@@ -1,0 +1,68 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "tmp2wk_eq30.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "AZOSIS\nTECHNOLOG\nES",
+        "confidence": 0.872
+      },
+      "VendorAddress": {
+        "value": "{'houseNumber': '1201', 'road': 'North Market Street', 'postalCode': '19801', 'city': 'Wilmington', 'state': 'Delaware', 'countryRegion': 'U.S.A', 'streetAddress': '1201 North Market Street Suite 111', 'unit': 'Suite 111'}",
+        "confidence": 0.877
+      },
+      "VendorAddressRecipient": {
+        "value": "Azosis Technologies LLC",
+        "confidence": 0.929
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics INC",
+        "confidence": 0.93
+      },
+      "InvoiceId": {
+        "value": "May/2526/06",
+        "confidence": 0.95
+      },
+      "InvoiceDate": {
+        "value": "2025-05-01",
+        "confidence": 0.93
+      },
+      "InvoiceTotal": {
+        "value": 35003.18,
+        "currency": "$",
+        "confidence": 0.95
+      },
+      "DueDate": {
+        "value": "2025-05-16",
+        "confidence": 0.93
+      },
+      "BillingAddress": {
+        "value": "{'houseNumber': '1', 'road': 'MacArthur PI', 'postalCode': '92707', 'state': 'California', 'countryRegion': 'U.S.A', 'streetAddress': '1 MacArthur PI Ste 100', 'unit': 'Ste 100'}",
+        "confidence": 0.844
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": {
+          "value": "Azure Software Subscription\nWorkspot DaaS on Microsoft Azure\nBilling Cycle (4/01/2025 - 4/30/2025)\n177219dd-e922-4959-84d1-7d6a497921c0",
+          "confidence": 0.884
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.924
+        },
+        "UnitPrice": {
+          "value": 35003.18,
+          "currency": null,
+          "confidence": 0.925
+        },
+        "Amount": {
+          "value": 35003.18,
+          "currency": null,
+          "confidence": 0.925
+        }
+      }
+    ]
+  }
+]

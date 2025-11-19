@@ -1,0 +1,495 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "tmpc247d156.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "Centrilogic",
+        "confidence": 0.976
+      },
+      "CustomerName": {
+        "value": "Real-Info",
+        "confidence": 0.976
+      },
+      "CustomerId": {
+        "value": "US77821\nREAL-2013050-US",
+        "confidence": 0.887
+      },
+      "InvoiceId": {
+        "value": "US77821",
+        "confidence": 0.98
+      },
+      "InvoiceDate": {
+        "value": "2025-07-01",
+        "confidence": 0.923
+      },
+      "InvoiceTotal": {
+        "value": 3222.09,
+        "currency": "USD",
+        "confidence": 0.544
+      },
+      "DueDate": {
+        "value": "2025-07-31",
+        "confidence": 0.926
+      },
+      "BillingAddress": {
+        "value": "{'houseNumber': '701', 'road': 'Seneca St.', 'postalCode': '14210', 'city': 'Buffalo', 'state': 'NY', 'countryRegion': 'USA', 'streetAddress': '701 Seneca St. Suite 641', 'unit': 'Suite 641'}",
+        "confidence": 0.878
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": {
+          "value": "One-Time Charges",
+          "confidence": 0.518
+        },
+        "Amount": {
+          "value": 0.0,
+          "currency": "USD",
+          "confidence": 0.482
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": {
+          "value": "Recurring Charges",
+          "confidence": 0.608
+        },
+        "Amount": {
+          "value": 3222.09,
+          "currency": "USD",
+          "confidence": 0.591
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": {
+          "value": "Credit Adjustments / Discounts",
+          "confidence": 0.477
+        },
+        "Amount": {
+          "value": 0.0,
+          "currency": "USD",
+          "confidence": 0.306
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": {
+          "value": "Customer Device Procurement Setup\nRack Mount Hardware for Firewalls",
+          "confidence": 0.902
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.853
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": {
+          "value": "Customer Device Procurement Setup\nRedundant Power Adapter",
+          "confidence": 0.881
+        },
+        "Quantity": {
+          "value": 2.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.853
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": {
+          "value": "Advanced Technical Services: Project-based Techno\nline item to defer $720 start up costs over 24mth term",
+          "confidence": 0.943
+        },
+        "UnitPrice": {
+          "value": 32.36,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 7,
+        "Description": {
+          "value": "Power: Circuit A: AC 30A 120V SinglePhase\nL5-30R",
+          "confidence": 0.895
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 594.82,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 594.82,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 8,
+        "Description": {
+          "value": "Network IPv4 Address Allocation: 8 Contiguous Addr\nAddresses",
+          "confidence": 0.9
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 47.55,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 47.55,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 9,
+        "Description": {
+          "value": "Power: Circuit B : AC 30A 120V SinglePhase\nL5-30R",
+          "confidence": 0.889
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 297.42,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 297.42,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 10,
+        "Description": {
+          "value": "Network IPv4 Address Allocation: 16 Contiguous Add\nAddresses",
+          "confidence": 0.898
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 77.67,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 77.67,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 11,
+        "Description": {
+          "value": "Security Device Management: Static VPN\nEngagement IDJG2071690",
+          "confidence": 0.881
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 115.43,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 115.43,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 12,
+        "Description": {
+          "value": "Bandwidth: Multi-homed Burstable Internet 10: 1-9 M\n95th Percentile (max in/out) - Burstable 100 Mbps - Unless defined by a\nspecific overage line item, throughput over base commit, 95th percentile (max\nin/out), will be billed at 150% commited rate. Billed in 1 Mbps increments over\nbase commit.",
+          "confidence": 0.887
+        },
+        "Quantity": {
+          "value": 10.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 42.8,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 428.0,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 13,
+        "Description": {
+          "value": "Co-location Space: Cabinet (40U) ....- 40 U useable\n19wide x 36 deep x 84 high",
+          "confidence": 0.952
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 424.21,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 424.21,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 14,
+        "Description": {
+          "value": "Network Cross Connects-Ethernet-Internal Facility",
+          "confidence": 0.852
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 18.18,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 18.18,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 15,
+        "Description": {
+          "value": "Network Redundant Uplink: Dual Switches Cisco HSR\n-Engagement ID OPP-00013387-2",
+          "confidence": 0.916
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 53.5,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 53.5,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 16,
+        "Description": {
+          "value": "Managed Software - License and Management\nGlobal protect",
+          "confidence": 0.869
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.853
+        }
+      },
+      {
+        "item_number": 17,
+        "Description": {
+          "value": "Managed Software - License and Management",
+          "confidence": 0.852
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.853
+        },
+        "Amount": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.853
+        }
+      },
+      {
+        "item_number": 18,
+        "Description": {
+          "value": "Managed Software - License and Management\nAutofocus",
+          "confidence": 0.872
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.853
+        },
+        "Amount": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.853
+        }
+      },
+      {
+        "item_number": 19,
+        "Description": {
+          "value": "Managed Dedicated Firewall - Device Management an",
+          "confidence": 0.853
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 461.73,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 461.73,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 20,
+        "Description": {
+          "value": "Private Hardware- Dedicated Firewall\n1/2 PA-200 in HA",
+          "confidence": 0.892
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 288.58,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 288.58,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 21,
+        "Description": {
+          "value": "Private Hardware- Dedicated Firewall\n2/2 PA-200 in HA",
+          "confidence": 0.891
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 288.58,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 288.58,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 22,
+        "Description": {
+          "value": "Network Cross Connect - Ethernet - Internal Facili\nPOP to FW\nSwitch Fabric upgrade order ID 5288-1",
+          "confidence": 0.8
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 46.17,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 46.17,
+          "currency": null,
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 23,
+        "Description": {
+          "value": "Network Redundant Uplink- Dual Switches Cisco HSR",
+          "confidence": 0.885
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.852
+        },
+        "UnitPrice": {
+          "value": 80.25,
+          "currency": null,
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 80.25,
+          "currency": null,
+          "confidence": 0.852
+        }
+      }
+    ]
+  }
+]

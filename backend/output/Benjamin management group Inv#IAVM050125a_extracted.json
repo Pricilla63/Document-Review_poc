@@ -1,0 +1,131 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "tmpm_7_u_0z.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "BMG\nBENJAMIN\nMANAGEMENT\nGROUP",
+        "confidence": 0.919
+      },
+      "VendorAddress": {
+        "value": "{'houseNumber': '100', 'road': 'Spectrum Center Drive', 'postalCode': '92618', 'city': 'Irvine', 'state': 'CA', 'streetAddress': '100 Spectrum Center Drive Suite # 900', 'unit': 'Suite # 900'}",
+        "confidence": 0.88
+      },
+      "VendorAddressRecipient": {
+        "value": "Benjamin Management Group, Inc.",
+        "confidence": 0.926
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics",
+        "confidence": 0.943
+      },
+      "InvoiceId": {
+        "value": "IAVM050125a",
+        "confidence": 0.972
+      },
+      "InvoiceDate": {
+        "value": "2025-05-01",
+        "confidence": 0.972
+      },
+      "InvoiceTotal": {
+        "value": 2660.0,
+        "currency": "$",
+        "confidence": 0.969
+      },
+      "DueDate": {
+        "value": "2025-05-30",
+        "confidence": 0.972
+      },
+      "BillingAddress": {
+        "value": "{'houseNumber': '1500', 'road': 'South Douglass Road', 'postalCode': '92806', 'city': 'Anaheim', 'state': 'CA', 'streetAddress': '1500 South Douglass Road Suite 110 B', 'unit': 'Suite 110 B'}",
+        "confidence": 0.879
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": {
+          "value": "11 IAVMs x $10",
+          "confidence": 0.953
+        },
+        "Quantity": {
+          "value": 11.0,
+          "confidence": 0.947
+        },
+        "UnitPrice": {
+          "value": 10.0,
+          "currency": null,
+          "confidence": 0.945
+        },
+        "Amount": {
+          "value": 110.0,
+          "currency": null,
+          "confidence": 0.945
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": {
+          "value": "0 Desktop BPOs x $50",
+          "confidence": 0.94
+        },
+        "Quantity": {
+          "value": 0.0,
+          "confidence": 0.945
+        },
+        "UnitPrice": {
+          "value": 50.0,
+          "currency": null,
+          "confidence": 0.945
+        },
+        "Amount": {
+          "value": 0.0,
+          "currency": null,
+          "confidence": 0.946
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": {
+          "value": "10 Commercial CCA Orders x $150.00",
+          "confidence": 0.946
+        },
+        "Quantity": {
+          "value": 10.0,
+          "confidence": 0.945
+        },
+        "UnitPrice": {
+          "value": 150.0,
+          "currency": null,
+          "confidence": 0.945
+        },
+        "Amount": {
+          "value": 1500.0,
+          "currency": null,
+          "confidence": 0.945
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": {
+          "value": "6 Rush Commercial CCAs x $175.00",
+          "confidence": 0.945
+        },
+        "Quantity": {
+          "value": 6.0,
+          "confidence": 0.945
+        },
+        "UnitPrice": {
+          "value": 175.0,
+          "currency": null,
+          "confidence": 0.945
+        },
+        "Amount": {
+          "value": 1050.0,
+          "currency": null,
+          "confidence": 0.945
+        }
+      }
+    ]
+  }
+]

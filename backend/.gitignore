@@ -1,0 +1,7 @@
+.output/
+.env
+package-lock.json
+package.json
+requirements.txt
+__pycache__/
+

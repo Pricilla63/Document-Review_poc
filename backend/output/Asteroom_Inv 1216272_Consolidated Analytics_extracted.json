@@ -1,0 +1,89 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "tmpari0t0bn.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "\"Asteroom",
+        "confidence": 0.72
+      },
+      "VendorAddress": {
+        "value": "{'houseNumber': '20947', 'road': 'Currier Rd.', 'postalCode': '91789', 'city': 'Walnut', 'state': 'CA', 'countryRegion': 'US', 'streetAddress': '20947 Currier Rd. Unit O', 'unit': 'Unit O'}",
+        "confidence": 0.842
+      },
+      "VendorAddressRecipient": {
+        "value": "\"Asteroom",
+        "confidence": 0.72
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics",
+        "confidence": 0.93
+      },
+      "CustomerId": {
+        "value": "RU0012",
+        "confidence": 0.965
+      },
+      "InvoiceId": {
+        "value": "1216272",
+        "confidence": 0.968
+      },
+      "InvoiceDate": {
+        "value": "2025-05-31",
+        "confidence": 0.968
+      },
+      "InvoiceTotal": {
+        "value": 9280.0,
+        "currency": "USD",
+        "confidence": 0.938
+      },
+      "DueDate": {
+        "value": "2025-06-30",
+        "confidence": 0.969
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": {
+          "value": "GSE Property Data Collection Service",
+          "confidence": 0.943
+        },
+        "Quantity": {
+          "value": 51.0,
+          "confidence": 0.944
+        },
+        "UnitPrice": {
+          "value": 180.0,
+          "currency": "USD",
+          "confidence": 0.944
+        },
+        "Amount": {
+          "value": 9180.0,
+          "currency": "USD",
+          "confidence": 0.944
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": {
+          "value": "GSE Property Data Collection Service",
+          "confidence": 0.943
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.944
+        },
+        "UnitPrice": {
+          "value": 100.0,
+          "currency": "USD",
+          "confidence": 0.944
+        },
+        "Amount": {
+          "value": 100.0,
+          "currency": "USD",
+          "confidence": 0.944
+        }
+      }
+    ]
+  }
+]

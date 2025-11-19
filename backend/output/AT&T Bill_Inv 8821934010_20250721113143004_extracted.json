@@ -1,0 +1,103 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "tmpk0vuvm2o.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "AT&T",
+        "confidence": 0.938
+      },
+      "VendorAddress": {
+        "value": "{'poBox': 'P.O. Box 5093', 'postalCode': '60197-5093', 'city': 'Carol Stream', 'state': 'IL', 'streetAddress': 'P.O. Box 5093'}",
+        "confidence": 0.995
+      },
+      "VendorAddressRecipient": {
+        "value": "AT&T",
+        "confidence": 0.971
+      },
+      "CustomerName": {
+        "value": "CONSOLIDATED ANALYTICS, INC.",
+        "confidence": 0.891
+      },
+      "CustomerId": {
+        "value": "831-001-1572 578",
+        "confidence": 0.811
+      },
+      "CustomerAddress": {
+        "value": "{'houseNumber': '1', 'road': 'MACARTHUR PL', 'postalCode': '92707', 'city': 'SANTA ANA', 'state': 'CA', 'streetAddress': '1 MACARTHUR PL STE 100', 'unit': 'STE 100'}",
+        "confidence": 0.865
+      },
+      "CustomerAddressRecipient": {
+        "value": "CONSOLIDATED ANALYTICS, INC.",
+        "confidence": 0.891
+      },
+      "InvoiceId": {
+        "value": "8821934010",
+        "confidence": 0.937
+      },
+      "InvoiceDate": {
+        "value": "2025-07-11",
+        "confidence": 0.915
+      },
+      "InvoiceTotal": {
+        "value": 848.7,
+        "currency": null,
+        "confidence": 0.92
+      },
+      "DueDate": {
+        "value": "2025-08-10",
+        "confidence": 0.915
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": {
+          "value": "100 Mbps HiCap Flex Bandwidth\n100Mbps - US",
+          "confidence": 0.706
+        },
+        "Amount": {
+          "value": 133.47,
+          "currency": null,
+          "confidence": 0.875
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": {
+          "value": "Property Tax Allotment - ADI",
+          "confidence": 0.716
+        },
+        "Amount": {
+          "value": 13.99,
+          "currency": null,
+          "confidence": 0.75
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": {
+          "value": "Federal Access Recovery Fee",
+          "confidence": 0.808
+        },
+        "Amount": {
+          "value": 9.97,
+          "currency": null,
+          "confidence": 0.871
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": {
+          "value": "ADI Access Charge",
+          "confidence": 0.624
+        },
+        "Amount": {
+          "value": 604.0,
+          "currency": null,
+          "confidence": 0.767
+        }
+      }
+    ]
+  }
+]

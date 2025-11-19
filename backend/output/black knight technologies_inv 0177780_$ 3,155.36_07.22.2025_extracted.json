@@ -1,0 +1,86 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "tmpg7fvtox1.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "BLACK\nKNIGHT®",
+        "confidence": 0.938
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics, Inc.\nAccounts Payable",
+        "confidence": 0.915
+      },
+      "CustomerId": {
+        "value": "L6Q",
+        "confidence": 0.969
+      },
+      "CustomerAddress": {
+        "value": "{'houseNumber': '6032', 'road': 'Innovation Way', 'postalCode': '76244', 'city': 'Fort Worth', 'state': 'TX', 'streetAddress': '6032 Innovation Way'}",
+        "confidence": 0.89
+      },
+      "CustomerAddressRecipient": {
+        "value": "Consolidated Analytics, Inc.\nAccounts Payable",
+        "confidence": 0.915
+      },
+      "InvoiceId": {
+        "value": "0177780",
+        "confidence": 0.977
+      },
+      "InvoiceDate": {
+        "value": "2025-07-22",
+        "confidence": 0.938
+      },
+      "InvoiceTotal": {
+        "value": 3155.36,
+        "currency": "$",
+        "confidence": 0.446
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": {
+          "value": "InterChange Products / Services",
+          "confidence": 0.779
+        },
+        "Amount": {
+          "value": 1000.0,
+          "currency": "$",
+          "confidence": 0.945
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": {
+          "value": "Web Direct",
+          "confidence": 0.235
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": {
+          "value": "Web Direct",
+          "confidence": 0.737
+        },
+        "Amount": {
+          "value": 1960.0,
+          "currency": "$",
+          "confidence": 0.93
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": {
+          "value": "InterChange Service Subscription Fee for the month of June, 2025",
+          "confidence": 0.513
+        },
+        "Amount": {
+          "value": 1000.0,
+          "currency": "$",
+          "confidence": 0.372
+        }
+      }
+    ]
+  }
+]

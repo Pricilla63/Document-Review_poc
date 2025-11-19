@@ -1,0 +1,330 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "tmpdpsehn74.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "8x8",
+        "confidence": 0.938
+      },
+      "CustomerName": {
+        "value": "CONSOLIDATED ANALYTICS INC\nATTN: ACCOUNTS PAYABLE",
+        "confidence": 0.886
+      },
+      "CustomerId": {
+        "value": "RW00381535",
+        "confidence": 0.937
+      },
+      "InvoiceId": {
+        "value": "5082786",
+        "confidence": 0.939
+      },
+      "InvoiceDate": {
+        "value": "2025-07-01",
+        "confidence": 0.939
+      },
+      "InvoiceTotal": {
+        "value": 5783.33,
+        "currency": "$",
+        "confidence": 0.916
+      },
+      "BillingAddress": {
+        "value": "{'houseNumber': '19712', 'road': 'MACARTHUR BLVD', 'postalCode': '92612', 'city': 'IRVINE', 'state': 'CA', 'countryRegion': 'United States', 'streetAddress': '19712 MACARTHUR BLVD STE 110', 'unit': 'STE 110'}",
+        "confidence": 0.83
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": {
+          "value": "SVC: TOLL FREE USAGE NO RRF",
+          "confidence": 0.92
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.916
+        },
+        "UnitPrice": {
+          "value": 16.0,
+          "currency": "$",
+          "confidence": 0.92
+        },
+        "Amount": {
+          "value": 16.0,
+          "currency": "$",
+          "confidence": 0.921
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": {
+          "value": "Additional Local Number",
+          "confidence": 0.92
+        },
+        "Quantity": {
+          "value": 21.0,
+          "confidence": 0.919
+        },
+        "UnitPrice": {
+          "value": 1.1,
+          "currency": "$",
+          "confidence": 0.92
+        },
+        "Amount": {
+          "value": 23.1,
+          "currency": "$",
+          "confidence": 0.921
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": {
+          "value": "Local Number - Included",
+          "confidence": 0.903
+        },
+        "Quantity": {
+          "value": 233.0,
+          "confidence": 0.919
+        },
+        "UnitPrice": {
+          "value": 0.0,
+          "currency": "$",
+          "confidence": 0.92
+        },
+        "Amount": {
+          "value": 0.0,
+          "currency": "$",
+          "confidence": 0.921
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": {
+          "value": "Toll Free numbers",
+          "confidence": 0.92
+        },
+        "Quantity": {
+          "value": 7.0,
+          "confidence": 0.917
+        },
+        "UnitPrice": {
+          "value": 1.1,
+          "currency": "$",
+          "confidence": 0.92
+        },
+        "Amount": {
+          "value": 7.7,
+          "currency": "$",
+          "confidence": 0.921
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": {
+          "value": "X Series - X2",
+          "confidence": 0.906
+        },
+        "Quantity": {
+          "value": 25.0,
+          "confidence": 0.919
+        },
+        "UnitPrice": {
+          "value": 18.5,
+          "currency": "$",
+          "confidence": 0.921
+        },
+        "Amount": {
+          "value": 462.5,
+          "currency": "$",
+          "confidence": 0.921
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": {
+          "value": "X Series Metered",
+          "confidence": 0.921
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.915
+        },
+        "UnitPrice": {
+          "value": 10.0,
+          "currency": "$",
+          "confidence": 0.92
+        },
+        "Amount": {
+          "value": 10.0,
+          "currency": "$",
+          "confidence": 0.921
+        }
+      },
+      {
+        "item_number": 7,
+        "Description": {
+          "value": "X Series Pro",
+          "confidence": 0.923
+        },
+        "Quantity": {
+          "value": 168.0,
+          "confidence": 0.918
+        },
+        "UnitPrice": {
+          "value": 23.0,
+          "currency": "$",
+          "confidence": 0.92
+        },
+        "Amount": {
+          "value": 3864.0,
+          "currency": "$",
+          "confidence": 0.921
+        }
+      },
+      {
+        "item_number": 8,
+        "Description": {
+          "value": "SVC: VO ONLINE ADDITIONAL 1GB STORAGE",
+          "confidence": 0.917
+        },
+        "Amount": {
+          "value": 395.34,
+          "currency": "$",
+          "confidence": 0.921
+        }
+      },
+      {
+        "item_number": 9,
+        "Description": {
+          "value": "SVC: USAGE",
+          "confidence": 0.921
+        },
+        "Amount": {
+          "value": 164.32,
+          "currency": "$",
+          "confidence": 0.921
+        }
+      },
+      {
+        "item_number": 10,
+        "Description": {
+          "value": "MISC: REGULATORY RECOVERY FEE",
+          "confidence": 0.919
+        },
+        "Amount": {
+          "value": 219.42,
+          "currency": "$",
+          "confidence": 0.921
+        }
+      },
+      {
+        "item_number": 11,
+        "Description": {
+          "value": "MISC: E911 SERVICE",
+          "confidence": 0.92
+        },
+        "Amount": {
+          "value": 47.76,
+          "currency": "$",
+          "confidence": 0.921
+        }
+      },
+      {
+        "item_number": 12,
+        "Description": {
+          "value": "CA Local Utility Tax",
+          "confidence": 0.853
+        },
+        "Amount": {
+          "value": 127.89,
+          "currency": "$",
+          "confidence": 0.853
+        }
+      },
+      {
+        "item_number": 13,
+        "Description": {
+          "value": "CA Public Purpose Program Surcharge",
+          "confidence": 0.914
+        },
+        "Amount": {
+          "value": 162.9,
+          "currency": "$",
+          "confidence": 0.92
+        }
+      },
+      {
+        "item_number": 14,
+        "Description": {
+          "value": "CA State and Local 911 Tax",
+          "confidence": 0.872
+        },
+        "Amount": {
+          "value": 74.21,
+          "currency": "$",
+          "confidence": 0.886
+        }
+      },
+      {
+        "item_number": 15,
+        "Description": {
+          "value": "CA State and Local 988 Tax",
+          "confidence": 0.853
+        },
+        "Amount": {
+          "value": 14.48,
+          "currency": "$",
+          "confidence": 0.854
+        }
+      },
+      {
+        "item_number": 16,
+        "Description": {
+          "value": "TX E911 Equalization Surcharge",
+          "confidence": 0.898
+        },
+        "Amount": {
+          "value": 0.78,
+          "currency": "$",
+          "confidence": 0.915
+        }
+      },
+      {
+        "item_number": 17,
+        "Description": {
+          "value": "TX State and Local 911 Tax",
+          "confidence": 0.853
+        },
+        "Amount": {
+          "value": 9.75,
+          "currency": "$",
+          "confidence": 0.857
+        }
+      },
+      {
+        "item_number": 18,
+        "Description": {
+          "value": "TX State and Local Sales Tax",
+          "confidence": 0.852
+        },
+        "Amount": {
+          "value": 26.06,
+          "currency": "$",
+          "confidence": 0.852
+        }
+      },
+      {
+        "item_number": 19,
+        "Description": {
+          "value": "MISC: UNIVERSAL SERVICE SURCHARGE\n(USF)",
+          "confidence": 0.732
+        },
+        "Amount": {
+          "value": 157.12,
+          "currency": "$",
+          "confidence": 0.785
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "tmpgep3kq5e.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "HOVER\nNETWORKS",
+        "confidence": 0.935
+      },
+      "VendorAddress": {
+        "value": "{'houseNumber': '475', 'road': 'Lawrence Bell Dr.', 'postalCode': '14221', 'city': 'Buffalo', 'state': 'NY', 'streetAddress': '475 Lawrence Bell Dr.'}",
+        "confidence": 0.887
+      },
+      "VendorAddressRecipient": {
+        "value": "Hover Networks, Inc.",
+        "confidence": 0.926
+      },
+      "CustomerName": {
+        "value": "Consilidated Analytics",
+        "confidence": 0.936
+      },
+      "InvoiceId": {
+        "value": "464513",
+        "confidence": 0.958
+      },
+      "InvoiceDate": {
+        "value": "2025-07-01",
+        "confidence": 0.958
+      },
+      "InvoiceTotal": {
+        "value": 1.31,
+        "currency": null,
+        "confidence": 0.92
+      },
+      "DueDate": {
+        "value": "2025-07-16",
+        "confidence": 0.957
+      },
+      "BillingAddress": {
+        "value": "{'houseNumber': '1', 'road': 'McArthur Place', 'postalCode': '92707', 'city': 'Santa Ana', 'state': 'CA', 'streetAddress': '1 McArthur Place Suite 100', 'unit': 'Suite 100'}",
+        "confidence": 0.872
+      },
+      "ShippingAddress": {
+        "value": "{'houseNumber': '701', 'road': 'Seneca St', 'postalCode': '14210', 'city': 'Buffalo', 'state': 'NY', 'streetAddress': '701 Seneca St Suite 641', 'unit': 'Suite 641'}",
+        "confidence": 0.879
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": {
+          "value": "Phone Numbers Registered in Total\nControl.",
+          "confidence": 0.901
+        },
+        "Quantity": {
+          "value": 1.0,
+          "confidence": 0.904
+        },
+        "UnitPrice": {
+          "value": 1.0,
+          "currency": null,
+          "confidence": 0.906
+        },
+        "Amount": {
+          "value": 1.0,
+          "currency": null,
+          "confidence": 0.911
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": {
+          "value": "Toll Free Usage",
+          "confidence": 0.906
+        },
+        "Quantity": {
+          "value": 5.0,
+          "confidence": 0.905
+        },
+        "UnitPrice": {
+          "value": 0.04,
+          "currency": null,
+          "confidence": 0.902
+        },
+        "Amount": {
+          "value": 0.2,
+          "currency": null,
+          "confidence": 0.91
+        }
+      }
+    ]
+  }
+]
