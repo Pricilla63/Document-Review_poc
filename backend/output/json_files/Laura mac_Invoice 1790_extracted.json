@@ -1,0 +1,408 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "Laura mac_Invoice 1790.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "LauraMac",
+        "confidence": 0.975,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "PO Box 2123",
+          "city": "Spokane",
+          "state": "WA",
+          "postal_code": "99210",
+          "country": "US"
+        },
+        "confidence": 0.886,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "LauraMac, LLC",
+        "confidence": 0.933,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics",
+        "confidence": 0.937,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1 MachArthur Place",
+          "city": "Santa Ana",
+          "state": "CA",
+          "postal_code": "92707",
+          "house_number": "1",
+          "road": "MachArthur Place"
+        },
+        "confidence": 0.886,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "1790",
+        "confidence": 0.976,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-02-28",
+        "confidence": 0.975,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-03-30",
+        "confidence": 0.975,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 81305.24,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.947,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "Subtotal": {
+        "value": {
+          "amount": 208119.98,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.975,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 81305.24,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.972,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorEmail": {
+        "value": "AR@lauramac.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "ax",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "PaymentMethod": {
+        "value": "ach",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorCountry": {
+        "value": "US",
+        "confidence": 0.7974,
+        "method": "DerivedFromAddress"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.947,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 7,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Review License Fee",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 5000.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 5000.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Review Transaction Fee",
+        "Quantity": 5414.0,
+        "UnitPrice": {
+          "amount": 34.6495161,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 187592.48,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "ODS Fee (47 Refresh)",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 970.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 970.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "Data Storage (Active)",
+        "Quantity": 2.6,
+        "UnitPrice": {
+          "amount": 125.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 325.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "Data Storage (Archived)",
+        "Quantity": 58.9,
+        "UnitPrice": {
+          "amount": 50.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 2945.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": "Technology Software Development\nLMSD-12664",
+        "Quantity": 64.5,
+        "UnitPrice": {
+          "amount": 175.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 11287.5,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 7,
+        "Description": "Sales Tax calculated by Ava Tax for\n7666-V0 at Fri Mar 7 07:58:33 UTC\n2025",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.975,
+        "VendorAddress": 0.886,
+        "VendorContactPerson": 0.933,
+        "CustomerName": 0.937,
+        "BillingAddress": 0.886,
+        "InvoiceId": 0.976,
+        "InvoiceDate": 0.975,
+        "DueDate": 0.975,
+        "InvoiceTotal": 0.947,
+        "Subtotal": 0.975,
+        "AmountDue": 0.972,
+        "VendorEmail": 0.7,
+        "VendorTaxId": 0.7,
+        "PaymentMethod": 0.7
+      },
+      "processing_timestamp": "2025-11-20T17:57:35.160183",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

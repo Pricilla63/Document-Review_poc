@@ -1,0 +1,318 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "Loan logic process solutions_Invoice_INV79823_1749239459138.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "loanlogics®",
+        "confidence": 0.947,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "4600 Touchton Road E\nBuilding Suite 150",
+          "city": "Jacksonville",
+          "state": "FL",
+          "postal_code": "32246",
+          "house_number": "4600",
+          "road": "Touchton Road E\nBuilding",
+          "unit": "Suite 150"
+        },
+        "confidence": 0.866,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "LoanLogics Risk Analytics, Inc.\nLoanLogics, Inc.",
+        "confidence": 0.503,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics, Inc.",
+        "confidence": 0.928,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1500 S Douglass Rd",
+          "city": "Anaheim",
+          "state": "CA",
+          "postal_code": "92806",
+          "country": "United States",
+          "house_number": "1500",
+          "road": "S Douglass Rd"
+        },
+        "confidence": 0.88,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "INV79823",
+        "confidence": 0.967,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-05-31",
+        "confidence": 0.967,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-06-30",
+        "confidence": 0.966,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 33945.4,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.747,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 33945.4,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.956,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorEmail": {
+        "value": "accounts.receivable@loanlogics.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "g",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "PaymentMethod": {
+        "value": "wire",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "ounts",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.747,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 1,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "CustomerEmail": {
+        "value": "accounts.receivable@loanlogics.com",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "CustomerPhone": {
+        "value": "\n(866) 557-6959",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "IDEA loan processing",
+        "Quantity": 1225.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 33945.4,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.947,
+        "VendorAddress": 0.866,
+        "VendorContactPerson": 0.503,
+        "CustomerName": 0.928,
+        "BillingAddress": 0.88,
+        "InvoiceId": 0.967,
+        "InvoiceDate": 0.967,
+        "DueDate": 0.966,
+        "InvoiceTotal": 0.747,
+        "AmountDue": 0.956,
+        "VendorEmail": 0.7,
+        "VendorTaxId": 0.7,
+        "PaymentMethod": 0.7,
+        "CostCenter": 0.7
+      },
+      "processing_timestamp": "2025-11-20T17:57:56.517583",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "TextAnalysis",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

@@ -1,0 +1,648 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "Centrilogic Inc_SalesInvoice US77821.PDF",
+    "fields": {
+      "VendorName": {
+        "value": "Centrilogic",
+        "confidence": 0.976,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Real-Info",
+        "confidence": 0.976,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "701 Seneca St. Suite 641",
+          "city": "Buffalo",
+          "state": "NY",
+          "postal_code": "14210",
+          "country": "USA",
+          "house_number": "701",
+          "road": "Seneca St.",
+          "unit": "Suite 641"
+        },
+        "confidence": 0.878,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "US77821",
+        "confidence": 0.98,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-01",
+        "confidence": 0.923,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-07-31",
+        "confidence": 0.926,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 3222.09,
+          "currency": "USD",
+          "currency_code": "USD"
+        },
+        "confidence": 0.544,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 0.0,
+          "currency": "USD",
+          "currency_code": "USD"
+        },
+        "confidence": 0.925,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 3222.09,
+          "currency": "USD",
+          "currency_code": "USD"
+        },
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorEmail": {
+        "value": "accounting@centrilogic.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "e",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorContactPerson": {
+        "value": "erin walsh\nPayment Terms",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "ounting",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "Notes": {
+        "value": "Tax Registration No.: 98-0534283\nPage: 1 / 2\nINVOICE SUMMARY\nJuly 1, 2025\nUS77821\nREAL-2013050-US\nInvoice #:\nCustomer ID:\nBuffalo - 350 Main Street-100 Data Center (BUF)\n13418\nCustomer Device Procurement Setup\nRack Mount Hardware for Firewalls\nJul 1 - Jul 31\n1\n0.00\n0.00\n13419\nCustomer Device Procurement Setup\nRedundant Power Adapter\nJul 1 - Jul 31\n2\n0.00\n0.00\n2248\nAdvanced Technical Services:  Project-based Techno\nline item to defer $720 start up costs over 24mth term\nJul 1 - Jul 31\n32.36\n0.00\n2835\nPower: Circuit A: AC 30A 120V SinglePhase\nL5-30R\nJul 1 - Jul 31\n1\n594.82\n594.82\n13487\nNetwork IPv4 Address Allocation: 8 Contiguous Addr\nAddresses\nJul 1 - Jul 31\n1\n47.55\n47.55\n2836\nPower: Circuit B : AC 30A 120V SinglePhase\nL5-30R\nJul 1 - Jul 31\n1\n297.42\n297.42\n13486\nNetwork IPv4 Address Allocation: 16 Contiguous Add\nAddresses\nJul 1 - Jul 31\n1\n77.67\n77.67\n2838\nSecurity Device Management:  Static VPN\nEngagement IDJG2071690\nJul 1 - Jul 31\n1\n115.43\n115.43\n2833\nBandwidth:Multi-homed Burstable Internet 10: 1-9 M\n95th Percentile (max in/out) - Burstable 100 Mbps - Unless defined by a \nspecific overage line item, throughput over base commit, 95th percentile (max \nin/out), will be billed at 150% commited rate. Billed in 1 Mbps increments over \nbase commit.\nJul 1 - Jul 31\n10\n42.80\n428.00\n2834\nCo-location Space:  Cabinet (40U)....-40 U useable\n19wide x 36 deep x 84 high\nJul 1 - Jul 31\n1\n424.21\n424.21\n2832\nNetwork Cross Connects-Ethernet-Internal Facility\nJul 1 - Jul 31\n1\n18.18\n18.18\n2247\nNetwork Redundant Uplink:  Dual Switches Cisco HSR\nJul 1 - Jul 31\n1\n53.50\n53.50\n-Engagement ID OPP-00013387-2\n13327\nManaged Software - License and Management\nGlobal protect\nJul 1 - Jul 31\n1\n0.00\n0.00\n13328\nManaged Software - License and Management\nJul 1 - Jul 31\n1\n0.00\n0.00\n13329\nManaged Software - License and Management\nAutofocus\nJul 1 - Jul 31\n1\n0.00\n0.00\n13330\nManaged Dedicated Firewall -  Device Management an\nJul 1 - Jul 31\n1\n461.73\n461.73\n13325\nPrivate Hardware- Dedicated Firewall\n1/2 PA-200 in HA\nJul 1 - Jul 31\n1\n288.58\n288.58\n13326\nPrivate Hardware- Dedicated Firewall\n2/2 PA-200 in HA\nJul 1 - Jul 31\n1\n288.58\n288.58\n13331\nNetwork Cross Connect - Ethernet - Internal Facili\nPOP to FW\nJul 1 - Jul 31\n1\n46.17\n46.17\nSwitch Fabric upgrade order ID 5288-1\n4378\nNetwork Redundant Uplink-  Dual Switches Cisco HSR\nJul 1 - Jul 31\n1\n80.25\n80.25\nPage: 2 / 2\nINVOICE DETAILS\nQty\nDescription\nUnit Price\nAmount\nSID\nTC\nPeriod\nJuly 1, 2025\nUS77821\nREAL-2013050-US\nInvoice #:\nCustomer ID:",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.544,
+        "method": "DerivedFromTotal"
+      },
+      "TaxTypeBreakdown": {
+        "value": {
+          "Private Hardware- Dedicated Firewall\n1/2 PA-200 in HA": 288.58,
+          "Private Hardware- Dedicated Firewall\n2/2 PA-200 in HA": 288.58
+        },
+        "confidence": 0.8,
+        "method": "CalculatedFromItems"
+      },
+      "LineItems_Count": {
+        "value": 23,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "VendorAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentMethod": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "One-Time Charges",
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": "USD",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Recurring Charges",
+        "NetAmount": {
+          "amount": 3222.09,
+          "currency": "USD",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "Credit Adjustments / Discounts",
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": "USD",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "Customer Device Procurement Setup\nRack Mount Hardware for Firewalls",
+        "ItemCode": "13418",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "Customer Device Procurement Setup\nRedundant Power Adapter",
+        "ItemCode": "13419",
+        "Quantity": 2.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": "Advanced Technical Services: Project-based Techno\nline item to defer $720 start up costs over 24mth term",
+        "ItemCode": "2248",
+        "UnitPrice": {
+          "amount": 32.36,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 7,
+        "Description": "Power: Circuit A: AC 30A 120V SinglePhase\nL5-30R",
+        "ItemCode": "2835",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 594.82,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 594.82,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 8,
+        "Description": "Network IPv4 Address Allocation: 8 Contiguous Addr\nAddresses",
+        "ItemCode": "13487",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 47.55,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 47.55,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 9,
+        "Description": "Power: Circuit B : AC 30A 120V SinglePhase\nL5-30R",
+        "ItemCode": "2836",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 297.42,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 297.42,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 10,
+        "Description": "Network IPv4 Address Allocation: 16 Contiguous Add\nAddresses",
+        "ItemCode": "13486",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 77.67,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 77.67,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 11,
+        "Description": "Security Device Management: Static VPN\nEngagement IDJG2071690",
+        "ItemCode": "2838",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 115.43,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 115.43,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 12,
+        "Description": "Bandwidth: Multi-homed Burstable Internet 10: 1-9 M\n95th Percentile (max in/out) - Burstable 100 Mbps - Unless defined by a\nspecific overage line item, throughput over base commit, 95th percentile (max\nin/out), will be billed at 150% commited rate. Billed in 1 Mbps increments over\nbase commit.",
+        "ItemCode": "2833",
+        "Quantity": 10.0,
+        "UnitPrice": {
+          "amount": 42.8,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 428.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 13,
+        "Description": "Co-location Space: Cabinet (40U) ....- 40 U useable\n19wide x 36 deep x 84 high",
+        "ItemCode": "2834",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 424.21,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 424.21,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 14,
+        "Description": "Network Cross Connects-Ethernet-Internal Facility",
+        "ItemCode": "2832",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 18.18,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 18.18,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 15,
+        "Description": "Network Redundant Uplink: Dual Switches Cisco HSR\n-Engagement ID OPP-00013387-2",
+        "ItemCode": "2247",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 53.5,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 53.5,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 16,
+        "Description": "Managed Software - License and Management\nGlobal protect",
+        "ItemCode": "13327",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 17,
+        "Description": "Managed Software - License and Management",
+        "ItemCode": "13328",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 18,
+        "Description": "Managed Software - License and Management\nAutofocus",
+        "ItemCode": "13329",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 19,
+        "Description": "Managed Dedicated Firewall - Device Management an",
+        "ItemCode": "13330",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 461.73,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 461.73,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 20,
+        "Description": "Private Hardware- Dedicated Firewall\n1/2 PA-200 in HA",
+        "ItemCode": "13325",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 288.58,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 288.58,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 21,
+        "Description": "Private Hardware- Dedicated Firewall\n2/2 PA-200 in HA",
+        "ItemCode": "13326",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 288.58,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 288.58,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 22,
+        "Description": "Network Cross Connect - Ethernet - Internal Facili\nPOP to FW\nSwitch Fabric upgrade order ID 5288-1",
+        "ItemCode": "13331",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 46.17,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 46.17,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 23,
+        "Description": "Network Redundant Uplink- Dual Switches Cisco HSR",
+        "ItemCode": "4378",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 80.25,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 80.25,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.976,
+        "CustomerName": 0.976,
+        "BillingAddress": 0.878,
+        "InvoiceId": 0.98,
+        "InvoiceDate": 0.923,
+        "DueDate": 0.926,
+        "InvoiceTotal": 0.544,
+        "TotalTax": 0.925,
+        "AmountDue": 0.93,
+        "VendorEmail": 0.7,
+        "VendorTaxId": 0.7,
+        "VendorContactPerson": 0.7,
+        "CostCenter": 0.7,
+        "Notes": 0.7
+      },
+      "processing_timestamp": "2025-11-20T17:55:46.303501",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

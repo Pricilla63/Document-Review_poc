@@ -1,0 +1,326 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "Azosis technologies_Inv May252606_.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "AZOSIS\nTECHNOLOG\nES",
+        "confidence": 0.872,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "1201 North Market Street Suite 111",
+          "city": "Wilmington",
+          "state": "Delaware",
+          "postal_code": "19801",
+          "country": "U.S.A",
+          "house_number": "1201",
+          "road": "North Market Street",
+          "unit": "Suite 111"
+        },
+        "confidence": 0.877,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "Azosis Technologies LLC",
+        "confidence": 0.929,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics INC",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1 MacArthur PI Ste 100",
+          "state": "California",
+          "postal_code": "92707",
+          "country": "U.S.A",
+          "house_number": "1",
+          "road": "MacArthur PI",
+          "unit": "Ste 100"
+        },
+        "confidence": 0.844,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "May/2526/06",
+        "confidence": 0.95,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-05-01",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-05-16",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodStart": {
+        "value": "2025-04-01",
+        "confidence": 0.536,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodEnd": {
+        "value": "2025-04-30",
+        "confidence": 0.536,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 35003.18,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.95,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "Subtotal": {
+        "value": {
+          "amount": 35003.18,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.95,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 35003.18,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.95,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorEmail": {
+        "value": "accounts@azosis.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorWebsite": {
+        "value": "www.azosis.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "g",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "ounts",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "Notes": {
+        "value": "Thanks for your business. \nKindly transfer to below Bank account details\nAccount Number-325192652575\nRouting Number-121000358\nEIN-026009593\nTerms & Conditions\nAs per Agreed SOW. Any discrepancy to be reported within 14 days for Credit Memo.\nThis is Computer generated invoice does not require signature",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorCountry": {
+        "value": "U.S.A",
+        "confidence": 0.7893,
+        "method": "DerivedFromAddress"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.95,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 1,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentMethod": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Azure Software Subscription\nWorkspot DaaS on Microsoft Azure\nBilling Cycle (4/01/2025 - 4/30/2025)\n177219dd-e922-4959-84d1-7d6a497921c0",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 35003.18,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 35003.18,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.872,
+        "VendorAddress": 0.877,
+        "VendorContactPerson": 0.929,
+        "CustomerName": 0.93,
+        "BillingAddress": 0.844,
+        "InvoiceId": 0.95,
+        "InvoiceDate": 0.93,
+        "DueDate": 0.93,
+        "ServicePeriodStart": 0.536,
+        "ServicePeriodEnd": 0.536,
+        "InvoiceTotal": 0.95,
+        "Subtotal": 0.95,
+        "AmountDue": 0.95,
+        "VendorEmail": 0.7,
+        "VendorWebsite": 0.7,
+        "VendorTaxId": 0.7,
+        "CostCenter": 0.7,
+        "Notes": 0.7
+      },
+      "processing_timestamp": "2025-11-20T17:54:39.977397",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

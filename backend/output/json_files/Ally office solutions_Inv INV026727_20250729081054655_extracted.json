@@ -1,0 +1,308 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "Ally office solutions_Inv INV026727_20250729081054655.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "ALLY\nOFFICE SOLUTIONS",
+        "confidence": 0.493,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "405 S Nolen Dr. Ste. 180",
+          "city": "Southlake",
+          "state": "Tx",
+          "postal_code": "76092",
+          "house_number": "405",
+          "road": "S Nolen Dr.",
+          "unit": "Ste. 180"
+        },
+        "confidence": 0.881,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "ALLY\nOFFICE SOLUTIONS",
+        "confidence": 0.493,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics, Inc.",
+        "confidence": 0.745,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "6100 Tennyson Pkwy Ste. 115",
+          "city": "Plano",
+          "state": "TX",
+          "postal_code": "75024",
+          "house_number": "6100",
+          "road": "Tennyson Pkwy",
+          "unit": "Ste. 115"
+        },
+        "confidence": 0.885,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerContactPerson": {
+        "value": "Consolidated Analytics, Inc.",
+        "confidence": 0.745,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "INV026727",
+        "confidence": 0.952,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-21",
+        "confidence": 0.951,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodStart": {
+        "value": "2025-06-20",
+        "confidence": 0.536,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodEnd": {
+        "value": "2025-07-19",
+        "confidence": 0.66,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 33.07,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.936,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "Subtotal": {
+        "value": {
+          "amount": 30.55,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.95,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 2.52,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.939,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.936,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 1,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentMethod": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountDue": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Total Meter Charge",
+        "NetAmount": {
+          "amount": 30.55,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.493,
+        "VendorAddress": 0.881,
+        "VendorContactPerson": 0.493,
+        "CustomerName": 0.745,
+        "BillingAddress": 0.885,
+        "CustomerContactPerson": 0.745,
+        "InvoiceId": 0.952,
+        "InvoiceDate": 0.951,
+        "ServicePeriodStart": 0.536,
+        "ServicePeriodEnd": 0.66,
+        "InvoiceTotal": 0.936,
+        "Subtotal": 0.95,
+        "TotalTax": 0.939
+      },
+      "processing_timestamp": "2025-11-20T17:54:06.704707",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "DerivedFields",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

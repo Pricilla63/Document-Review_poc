@@ -1,0 +1,408 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "FedEx_Inv 8-920-73191.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "FedEx",
+        "confidence": 0.95,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "CONSOLIDATED ANALYTICS, INC.",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "city": "SANTA ANA",
+          "state": "CA",
+          "postal_code": "92707-5928"
+        },
+        "confidence": 0.888,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": {
+          "city": "SANTA ANA",
+          "state": "CA",
+          "postal_code": "92707-5928"
+        },
+        "confidence": 0.917,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerContactPerson": {
+        "value": "Consolidated Analytics, Inc.",
+        "confidence": 0.416,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "8-920-73191",
+        "confidence": 0.956,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-11",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 129.07,
+          "currency": "USD",
+          "currency_code": "USD"
+        },
+        "confidence": 0.815,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "Subtotal": {
+        "value": {
+          "amount": 92.17,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.798,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "https://www.fedex.com/EarnedDiscounts/.",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "g",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorContactPerson": {
+        "value": "FedEx Revenue Services\nPhone",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceType": {
+        "value": "FedEx Ground Shipments",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "ount",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.815,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 13,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "VendorAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentMethod": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountDue": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Ground-Bill Third Party",
+        "Quantity": 1.0,
+        "NetAmount": {
+          "amount": 92.17,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Ground-Home Delivery",
+        "Quantity": 1.0,
+        "NetAmount": {
+          "amount": 36.9,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "Transportation Charge",
+        "NetAmount": {
+          "amount": 63.56,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "Grace Discount",
+        "NetAmount": {
+          "amount": -6.36,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "Performance Pricing",
+        "NetAmount": {
+          "amount": -20.34,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": "Fuel Surcharge",
+        "NetAmount": {
+          "amount": 15.36,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 7,
+        "Description": "Residential",
+        "NetAmount": {
+          "amount": 5.95,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 8,
+        "Description": "AHS - Dimensions",
+        "NetAmount": {
+          "amount": 34.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 9,
+        "Description": "Transportation Charge",
+        "NetAmount": {
+          "amount": 39.36,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 10,
+        "Description": "Grace Discount",
+        "NetAmount": {
+          "amount": -3.94,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 11,
+        "Description": "Performance Pricing",
+        "NetAmount": {
+          "amount": -10.62,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 12,
+        "Description": "Fuel Surcharge",
+        "NetAmount": {
+          "amount": 6.15,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 13,
+        "Description": "Residential",
+        "NetAmount": {
+          "amount": 5.95,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.95,
+        "CustomerName": 0.93,
+        "BillingAddress": 0.888,
+        "ShippingAddress": 0.917,
+        "CustomerContactPerson": 0.416,
+        "InvoiceId": 0.956,
+        "InvoiceDate": 0.93,
+        "InvoiceTotal": 0.815,
+        "Subtotal": 0.798,
+        "VendorWebsite": 0.7,
+        "VendorTaxId": 0.7,
+        "VendorContactPerson": 0.7,
+        "InvoiceType": 0.7,
+        "CostCenter": 0.7
+      },
+      "processing_timestamp": "2025-11-20T17:56:07.952576",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

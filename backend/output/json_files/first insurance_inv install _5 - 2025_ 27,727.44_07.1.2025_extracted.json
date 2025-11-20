@@ -1,0 +1,282 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "first insurance_inv install #5 - 2025_$ 27,727.44_07.1.2025.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "FIRST INSURANCE\nFUNDING",
+        "confidence": 0.888,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "450 Skokie Blvd. Suite 1000",
+          "city": "Northbrook",
+          "state": "IL",
+          "postal_code": "60062-7917",
+          "house_number": "450",
+          "road": "Skokie Blvd.",
+          "unit": "Suite 1000"
+        },
+        "confidence": 0.885,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "FIRST INSURANCE\nFUNDING",
+        "confidence": 0.888,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "CA HOLDING COMPANY II LLC",
+        "confidence": 0.91,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerContactPerson": {
+        "value": "CA HOLDING COMPANY II LLC",
+        "confidence": 0.91,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-11",
+        "confidence": 0.927,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-08-01",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 27727.44,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.535,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 27727.44,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.894,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.535,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 0,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "BillingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentMethod": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.888,
+        "VendorAddress": 0.885,
+        "VendorContactPerson": 0.888,
+        "CustomerName": 0.91,
+        "CustomerContactPerson": 0.91,
+        "InvoiceDate": 0.927,
+        "DueDate": 0.93,
+        "InvoiceTotal": 0.535,
+        "AmountDue": 0.894
+      },
+      "processing_timestamp": "2025-11-20T17:56:30.479909",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "DerivedFields",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

@@ -1,0 +1,343 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "Stratwell LLC_Inv 07292025300-3863_BKFS.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "Stratwell, LLC",
+        "confidence": 0.969,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "17687 NW 78 Avenue",
+          "city": "Miami",
+          "state": "FL",
+          "postal_code": "33015",
+          "house_number": "17687",
+          "road": "NW 78 Avenue"
+        },
+        "confidence": 0.89,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "Stratwell, LLC",
+        "confidence": 0.969,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Stratwell, LLC",
+        "confidence": 0.942,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "4772109536",
+          "house_number": "4772109536"
+        },
+        "confidence": 0.307,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerContactPerson": {
+        "value": "Stratwell, LLC",
+        "confidence": 0.942,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "24807",
+        "confidence": 0.989,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-08-01",
+        "confidence": 0.989,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "PurchaseOrder": {
+        "value": "4727561-2",
+        "confidence": 0.79,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodStart": {
+        "value": "2024-11-12",
+        "confidence": 0.801,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 437.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.988,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 4155.37,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.819,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorEmail": {
+        "value": "Palmwestgardens@bellsouth.net",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorWebsite": {
+        "value": "www.stratwell.co",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "g",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "PaymentMethod": {
+        "value": "ach",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "Rassias",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.988,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 5,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "VendorContactEmail": {
+        "value": "JKubik@ca-usa.com",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "CustomerEmail": {
+        "value": "JKubik@ca-usa.com",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "1950 W 56th St #2311B HOA",
+        "NetAmount": {
+          "amount": 437.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "NetAmount": {
+          "amount": 437.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "NetAmount": {
+          "amount": 437.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "Monthly Maintenance Fee",
+        "NetAmount": {
+          "amount": 252.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "Special Assessment",
+        "NetAmount": {
+          "amount": 185.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.969,
+        "VendorAddress": 0.89,
+        "VendorContactPerson": 0.969,
+        "CustomerName": 0.942,
+        "BillingAddress": 0.307,
+        "CustomerContactPerson": 0.942,
+        "InvoiceId": 0.989,
+        "InvoiceDate": 0.989,
+        "PurchaseOrder": 0.79,
+        "ServicePeriodStart": 0.801,
+        "InvoiceTotal": 0.988,
+        "AmountDue": 0.819,
+        "VendorEmail": 0.7,
+        "VendorWebsite": 0.7,
+        "VendorTaxId": 0.7,
+        "PaymentMethod": 0.7,
+        "CostCenter": 0.7
+      },
+      "processing_timestamp": "2025-11-20T18:44:01.067904",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "TextAnalysis",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

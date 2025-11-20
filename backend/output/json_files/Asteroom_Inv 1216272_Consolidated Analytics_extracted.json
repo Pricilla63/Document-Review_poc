@@ -1,0 +1,321 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "Asteroom_Inv 1216272_Consolidated Analytics.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "\"Asteroom",
+        "confidence": 0.72,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "20947 Currier Rd. Unit O",
+          "city": "Walnut",
+          "state": "CA",
+          "postal_code": "91789",
+          "country": "US",
+          "house_number": "20947",
+          "road": "Currier Rd.",
+          "unit": "Unit O"
+        },
+        "confidence": 0.842,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "\"Asteroom",
+        "confidence": 0.72,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "1216272",
+        "confidence": 0.968,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-05-31",
+        "confidence": 0.968,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-06-30",
+        "confidence": 0.969,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 9280.0,
+          "currency": "USD",
+          "currency_code": "USD"
+        },
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorEmail": {
+        "value": "sales@asteroom.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "g",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceType": {
+        "value": "checking\nAccount Number",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "PaymentMethod": {
+        "value": "check",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "ountsPayable",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorCountry": {
+        "value": "US",
+        "confidence": 0.7578,
+        "method": "DerivedFromAddress"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.938,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 2,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "CustomerEmail": {
+        "value": "AccountsPayable@ca-usa.com",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "CustomerPhone": {
+        "value": " 3250848002",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "BillingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountDue": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "GSE Property Data Collection Service",
+        "Quantity": 51.0,
+        "UnitPrice": {
+          "amount": 180.0,
+          "currency": "USD",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 9180.0,
+          "currency": "USD",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "GSE Property Data Collection Service",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": "USD",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 100.0,
+          "currency": "USD",
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.72,
+        "VendorAddress": 0.842,
+        "VendorContactPerson": 0.72,
+        "CustomerName": 0.93,
+        "InvoiceId": 0.968,
+        "InvoiceDate": 0.968,
+        "DueDate": 0.969,
+        "InvoiceTotal": 0.938,
+        "VendorEmail": 0.7,
+        "VendorTaxId": 0.7,
+        "InvoiceType": 0.7,
+        "PaymentMethod": 0.7,
+        "CostCenter": 0.7
+      },
+      "processing_timestamp": "2025-11-20T17:54:16.056143",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "TextAnalysis",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

@@ -1,0 +1,426 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "Housecanary_Invoice_INV98996.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "HouseCanary",
+        "confidence": 0.968,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics\nCA Accounting",
+        "confidence": 0.912,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1600 South Douglass Road Suite 110",
+          "city": "Aneheim",
+          "state": "CA",
+          "postal_code": "92806",
+          "country": "United States",
+          "house_number": "1600",
+          "road": "South Douglass Road",
+          "unit": "Suite 110"
+        },
+        "confidence": 0.847,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "INV98996",
+        "confidence": 0.971,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-30",
+        "confidence": 0.97,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-07-12",
+        "confidence": 0.97,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodStart": {
+        "value": "2025-06-01",
+        "confidence": 0.557,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodEnd": {
+        "value": "2025-06-30",
+        "confidence": 0.536,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 11333.34,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.652,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "Subtotal": {
+        "value": {
+          "amount": 11333.34,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.969,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.936,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 11333.34,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.652,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorEmail": {
+        "value": "billing@housecanary.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "g",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "PaymentMethod": {
+        "value": "s",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "ounting",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.652,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 8,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "CustomerEmail": {
+        "value": "billing@housecanary.com",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "VendorAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Standing Charge\nHouseCanary Platform Fee",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 6666.666666,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 6666.67,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Standing Charge\nHouseCanary Platform Fee",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 4666.666666,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 4666.67,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "Usage\nProperty Explorer Reports (endpoint=pexp-\ndynamic-report)",
+        "Quantity": 16.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "Usage\nAgile Insights Reports",
+        "Quantity": 229.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "Usage\nProperty Explorer Reports (endpoint=pexp-\ndynamic-report)",
+        "Quantity": 22.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": "Usage\nAgile Insights Reports",
+        "Quantity": 326.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 7,
+        "Description": "Usage\nTotal MSAs",
+        "Quantity": 308.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 8,
+        "Description": "Usage\nTotal MSAs",
+        "Quantity": 308.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.968,
+        "CustomerName": 0.912,
+        "BillingAddress": 0.847,
+        "InvoiceId": 0.971,
+        "InvoiceDate": 0.97,
+        "DueDate": 0.97,
+        "ServicePeriodStart": 0.557,
+        "ServicePeriodEnd": 0.536,
+        "InvoiceTotal": 0.652,
+        "Subtotal": 0.969,
+        "TotalTax": 0.936,
+        "AmountDue": 0.652,
+        "VendorEmail": 0.7,
+        "VendorTaxId": 0.7,
+        "PaymentMethod": 0.7,
+        "CostCenter": 0.7
+      },
+      "processing_timestamp": "2025-11-20T17:56:57.949290",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "TextAnalysis",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

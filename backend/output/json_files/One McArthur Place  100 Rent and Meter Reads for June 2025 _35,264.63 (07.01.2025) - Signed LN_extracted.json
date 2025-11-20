@@ -1,0 +1,339 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "One McArthur Place  100 Rent and Meter Reads for June 2025 $35,264.63 (07.01.2025) - Signed LN.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "ONE MACARTHUR PLACE, LLC\nATTN: ROSE CRUZ OR KEN QUACH",
+        "confidence": 0.722,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "2101 ROSECRANS AVE SUITE 3270",
+          "city": "EL SEGUNDO",
+          "state": "CA",
+          "postal_code": "90245",
+          "house_number": "2101",
+          "road": "ROSECRANS AVE",
+          "unit": "SUITE 3270"
+        },
+        "confidence": 0.739,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "ONE MACARTHUR PLACE, LLC\nATTN: ROSE CRUZ OR KEN QUACH",
+        "confidence": 0.722,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Attn: Arvin Wijay\nConsolidated Analytics, Inc.",
+        "confidence": 0.292,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-30",
+        "confidence": 0.967,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 35264.63,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.956,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 35264.63,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.956,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorTaxId": {
+        "value": "g",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "PaymentMethod": {
+        "value": "ACH",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "ount",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.956,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 6,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "BillingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Operating Expense - Office (06/2025) - 2025\nEstimates",
+        "NetAmount": {
+          "amount": 1900.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Office Rent (06/2025)",
+        "NetAmount": {
+          "amount": 33308.89,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "ACH - 06/2025 Rent/OE & Billbacks",
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "5/06/25-6/05/25 kWh",
+        "NetAmount": {
+          "amount": 55.74,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "Operating Expense - Office (07/2025) - 2025\nEstimates",
+        "NetAmount": {
+          "amount": 1900.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": "Office Rent (07/2025)",
+        "NetAmount": {
+          "amount": 33308.89,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.722,
+        "VendorAddress": 0.739,
+        "VendorContactPerson": 0.722,
+        "CustomerName": 0.292,
+        "InvoiceDate": 0.967,
+        "InvoiceTotal": 0.956,
+        "AmountDue": 0.956,
+        "VendorTaxId": 0.7,
+        "PaymentMethod": 0.7,
+        "CostCenter": 0.7
+      },
+      "processing_timestamp": "2025-11-20T18:41:57.372442",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

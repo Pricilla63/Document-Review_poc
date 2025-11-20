@@ -1,0 +1,347 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "McCarthy Holthus LLP_Inv 11795809-Cenlar.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "IDSolutions",
+        "confidence": 0.926,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "2763 Camino Del Rio South",
+          "city": "San Diego",
+          "state": "CA",
+          "postal_code": "92108",
+          "house_number": "2763",
+          "road": "Camino Del Rio South"
+        },
+        "confidence": 0.865,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "IDSolutions",
+        "confidence": 0.926,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "McCarthy & Holthus, LLP",
+        "confidence": 0.903,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerContactPerson": {
+        "value": "McCarthy & Holthus, LLP",
+        "confidence": 0.903,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "3575639",
+        "confidence": 0.973,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-23",
+        "confidence": 0.972,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.819,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "Subtotal": {
+        "value": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.97,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.941,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.819,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorEmail": {
+        "value": "jkubik@ca-usa.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorWebsite": {
+        "value": "www.McCarthyHolthus.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "e",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceType": {
+        "value": "of Payment",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "PaymentMethod": {
+        "value": "",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "arthy",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "AmountPaid": {
+        "value": ",",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.819,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 4,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "BillingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Mailing Cost\n1 x $0.73",
+        "NetAmount": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Eviction Attorney",
+        "NetAmount": {
+          "amount": 550.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "All Occupants\n2111 E WAYNE RD\nPALM SPRINGS, CA 92262",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "First-Class Mail® Letter",
+        "NetAmount": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.926,
+        "VendorAddress": 0.865,
+        "VendorContactPerson": 0.926,
+        "CustomerName": 0.903,
+        "CustomerContactPerson": 0.903,
+        "InvoiceId": 0.973,
+        "InvoiceDate": 0.972,
+        "InvoiceTotal": 0.819,
+        "Subtotal": 0.97,
+        "TotalTax": 0.941,
+        "AmountDue": 0.819,
+        "VendorEmail": 0.7,
+        "VendorWebsite": 0.7,
+        "VendorTaxId": 0.7,
+        "InvoiceType": 0.7,
+        "PaymentMethod": 0.7,
+        "CostCenter": 0.7,
+        "AmountPaid": 0.7
+      },
+      "processing_timestamp": "2025-11-20T18:38:18.252074",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

@@ -1,0 +1,348 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "Lucianos utopia realty inc_07292025300-3867.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "ORSID\nNEW YORK-",
+        "confidence": 0.426,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "156 WEST 56TH STREET",
+          "city": "NEW YORK",
+          "state": "NY",
+          "postal_code": "10019",
+          "house_number": "156",
+          "road": "WEST 56TH STREET"
+        },
+        "confidence": 0.868,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "ORSID\nNEW YORK-",
+        "confidence": 0.426,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "GOTTESMAN, CHAYA",
+        "confidence": 0.916,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "127 WEST 82ND STREET APT. 1B",
+          "city": "NEW YORK",
+          "state": "NY",
+          "postal_code": "10024",
+          "house_number": "127",
+          "road": "WEST 82ND STREET",
+          "unit": "APT. 1B"
+        },
+        "confidence": 0.837,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerContactPerson": {
+        "value": "GOTTESMAN, CHAYA",
+        "confidence": 0.916,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-28",
+        "confidence": 0.654,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-08-01",
+        "confidence": 0.942,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 55361.35,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.934,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 55361.35,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.934,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorEmail": {
+        "value": "EFILJA@ORSIDNY.COM",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorWebsite": {
+        "value": "Reg#:",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "g",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "PaymentMethod": {
+        "value": "CHECK",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "ount",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.934,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 5,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "VendorContactEmail": {
+        "value": "JKubik@ca-usa.com",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "CustomerEmail": {
+        "value": "EFILJA@ORSIDNY.COM",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "CustomerPhone": {
+        "value": " 631-363-4822",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "OPEN BAL",
+        "NetAmount": {
+          "amount": 55281.85,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "PAYMENTS",
+        "NetAmount": {
+          "amount": -1834.71,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "COMM. CHG",
+        "NetAmount": {
+          "amount": 1018.82,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "LEGAL FEES",
+        "NetAmount": {
+          "amount": 79.5,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "ASSESSMENT",
+        "NetAmount": {
+          "amount": 815.89,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.426,
+        "VendorAddress": 0.868,
+        "VendorContactPerson": 0.426,
+        "CustomerName": 0.916,
+        "BillingAddress": 0.837,
+        "CustomerContactPerson": 0.916,
+        "InvoiceDate": 0.654,
+        "DueDate": 0.942,
+        "InvoiceTotal": 0.934,
+        "AmountDue": 0.934,
+        "VendorEmail": 0.7,
+        "VendorWebsite": 0.7,
+        "VendorTaxId": 0.7,
+        "PaymentMethod": 0.7,
+        "CostCenter": 0.7
+      },
+      "processing_timestamp": "2025-11-20T18:37:54.911492",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "TextAnalysis",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

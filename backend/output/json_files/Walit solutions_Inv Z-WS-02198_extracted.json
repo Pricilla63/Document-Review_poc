@@ -1,0 +1,525 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "Walit solutions_Inv Z-WS-02198.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "WALIT\nWALITT\nSOLUTIONS",
+        "confidence": 0.887,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "3152 E Merganser Ln",
+          "city": "Grand Junction",
+          "state": "Colorado",
+          "postal_code": "81504",
+          "house_number": "3152",
+          "road": "E Merganser Ln"
+        },
+        "confidence": 0.882,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "Walitt Solutions",
+        "confidence": 0.937,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics, Inc.",
+        "confidence": 0.921,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1 MacArthur Place Ste 100",
+          "city": "Santa Ana",
+          "state": "CA",
+          "postal_code": "92707",
+          "house_number": "1",
+          "road": "MacArthur Place",
+          "unit": "Ste 100"
+        },
+        "confidence": 0.875,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "Z-WS-02198",
+        "confidence": 0.943,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-24",
+        "confidence": 0.925,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-07-24",
+        "confidence": 0.925,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 2184.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.969,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "Subtotal": {
+        "value": {
+          "amount": 2184.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.97,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 2184.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.969,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorTaxId": {
+        "value": "gs",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "MANAGEMENT",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "Notes": {
+        "value": "Thank you for your business. \nTerms & Conditions\nUnpaid invoices are subject to late fees. \nIf a W9 is necessary to process payment, please contact our office.",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.969,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 15,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentMethod": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Consolidated Analytics | AMC SERVICE - Meetings\n: Feb 26, 2025 : Meeting re change of CP",
+        "Quantity": 0.5,
+        "UnitPrice": {
+          "amount": 200.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - Controlling Person\nChange: R Galpin to J. Rauland\n: Feb 24, 2025 : Timesheet log details:\nStart Time - 02-24-2025 02:47 PM End time 02-24-2025 05:26 PM RGalpin\nControlling Person Reveiw\nTime spent - 02:39 : Orla",
+        "Quantity": 2.65,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 265.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - Controlling Person\nChange: R Galpin to J. Rauland\n: Mar 10, 2025 : Timesheet log details:\nStart Time - 03-10-2025 02:26 PM End time 03-10-2025 07:16 PM AJF DCP\nChange from Galpin to Rauland\nTime spent - 04:50 : Amanda Foth",
+        "Quantity": 4.83,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 483.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - WY - Ownership\nChange\n: Mar 24, 2025 : Time log details:\nStart Time - 03-24-2025 01:26 PM End time 03-24-2025 01:35 PM Ownership\nChange CDA WY\nTime spent - 00:09 : Orla",
+        "Quantity": 0.15,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 15.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - WY - Ownership\nChange\n: Mar 24, 2025 : Time log details:\nStart Time - 03-24-2025 01:56 PM End time 03-24-2025 02:18 PM CDA WY AMC\nRenewal\nTime spent - 00:22 : Orla",
+        "Quantity": 0.37,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 37.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - WY - Ownership\nChange\n: Mar 24, 2025 : Time log details:\nStart Time - 03-24-2025 03:13 PM End time 03-24-2025 03:30 PM CDA WY\nOwnership Change\nTime spent - 00:16 : Orla",
+        "Quantity": 0.27,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 27.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 7,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - Controlling Person\nChange: R Galpin to J. Rauland\n: Mar 28, 2025 : Time log details:\nStart Time - 03-28-2025 10:06 AM End time 03-28-2025 11:18 AM AJF\nAPPLICATIONS\nTime spent - 01:12 : Amanda Foth",
+        "Quantity": 1.2,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 120.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 8,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - Controlling Person\nChange: R Galpin to J. Rauland\n: Mar 28, 2025 : Time log details:\nStart Time - 03-28-2025 01:14 PM End time 03-28-2025 03:23 PM AJF DCP\nCHANGES\nTime spent - 02:09 : Amanda Foth",
+        "Quantity": 2.15,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 215.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 9,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - Controlling Person\nChange: R Galpin to J. Rauland\n: Apr 01, 2025 : Time log details:\nStart Time - 04-01-2025 05:54 PM End time 04-01-2025 07:24 PM AJF PROJECT\nMANAGEMENT\nTime spent - 01:30 : Amanda Foth",
+        "Quantity": 1.5,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 150.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 10,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - WY - Ownership\nChange\n: Apr 02, 2025 : Time log details:\nStart Time - 04-02-2025 06:54 AM End time 04-02-2025 07:29 AM WY Change of\nOwnership\nTime spent - 00:35 : Orla",
+        "Quantity": 0.58,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 58.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 11,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - Controlling Person\nChange: R Galpin to J. Rauland\n: Apr 10, 2025 : Time log details:\nStart Time - 04-10-2025 05:01 PM End time 04-10-2025 05:38 PM AJF DCP\nCHANGES\nTime spent - 00:36 : Amanda Foth",
+        "Quantity": 0.6,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 60.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 12,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - Controlling Person\nChange: R Galpin to J. Rauland\n: Apr 10, 2025 : Time log details:\nStart Time - 04-10-2025 05:53 PM End time 04-10-2025 06:23 PM AJF DCP\nCHANGES\nTime spent - 00:29 : Amanda Foth",
+        "Quantity": 0.48,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 48.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 13,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - Controlling Person\nChange: R Galpin to J. Rauland\n: Apr 14, 2025 : Time log details:\nStart Time - 04-14-2025 02:54 PM End time 04-14-2025 05:02 PM AJF DCP\nCHANGE FORMS & INSTRUCTIONS\nTime spent - 02:08 : Amanda Foth",
+        "Quantity": 2.13,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 213.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 14,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - Controlling Person\nChange: R Galpin to J. Rauland\n: Apr 15, 2025 : Time log details:\nStart Time - 04-15-2025 01:52 PM End time 04-15-2025 04:01 PM AJF DCP\nCHANGES\nTime spent - 02:09 : Amanda Foth",
+        "Quantity": 2.15,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 215.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 15,
+        "Description": "Consolidated Analytics | AMC MAINTENANCE - PA - OWNERSHIP\nCHANGE\n: May 09, 2025 : Amanda Foth is no longer assigned to this Task.\n01.47 hours have been logged successfully based on the time log restrictions.\nTime log details:\nStart Time - 05-09-2025 08:23 AM End time 05-09-2025 10:10 AM\nTime spent - 01.47 : Amanda Foth",
+        "Quantity": 1.78,
+        "UnitPrice": {
+          "amount": 100.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 178.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.887,
+        "VendorAddress": 0.882,
+        "VendorContactPerson": 0.937,
+        "CustomerName": 0.921,
+        "BillingAddress": 0.875,
+        "InvoiceId": 0.943,
+        "InvoiceDate": 0.925,
+        "DueDate": 0.925,
+        "InvoiceTotal": 0.969,
+        "Subtotal": 0.97,
+        "AmountDue": 0.969,
+        "VendorTaxId": 0.7,
+        "CostCenter": 0.7,
+        "Notes": 0.7
+      },
+      "processing_timestamp": "2025-11-20T18:44:37.683831",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

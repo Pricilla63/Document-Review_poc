@@ -26,30 +26,18 @@
     cursor: not-allowed;
   }
 
+  
 
-
-  .pdf-highlight {
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.pdf-highlight:hover {
-  background-color: rgba(255, 255, 0, 0.5) !important;
-  border: 2px solid #ff0000 !important;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
-  z-index: 100 !important;
-}
-
+  /* CRITICAL: Remove all width constraints from PDF */
 .react-pdf__Page {
   position: relative;
 }
 
 .react-pdf__Page__canvas {
-  position: relative;
-  z-index: 1;
   display: block;
-  max-width: 100%;
-  height: auto;
+  max-width: none !important;
+  width: auto !important;
+  height: auto !important;
 }
 
 .react-pdf__Page__textContent {
@@ -57,29 +45,41 @@
   z-index: 2;
 }
 
-/* Custom scrollbar */
+/* Force scrollbars to be visible */
 ::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
 }
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #c1c1c1;
-  border-radius: 6px;
-  border: 2px solid #f1f1f1;
+  border-radius: 8px;
+  border: 3px solid #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
 
-/* For Firefox */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+/* Horizontal scrollbar will appear at the BOTTOM */
+/* Vertical scrollbar will appear on the RIGHT */
+
+/* Firefox */
 * {
-  scrollbar-width: thin;
+  scrollbar-width: auto;
   scrollbar-color: #c1c1c1 #f1f1f1;
+}
+
+/* Ensure the PDF container doesn't constrain width */
+.pdf-container {
+  min-width: min-content;
 }

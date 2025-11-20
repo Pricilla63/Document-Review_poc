@@ -1,0 +1,326 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "Spur Global Ventures Inc_ValueLink_Invoice_Inv29228.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "Spur Global Ventures Inc",
+        "confidence": 0.917,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "3200 Wilcrest Suite 575",
+          "city": "Houston",
+          "state": "TX",
+          "postal_code": "77042",
+          "house_number": "3200",
+          "road": "Wilcrest",
+          "unit": "Suite 575"
+        },
+        "confidence": 0.887,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "Spur Global Ventures Inc",
+        "confidence": 0.917,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics",
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1500 S. Douglass Rd. Suite 110 B",
+          "city": "Orange",
+          "state": "CA",
+          "postal_code": "92806",
+          "house_number": "1500",
+          "road": "S. Douglass Rd.",
+          "unit": "Suite 110 B"
+        },
+        "confidence": 0.872,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": {
+          "street_address": "1500 S. Douglass Rd. Suite 110 B",
+          "city": "Orange",
+          "state": "CA",
+          "postal_code": "92806",
+          "house_number": "1500",
+          "road": "S. Douglass Rd.",
+          "unit": "Suite 110 B"
+        },
+        "confidence": 0.866,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "29228",
+        "confidence": 0.978,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-01",
+        "confidence": 0.978,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-07-03",
+        "confidence": 0.978,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodStart": {
+        "value": "2025-06-01",
+        "confidence": 0.513,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodEnd": {
+        "value": "2025-06-30",
+        "confidence": 0.554,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 1225.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.975,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorEmail": {
+        "value": "billing@valuelinksoftware.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorWebsite": {
+        "value": "www.valuelinksoftware.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "ar",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "PaymentMethod": {
+        "value": "check",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.975,
+        "method": "DerivedFromTotal"
+      },
+      "TaxTypeBreakdown": {
+        "value": {
+          "Flagstar Bank Orders - 06/01/2025 -\n06/30/2025": 1225.0
+        },
+        "confidence": 0.8,
+        "method": "CalculatedFromItems"
+      },
+      "LineItems_Count": {
+        "value": 1,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "CustomerEmail": {
+        "value": "billing@valuelinksoftware.com",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "CustomerPhone": {
+        "value": "+1 (888) 587-0805",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountDue": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Flagstar Bank Orders - 06/01/2025 -\n06/30/2025",
+        "Quantity": 175.0,
+        "UnitPrice": {
+          "amount": 7.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 1225.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.917,
+        "VendorAddress": 0.887,
+        "VendorContactPerson": 0.917,
+        "CustomerName": 0.938,
+        "BillingAddress": 0.872,
+        "ShippingAddress": 0.866,
+        "InvoiceId": 0.978,
+        "InvoiceDate": 0.978,
+        "DueDate": 0.978,
+        "ServicePeriodStart": 0.513,
+        "ServicePeriodEnd": 0.554,
+        "InvoiceTotal": 0.975,
+        "VendorEmail": 0.7,
+        "VendorWebsite": 0.7,
+        "VendorTaxId": 0.7,
+        "PaymentMethod": 0.7
+      },
+      "processing_timestamp": "2025-11-20T18:43:29.971928",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "TextAnalysis",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]

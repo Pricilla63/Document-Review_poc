@@ -1,0 +1,317 @@
+[
+  {
+    "invoice_number": 1,
+    "source_file": "black knight technologies_inv 0177780_$ 3,155.36_07.22.2025.pdf",
+    "fields": {
+      "VendorName": {
+        "value": "BLACK\nKNIGHT®",
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics, Inc.\nAccounts Payable",
+        "confidence": 0.915,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerContactPerson": {
+        "value": "Consolidated Analytics, Inc.\nAccounts Payable",
+        "confidence": 0.915,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "0177780",
+        "confidence": 0.977,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-22",
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 3155.36,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.446,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 195.36,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.647,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorEmail": {
+        "value": "AccountsReceivablebk@ice.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorWebsite": {
+        "value": "Direct",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorTaxId": {
+        "value": "g",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "PaymentMethod": {
+        "value": "Wire",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "CostCenter": {
+        "value": "ount",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "Notes": {
+        "value": "taxable line item\nInvoice Detail\nNo.\nDate\nClient #\n0177780\nJul 22, 2025\nL6Q\nName\nSSR / Ref\nT\nConsolidated Analytics, Inc.\nInterChange - InterChange Products / Services\nInterChange Service Subscription Fee for the month of June, 2025\n$1,000.00\nT\nWeb Direct\nActual Views:\n1,192\nBillable Views :\n1,192\nMinimum Amount:\n$875.00\nAmount\nViews\nCharge\n826 to\n1,650\n$1,480.00\n$1,480.00\n$1,480.00\nT\n$1,480.00\nWeb Direct Base Fee for the month of June, 2025\n414 - ServiceMac, LLC (1,192 Views) \nActual Users:\n16\nBillable Users :\n16\nAmount\nUsers\nRate\n1 to\n16\n30.000000\n$480.00\n$480.00\nT\n$480.00\nWeb Direct User Fee for the month of June, 2025\nSales Tax\nTEXAS State Sales Tax (6.25%)\n$148.00\nFORT WORTH City Sales Tax (1.00%)\n$23.68\nFORT WORTH METROPOLITAN TRANSIT AUTHORITY Other Sales Tax (0.50%)\n$11.84\nFORT WORTH CRIME CONTROL DISTRICT Other Sales Tax (0.50%)\n$11.84\nPage 1 of 1",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.446,
+        "method": "DerivedFromTotal"
+      },
+      "LineItems_Count": {
+        "value": 4,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "CustomerPhone": {
+        "value": " 1235025530",
+        "confidence": 0.8,
+        "method": "TextAnalysis"
+      },
+      "VendorAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "BillingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountDue": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
+    },
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "InterChange Products / Services",
+        "NetAmount": {
+          "amount": 1000.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Web Direct"
+      },
+      {
+        "item_number": 3,
+        "Description": "Web Direct",
+        "NetAmount": {
+          "amount": 1960.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "InterChange Service Subscription Fee for the month of June, 2025",
+        "NetAmount": {
+          "amount": 1000.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "extraction_metadata": {
+      "methods_used": [
+        "AzurePrebuiltInvoice"
+      ],
+      "confidence_scores": {
+        "VendorName": 0.938,
+        "CustomerName": 0.915,
+        "CustomerContactPerson": 0.915,
+        "InvoiceId": 0.977,
+        "InvoiceDate": 0.938,
+        "InvoiceTotal": 0.446,
+        "TotalTax": 0.647,
+        "VendorEmail": 0.7,
+        "VendorWebsite": 0.7,
+        "VendorTaxId": 0.7,
+        "PaymentMethod": 0.7,
+        "CostCenter": 0.7,
+        "Notes": 0.7
+      },
+      "processing_timestamp": "2025-11-20T17:54:55.962438",
+      "extraction_strategies": [
+        "AzurePrebuiltInvoice",
+        "RegexPatterns",
+        "DerivedFields",
+        "TextAnalysis",
+        "MissingFieldHandling"
+      ]
+    }
+  }
+]
