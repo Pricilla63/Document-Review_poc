@@ -5,7 +5,7 @@
     "fields": {
       "VendorName": {
         "value": "ALLY\nOFFICE SOLUTIONS",
-        "confidence": 0.493,
+        "confidence": 0.498,
         "method": "AzurePrebuiltInvoice"
       },
       "VendorAddress": {
@@ -13,98 +13,10 @@
           "street_address": "405 S Nolen Dr. Ste. 180",
           "city": "Southlake",
           "state": "Tx",
-          "postal_code": "76092",
-          "house_number": "405",
-          "road": "S Nolen Dr.",
-          "unit": "Ste. 180"
+          "postal_code": "76092"
         },
-        "confidence": 0.881,
+        "confidence": 0.88,
         "method": "AzurePrebuiltInvoice"
-      },
-      "VendorContactPerson": {
-        "value": "ALLY\nOFFICE SOLUTIONS",
-        "confidence": 0.493,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "Consolidated Analytics, Inc.",
-        "confidence": 0.745,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "BillingAddress": {
-        "value": {
-          "street_address": "6100 Tennyson Pkwy Ste. 115",
-          "city": "Plano",
-          "state": "TX",
-          "postal_code": "75024",
-          "house_number": "6100",
-          "road": "Tennyson Pkwy",
-          "unit": "Ste. 115"
-        },
-        "confidence": 0.885,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerContactPerson": {
-        "value": "Consolidated Analytics, Inc.",
-        "confidence": 0.745,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "INV026727",
-        "confidence": 0.952,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-07-21",
-        "confidence": 0.951,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "ServicePeriodStart": {
-        "value": "2025-06-20",
-        "confidence": 0.536,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "ServicePeriodEnd": {
-        "value": "2025-07-19",
-        "confidence": 0.66,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 33.07,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.936,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "Subtotal": {
-        "value": {
-          "amount": 30.55,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.95,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "TotalTax": {
-        "value": {
-          "amount": 2.52,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.939,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.936,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 1,
-        "confidence": 1.0,
-        "method": "Calculated"
       },
       "VendorCountry": {
         "value": "na",
@@ -141,10 +53,30 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "VendorContactPerson": {
+        "value": "ALLY\nOFFICE SOLUTIONS",
+        "confidence": 0.498,
+        "method": "AzurePrebuiltInvoice"
+      },
       "VendorWebsite": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics, Inc.",
+        "confidence": 0.737,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "6100 Tennyson Pkwy Ste. 115",
+          "city": "Plano",
+          "state": "TX",
+          "postal_code": "75024"
+        },
+        "confidence": 0.885,
+        "method": "AzurePrebuiltInvoice"
       },
       "ShippingAddress": {
         "value": "na",
@@ -166,7 +98,27 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "CustomerContactPerson": {
+        "value": "Consolidated Analytics, Inc.",
+        "confidence": 0.737,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "INV026727",
+        "confidence": 0.95,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-21",
+        "confidence": 0.95,
+        "method": "AzurePrebuiltInvoice"
+      },
       "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceCurrency": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -196,6 +148,30 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "ServicePeriodStart": {
+        "value": "2025-06-20",
+        "confidence": 0.537,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodEnd": {
+        "value": "2025-07-19",
+        "confidence": 0.663,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "LineItems_Count": {
+        "value": 1,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 2.52,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
+      },
       "TaxTypeBreakdown": {
         "value": "na",
         "confidence": 0.0,
@@ -206,6 +182,15 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "Subtotal": {
+        "value": {
+          "amount": 30.55,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.946,
+        "method": "AzurePrebuiltInvoice"
+      },
       "ShippingHandling": {
         "value": "na",
         "confidence": 0.0,
@@ -215,6 +200,15 @@
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 33.07,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
       },
       "AmountPaid": {
         "value": "na",
@@ -280,29 +274,29 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence"
       ],
       "confidence_scores": {
-        "VendorName": 0.493,
-        "VendorAddress": 0.881,
-        "VendorContactPerson": 0.493,
-        "CustomerName": 0.745,
-        "BillingAddress": 0.885,
-        "CustomerContactPerson": 0.745,
-        "InvoiceId": 0.952,
-        "InvoiceDate": 0.951,
-        "ServicePeriodStart": 0.536,
-        "ServicePeriodEnd": 0.66,
-        "InvoiceTotal": 0.936,
-        "Subtotal": 0.95,
-        "TotalTax": 0.939
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorContactPerson": 0.9,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "CustomerContactPerson": 0.9,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "ServicePeriodStart": 0.9,
+        "ServicePeriodEnd": 0.9,
+        "TotalTax": 0.9,
+        "Subtotal": 0.9,
+        "InvoiceTotal": 0.9
       },
-      "processing_timestamp": "2025-11-20T17:54:06.704707",
+      "processing_timestamp": "2025-11-20T20:08:38.648203",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

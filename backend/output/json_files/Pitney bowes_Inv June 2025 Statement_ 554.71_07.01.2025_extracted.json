@@ -3,304 +3,174 @@
     "invoice_number": 1,
     "source_file": "Pitney bowes_Inv June 2025 Statement_ 554.71_07.01.2025.pdf",
     "fields": {
-      "VendorName": {
-        "value": "pitney bowes",
-        "confidence": 0.938,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorAddress": {
-        "value": {
-          "street_address": "27 Waterview Drive",
-          "city": "Shelton",
-          "state": "CT",
-          "postal_code": "06484",
-          "house_number": "27",
-          "road": "Waterview Drive"
-        },
-        "confidence": 0.876,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorContactPerson": {
-        "value": "PURCHASE POWER",
-        "confidence": 0.914,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "Consolidated Analytics Inc",
-        "confidence": 0.887,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerContactPerson": {
-        "value": "Consolidated Analytics Inc\nAccounts Payable",
-        "confidence": 0.887,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-07-01",
-        "confidence": 0.894,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "DueDate": {
-        "value": "2025-07-28",
-        "confidence": 0.937,
-        "method": "AzurePrebuiltInvoice"
-      },
+      "VendorName": "pitney bowes",
+      "VendorAddress": "27 Waterview Drive, Shelton, CT 06484",
+      "VendorCountry": "na",
+      "VendorTaxId": "84-1386389",
+      "VendorContactEmail": "na",
+      "VendorPhone": "844 256 6444",
+      "VendorBankName": "na",
+      "VendorBankAccountNumber": "na",
+      "VendorBankDetails": "na",
+      "VendorContactPerson": "PURCHASE POWER",
+      "VendorWebsite": "https://pitneybowes.com/us/support/addresschange",
+      "CustomerName": "Consolidated Analytics Inc",
+      "BillingAddress": "1500 S Douglass Rd, Suite 110B, Anaheim, CA 92806",
+      "ShippingAddress": "na",
+      "CustomerPhone": "na",
+      "CustomerEmail": "na",
+      "CustomerTaxId": "na",
+      "CustomerContactPerson": "Consolidated Analytics Inc\nAccounts Payable",
+      "InvoiceId": "8000-9090-0949-8283",
+      "InvoiceDate": "2025-07-01",
+      "DueDate": "2025-07-28",
+      "InvoiceCurrency": "USD",
+      "InvoiceType": "Account Statement",
+      "PurchaseOrder": "na",
+      "PaymentTerms": "Minimum payment due before due date",
+      "PaymentMethod": "Check, Online Bank Transfer",
+      "CostCenter": "na",
+      "ServicePeriodStart": "na",
+      "ServicePeriodEnd": "na",
+      "LineItems_Count": "na",
+      "TotalTax": "na",
+      "TaxTypeBreakdown": "na",
+      "WithholdingTax": "na",
+      "Subtotal": "502.25 USD",
+      "ShippingHandling": "na",
+      "Surcharges": "41.00 USD",
       "InvoiceTotal": {
-        "value": {
-          "amount": 554.71,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.662,
-        "method": "AzurePrebuiltInvoice"
+        "amount": 554.71,
+        "currency": "$",
+        "currency_code": "USD"
       },
+      "AmountPaid": "0.00 USD",
       "AmountDue": {
-        "value": {
-          "amount": 554.71,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.662,
-        "method": "AzurePrebuiltInvoice"
+        "amount": 554.71,
+        "currency": "$",
+        "currency_code": "USD"
       },
-      "VendorWebsite": {
-        "value": "-",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorTaxId": {
-        "value": "g",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "PaymentMethod": {
-        "value": "check",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "CostCenter": {
-        "value": "ount",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.662,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 2,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "CustomerPhone": {
-        "value": "1026\n8000909",
-        "confidence": 0.8,
-        "method": "TextAnalysis"
-      },
-      "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "BillingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ShippingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerTaxId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "InvoiceId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "InvoiceType": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PurchaseOrder": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PaymentTerms": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ServicePeriodStart": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ServicePeriodEnd": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "TotalTax": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "TaxTypeBreakdown": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "WithholdingTax": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "Subtotal": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ShippingHandling": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "Surcharges": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "AmountPaid": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "QRCode": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CompanyRegistration": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalWorkflowID": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalRequired": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApproverList": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalStatus": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalTimestamps": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      }
+      "Notes": "Credit Cards are NOT an accepted form of payment for accounts. To avoid late fees please ensure Pitney Bowes receives a minimum payment before the due date.",
+      "QRCode": "na",
+      "CompanyRegistration": "na",
+      "ApprovalWorkflowID": "na",
+      "ApprovalRequired": "na",
+      "ApproverList": "na",
+      "ApprovalStatus": "na",
+      "ApprovalTimestamps": "na"
     },
-    "items": [
-      {
-        "item_number": 1,
-        "Description": "LATE FEE",
-        "NetAmount": {
-          "amount": 41.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 2,
-        "Description": "POSTAGE / SUPPLIES",
-        "NetAmount": {
-          "amount": 11.46,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      }
-    ],
+    "items": [],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.938,
-        "VendorAddress": 0.876,
-        "VendorContactPerson": 0.914,
-        "CustomerName": 0.887,
-        "CustomerContactPerson": 0.887,
-        "InvoiceDate": 0.894,
-        "DueDate": 0.937,
-        "InvoiceTotal": 0.662,
-        "AmountDue": 0.662,
-        "VendorWebsite": 0.7,
-        "VendorTaxId": 0.7,
-        "PaymentMethod": 0.7,
-        "CostCenter": 0.7
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorCountry": 0.0,
+        "VendorTaxId": 0.8,
+        "VendorContactEmail": 0.0,
+        "VendorPhone": 0.8,
+        "VendorBankName": 0.0,
+        "VendorBankAccountNumber": 0.0,
+        "VendorBankDetails": 0.0,
+        "VendorContactPerson": 0.9,
+        "VendorWebsite": 0.8,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.8,
+        "ShippingAddress": 0.0,
+        "CustomerPhone": 0.0,
+        "CustomerEmail": 0.0,
+        "CustomerTaxId": 0.0,
+        "CustomerContactPerson": 0.9,
+        "InvoiceId": 0.8,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.9,
+        "InvoiceCurrency": 0.8,
+        "InvoiceType": 0.8,
+        "PurchaseOrder": 0.0,
+        "PaymentTerms": 0.8,
+        "PaymentMethod": 0.8,
+        "CostCenter": 0.0,
+        "ServicePeriodStart": 0.0,
+        "ServicePeriodEnd": 0.0,
+        "LineItems_Count": 0.0,
+        "TotalTax": 0.0,
+        "TaxTypeBreakdown": 0.8,
+        "WithholdingTax": 0.0,
+        "Subtotal": 0.8,
+        "ShippingHandling": 0.0,
+        "Surcharges": 0.8,
+        "InvoiceTotal": 0.9,
+        "AmountPaid": 0.8,
+        "AmountDue": 0.9,
+        "Notes": 0.8,
+        "QRCode": 0.0,
+        "CompanyRegistration": 0.0,
+        "ApprovalWorkflowID": 0.0,
+        "ApprovalRequired": 0.0,
+        "ApproverList": 0.0,
+        "ApprovalStatus": 0.0,
+        "ApprovalTimestamps": 0.0
       },
-      "processing_timestamp": "2025-11-20T18:42:29.532770",
+      "processing_timestamp": "2025-11-20T19:52:32.680827",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
+        "LLM_Text_Analysis",
         "RegexPatterns",
-        "DerivedFields",
-        "TextAnalysis",
         "MissingFieldHandling"
-      ]
+      ],
+      "source_breakdown": {
+        "VendorName": "azure",
+        "VendorAddress": "azure",
+        "VendorCountry": "NotAvailable",
+        "VendorTaxId": "llm",
+        "VendorContactEmail": "NotAvailable",
+        "VendorPhone": "llm",
+        "VendorBankName": "NotAvailable",
+        "VendorBankAccountNumber": "NotAvailable",
+        "VendorBankDetails": "NotAvailable",
+        "VendorContactPerson": "azure",
+        "VendorWebsite": "llm",
+        "CustomerName": "azure",
+        "BillingAddress": "llm",
+        "ShippingAddress": "NotAvailable",
+        "CustomerPhone": "NotAvailable",
+        "CustomerEmail": "NotAvailable",
+        "CustomerTaxId": "NotAvailable",
+        "CustomerContactPerson": "azure",
+        "InvoiceId": "llm",
+        "InvoiceDate": "azure",
+        "DueDate": "azure",
+        "InvoiceCurrency": "llm",
+        "InvoiceType": "llm",
+        "PurchaseOrder": "NotAvailable",
+        "PaymentTerms": "llm",
+        "PaymentMethod": "llm",
+        "CostCenter": "NotAvailable",
+        "ServicePeriodStart": "NotAvailable",
+        "ServicePeriodEnd": "NotAvailable",
+        "LineItems_Count": "NotAvailable",
+        "TotalTax": "NotAvailable",
+        "TaxTypeBreakdown": "llm",
+        "WithholdingTax": "NotAvailable",
+        "Subtotal": "llm",
+        "ShippingHandling": "NotAvailable",
+        "Surcharges": "llm",
+        "InvoiceTotal": "azure",
+        "AmountPaid": "llm",
+        "AmountDue": "azure",
+        "Notes": "llm",
+        "QRCode": "NotAvailable",
+        "CompanyRegistration": "NotAvailable",
+        "ApprovalWorkflowID": "NotAvailable",
+        "ApprovalRequired": "NotAvailable",
+        "ApproverList": "NotAvailable",
+        "ApprovalStatus": "NotAvailable",
+        "ApprovalTimestamps": "NotAvailable"
+      }
     }
   }
 ]

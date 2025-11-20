@@ -8,6 +8,56 @@
         "confidence": 0.938,
         "method": "AzurePrebuiltInvoice"
       },
+      "VendorAddress": {
+        "value": "PO BOX 848080, Los Angeles CA 90084-8080, United States",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorCountry": {
+        "value": "United States",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorTaxId": {
+        "value": "Canada BN GST 874256746; Quebec QST 1220633001",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactEmail": {
+        "value": "CashAppUS@8x8.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "888-898-8733",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "Wells Fargo Bank Gen Acct",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankAccountNumber": {
+        "value": "4121624514",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankDetails": {
+        "value": "121 Park Center Plaza, 3rd Floor, San Jose, CA 95113; ABA: 121000248",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactPerson": {
+        "value": "ACCOUNTS PAYABLE",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorWebsite": {
+        "value": "https://accountmanager.8x8.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "CustomerName": {
         "value": "CONSOLIDATED ANALYTICS INC\nATTN: ACCOUNTS PAYABLE",
         "confidence": 0.886,
@@ -19,13 +69,35 @@
           "city": "IRVINE",
           "state": "CA",
           "postal_code": "92612",
-          "country": "United States",
-          "house_number": "19712",
-          "road": "MACARTHUR BLVD",
-          "unit": "STE 110"
+          "country": "United States"
         },
         "confidence": 0.83,
         "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "ATTN: ACCOUNTS PAYABLE",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "InvoiceId": {
         "value": "5082786",
@@ -37,146 +109,17 @@
         "confidence": 0.939,
         "method": "AzurePrebuiltInvoice"
       },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 5783.33,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.916,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "AmountDue": {
-        "value": {
-          "amount": 5783.33,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.916,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorEmail": {
-        "value": "CashAppUS@8x8.com",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorWebsite": {
-        "value": "https://accountmanager.8x8.com",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorTaxId": {
-        "value": "874256746",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorContactPerson": {
-        "value": "ACCOUNTS PAYABLE",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceType": {
-        "value": "Standard",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "PaymentMethod": {
-        "value": "Cash",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "CostCenter": {
-        "value": "ount",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "Surcharges": {
-        "value": "162.90",
-        "confidence": 0.7,
-        "method": "Regex"
+      "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "InvoiceCurrency": {
         "value": "USD",
-        "confidence": 0.916,
-        "method": "DerivedFromTotal"
-      },
-      "TaxTypeBreakdown": {
-        "value": {
-          "CA Local Utility Tax": 127.89,
-          "CA State and Local 911 Tax": 74.21,
-          "CA State and Local 988 Tax": 14.48,
-          "TX State and Local 911 Tax": 9.75,
-          "TX State and Local Sales Tax": 26.06
-        },
         "confidence": 0.8,
-        "method": "CalculatedFromItems"
+        "method": "OpenAI_LLM"
       },
-      "LineItems_Count": {
-        "value": 19,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "CustomerEmail": {
-        "value": "CashAppUS@8x8.com",
-        "confidence": 0.8,
-        "method": "TextAnalysis"
-      },
-      "CustomerPhone": {
-        "value": "\n4121624514",
-        "confidence": 0.8,
-        "method": "TextAnalysis"
-      },
-      "VendorAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ShippingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerTaxId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerContactPerson": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "DueDate": {
+      "InvoiceType": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -187,24 +130,55 @@
         "method": "NotAvailable"
       },
       "PaymentTerms": {
+        "value": "Net 15",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": "Electronic Funds Transfer",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CostCenter": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
       "ServicePeriodStart": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "2025-06-01",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "ServicePeriodEnd": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "2025-06-30",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "LineItems_Count": {
+        "value": 19,
+        "confidence": 1.0,
+        "method": "Calculated"
       },
       "TotalTax": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "587.99",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "TaxTypeBreakdown": {
+        "value": {
+          "CA Local Utility Tax": "127.89",
+          "CA Public Purpose Program Surcharge": "162.90",
+          "CA State and Local 911 Tax": "74.21",
+          "CA State and Local 988 Tax": "14.48",
+          "TX E911 Equalization Surcharge": "0.78",
+          "TX State and Local 911 Tax": "9.75",
+          "TX State and Local Sales Tax": "26.06",
+          "MISC: UNIVERSAL SERVICE SURCHARGE (USF)": "157.12",
+          "MISC: REGULATORY RECOVERY FEE": "219.42",
+          "MISC: E911 SERVICE": "47.76"
+        },
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "WithholdingTax": {
         "value": "na",
@@ -221,15 +195,38 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "Surcharges": {
+        "value": "2.5% credit card surcharge (not included in total)",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 5783.33,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.916,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "AmountDue": {
+        "value": {
+          "amount": 5783.33,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.916,
+        "method": "AzurePrebuiltInvoice"
+      },
       "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "We impose a surcharge of 2.5% on the total transaction amount on all credit card payments. The surcharge is based on the billing address on the top of your invoice and is not greater than our cost of acceptance. We do not surcharge debit cards.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "QRCode": {
         "value": "na",
@@ -503,33 +500,46 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.938,
-        "CustomerName": 0.886,
-        "BillingAddress": 0.83,
-        "InvoiceId": 0.939,
-        "InvoiceDate": 0.939,
-        "InvoiceTotal": 0.916,
-        "AmountDue": 0.916,
-        "VendorEmail": 0.7,
-        "VendorWebsite": 0.7,
-        "VendorTaxId": 0.7,
+        "VendorName": 0.9,
+        "VendorAddress": 0.8,
+        "VendorCountry": 0.8,
+        "VendorTaxId": 0.8,
+        "VendorContactEmail": 0.8,
+        "VendorPhone": 0.8,
+        "VendorBankName": 0.8,
+        "VendorBankAccountNumber": 0.8,
+        "VendorBankDetails": 0.8,
         "VendorContactPerson": 0.7,
-        "InvoiceType": 0.7,
-        "PaymentMethod": 0.7,
-        "CostCenter": 0.7,
-        "Surcharges": 0.7
+        "VendorWebsite": 0.8,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "CustomerContactPerson": 0.8,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "InvoiceCurrency": 0.8,
+        "PaymentTerms": 0.8,
+        "PaymentMethod": 0.8,
+        "ServicePeriodStart": 0.8,
+        "ServicePeriodEnd": 0.8,
+        "LineItems_Count": 0.8,
+        "TotalTax": 0.8,
+        "TaxTypeBreakdown": 0.8,
+        "Surcharges": 0.8,
+        "InvoiceTotal": 0.9,
+        "AmountDue": 0.9,
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T17:53:35.765967",
+      "processing_timestamp": "2025-11-20T20:07:48.691916",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
-        "DerivedFields",
-        "TextAnalysis",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

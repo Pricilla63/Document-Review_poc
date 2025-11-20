@@ -3,289 +3,180 @@
     "invoice_number": 1,
     "source_file": "New mexico taxation revenue - gross receipt tax return full package $2,166.99 for june. 2025 (07.24.2025).pdf",
     "fields": {
-      "VendorName": {
-        "value": "New Mexico Taxation and Revenue Department",
-        "confidence": 0.819,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "CONSOLIDATED ANALYTICS, INC",
-        "confidence": 0.815,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerContactPerson": {
-        "value": "CONSOLIDATED ANALYTICS, INC",
-        "confidence": 0.442,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-07-24",
-        "confidence": 0.819,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "DueDate": {
-        "value": "2025-07-24",
-        "confidence": 0.349,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "ServicePeriodStart": {
-        "value": "2025-06-01",
-        "confidence": 0.91,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "ServicePeriodEnd": {
-        "value": "2025-06-30",
-        "confidence": 0.865,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 2166.99,
-          "currency": null,
-          "currency_code": "CRC"
-        },
-        "confidence": 0.524,
-        "method": "AzurePrebuiltInvoice"
-      },
+      "VendorName": "New Mexico Taxation and Revenue Department",
+      "VendorAddress": "1 MACARTHUR PL, SANTA ANA, CA 92707-5928",
+      "VendorCountry": "na",
+      "VendorTaxId": "03-270145-00-4",
+      "VendorContactEmail": "lngo@ca-usa.com",
+      "VendorPhone": "(949) 988-7239",
+      "VendorBankName": "na",
+      "VendorBankAccountNumber": "na",
+      "VendorBankDetails": "na",
+      "VendorContactPerson": "na",
+      "VendorWebsite": "na",
+      "CustomerName": "CONSOLIDATED ANALYTICS, INC",
+      "BillingAddress": "na",
+      "ShippingAddress": "na",
+      "CustomerPhone": "na",
+      "CustomerEmail": "na",
+      "CustomerTaxId": "na",
+      "CustomerContactPerson": "CONSOLIDATED ANALYTICS, INC",
+      "InvoiceId": "88888",
+      "InvoiceDate": "2025-07-24",
+      "DueDate": "2025-07-24",
+      "InvoiceCurrency": "na",
+      "InvoiceType": "SPECIAL",
+      "PurchaseOrder": "na",
+      "PaymentTerms": "na",
+      "PaymentMethod": "na",
+      "CostCenter": "na",
+      "ServicePeriodStart": "2025-06-01",
+      "ServicePeriodEnd": "2025-06-30",
+      "LineItems_Count": "na",
       "TotalTax": {
-        "value": {
-          "amount": 2166.99,
-          "currency": null,
-          "currency_code": "CRC"
-        },
-        "confidence": 0.416,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "AmountDue": {
-        "value": {
-          "amount": 2166.99,
-          "currency": null,
-          "currency_code": "CRC"
-        },
-        "confidence": 0.85,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorEmail": {
-        "value": "lngo@ca-usa.com",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorTaxId": {
-        "value": "g",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorContactPerson": {
-        "value": "us at\nTRD",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceType": {
-        "value": "GRT \nAccount ID",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "CostCenter": {
-        "value": "ount",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceCurrency": {
-        "value": "CRC",
-        "confidence": 0.524,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 0,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "CustomerEmail": {
-        "value": "TRD-Tap-TechnicalHelp@state.nm.us",
-        "confidence": 0.8,
-        "method": "TextAnalysis"
-      },
-      "CustomerPhone": {
-        "value": " (505) 841-6352",
-        "confidence": 0.8,
-        "method": "TextAnalysis"
-      },
-      "VendorAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorWebsite": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "BillingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ShippingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerTaxId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "InvoiceId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PurchaseOrder": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PaymentTerms": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PaymentMethod": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "amount": 2166.99,
+        "currency": null,
+        "currency_code": "CRC"
       },
       "TaxTypeBreakdown": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "Gross Receipts Tax": "2,166.99"
       },
-      "WithholdingTax": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+      "WithholdingTax": "0.00",
+      "Subtotal": "44,451.00",
+      "ShippingHandling": "0.00",
+      "Surcharges": "0.00",
+      "InvoiceTotal": {
+        "amount": 2166.99,
+        "currency": null,
+        "currency_code": "CRC"
       },
-      "Subtotal": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+      "AmountPaid": "0.00",
+      "AmountDue": {
+        "amount": 2166.99,
+        "currency": null,
+        "currency_code": "CRC"
       },
-      "ShippingHandling": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "Surcharges": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "AmountPaid": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "QRCode": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CompanyRegistration": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalWorkflowID": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalRequired": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApproverList": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalStatus": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalTimestamps": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      }
+      "Notes": "COPY DO NOT FILE",
+      "QRCode": "na",
+      "CompanyRegistration": "03270145004-GRT",
+      "ApprovalWorkflowID": "na",
+      "ApprovalRequired": "na",
+      "ApproverList": "na",
+      "ApprovalStatus": "na",
+      "ApprovalTimestamps": "na"
     },
     "items": [],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.819,
-        "CustomerName": 0.815,
-        "CustomerContactPerson": 0.442,
-        "InvoiceDate": 0.819,
-        "DueDate": 0.349,
-        "ServicePeriodStart": 0.91,
-        "ServicePeriodEnd": 0.865,
-        "InvoiceTotal": 0.524,
-        "TotalTax": 0.416,
-        "AmountDue": 0.85,
-        "VendorEmail": 0.7,
-        "VendorTaxId": 0.7,
-        "VendorContactPerson": 0.7,
-        "InvoiceType": 0.7,
-        "CostCenter": 0.7
+        "VendorName": 0.9,
+        "VendorAddress": 0.8,
+        "VendorCountry": 0.0,
+        "VendorTaxId": 0.8,
+        "VendorContactEmail": 0.8,
+        "VendorPhone": 0.8,
+        "VendorBankName": 0.0,
+        "VendorBankAccountNumber": 0.0,
+        "VendorBankDetails": 0.0,
+        "VendorContactPerson": 0.0,
+        "VendorWebsite": 0.0,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.0,
+        "ShippingAddress": 0.0,
+        "CustomerPhone": 0.0,
+        "CustomerEmail": 0.0,
+        "CustomerTaxId": 0.0,
+        "CustomerContactPerson": 0.9,
+        "InvoiceId": 0.8,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.9,
+        "InvoiceCurrency": 0.0,
+        "InvoiceType": 0.8,
+        "PurchaseOrder": 0.0,
+        "PaymentTerms": 0.0,
+        "PaymentMethod": 0.0,
+        "CostCenter": 0.0,
+        "ServicePeriodStart": 0.9,
+        "ServicePeriodEnd": 0.9,
+        "LineItems_Count": 0.0,
+        "TotalTax": 0.9,
+        "TaxTypeBreakdown": 0.8,
+        "WithholdingTax": 0.8,
+        "Subtotal": 0.8,
+        "ShippingHandling": 0.8,
+        "Surcharges": 0.8,
+        "InvoiceTotal": 0.9,
+        "AmountPaid": 0.8,
+        "AmountDue": 0.9,
+        "Notes": 0.8,
+        "QRCode": 0.0,
+        "CompanyRegistration": 0.8,
+        "ApprovalWorkflowID": 0.0,
+        "ApprovalRequired": 0.0,
+        "ApproverList": 0.0,
+        "ApprovalStatus": 0.0,
+        "ApprovalTimestamps": 0.0
       },
-      "processing_timestamp": "2025-11-20T18:41:22.055993",
+      "processing_timestamp": "2025-11-20T19:51:01.839318",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
+        "LLM_Text_Analysis",
         "RegexPatterns",
-        "DerivedFields",
-        "TextAnalysis",
         "MissingFieldHandling"
-      ]
+      ],
+      "source_breakdown": {
+        "VendorName": "azure",
+        "VendorAddress": "llm",
+        "VendorCountry": "NotAvailable",
+        "VendorTaxId": "llm",
+        "VendorContactEmail": "llm",
+        "VendorPhone": "llm",
+        "VendorBankName": "NotAvailable",
+        "VendorBankAccountNumber": "NotAvailable",
+        "VendorBankDetails": "NotAvailable",
+        "VendorContactPerson": "NotAvailable",
+        "VendorWebsite": "NotAvailable",
+        "CustomerName": "azure",
+        "BillingAddress": "NotAvailable",
+        "ShippingAddress": "NotAvailable",
+        "CustomerPhone": "NotAvailable",
+        "CustomerEmail": "NotAvailable",
+        "CustomerTaxId": "NotAvailable",
+        "CustomerContactPerson": "azure",
+        "InvoiceId": "llm",
+        "InvoiceDate": "azure",
+        "DueDate": "azure",
+        "InvoiceCurrency": "NotAvailable",
+        "InvoiceType": "llm",
+        "PurchaseOrder": "NotAvailable",
+        "PaymentTerms": "NotAvailable",
+        "PaymentMethod": "NotAvailable",
+        "CostCenter": "NotAvailable",
+        "ServicePeriodStart": "azure",
+        "ServicePeriodEnd": "azure",
+        "LineItems_Count": "NotAvailable",
+        "TotalTax": "azure",
+        "TaxTypeBreakdown": "llm",
+        "WithholdingTax": "llm",
+        "Subtotal": "llm",
+        "ShippingHandling": "llm",
+        "Surcharges": "llm",
+        "InvoiceTotal": "azure",
+        "AmountPaid": "llm",
+        "AmountDue": "azure",
+        "Notes": "llm",
+        "QRCode": "NotAvailable",
+        "CompanyRegistration": "llm",
+        "ApprovalWorkflowID": "NotAvailable",
+        "ApprovalRequired": "NotAvailable",
+        "ApproverList": "NotAvailable",
+        "ApprovalStatus": "NotAvailable",
+        "ApprovalTimestamps": "NotAvailable"
+      }
     }
   }
 ]

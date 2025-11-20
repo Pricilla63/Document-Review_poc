@@ -19,104 +19,20 @@
         "confidence": 0.886,
         "method": "AzurePrebuiltInvoice"
       },
-      "VendorContactPerson": {
-        "value": "LauraMac, LLC",
-        "confidence": 0.933,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "Consolidated Analytics",
-        "confidence": 0.937,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "BillingAddress": {
-        "value": {
-          "street_address": "1 MachArthur Place",
-          "city": "Santa Ana",
-          "state": "CA",
-          "postal_code": "92707",
-          "house_number": "1",
-          "road": "MachArthur Place"
-        },
-        "confidence": 0.886,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "1790",
-        "confidence": 0.976,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-02-28",
-        "confidence": 0.975,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "DueDate": {
-        "value": "2025-03-30",
-        "confidence": 0.975,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 81305.24,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "confidence": 0.947,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "Subtotal": {
-        "value": {
-          "amount": 208119.98,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "confidence": 0.975,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "AmountDue": {
-        "value": {
-          "amount": 81305.24,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.972,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorEmail": {
-        "value": "AR@lauramac.com",
-        "confidence": 0.7,
-        "method": "Regex"
+      "VendorCountry": {
+        "value": "US",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "VendorTaxId": {
         "value": "ax",
         "confidence": 0.7,
         "method": "Regex"
       },
-      "PaymentMethod": {
-        "value": "ach",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorCountry": {
-        "value": "US",
-        "confidence": 0.7974,
-        "method": "DerivedFromAddress"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.947,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 7,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
       "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "AR@lauramac.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "VendorPhone": {
         "value": "na",
@@ -138,10 +54,30 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "VendorContactPerson": {
+        "value": "LauraMac, LLC",
+        "confidence": 0.932,
+        "method": "AzurePrebuiltInvoice"
+      },
       "VendorWebsite": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics",
+        "confidence": 0.937,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1 MachArthur Place",
+          "city": "Santa Ana",
+          "state": "CA",
+          "postal_code": "92707"
+        },
+        "confidence": 0.886,
+        "method": "AzurePrebuiltInvoice"
       },
       "ShippingAddress": {
         "value": "na",
@@ -168,10 +104,30 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
-      "InvoiceType": {
+      "InvoiceId": {
+        "value": "1790",
+        "confidence": 0.976,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-02-28",
+        "confidence": 0.975,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-03-30",
+        "confidence": 0.975,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "INVOICE",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "PurchaseOrder": {
         "value": "na",
@@ -179,6 +135,11 @@
         "method": "NotAvailable"
       },
       "PaymentTerms": {
+        "value": "Net 30",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -198,20 +159,34 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "LineItems_Count": {
+        "value": 7,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
       "TotalTax": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "TaxTypeBreakdown": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "Sales Tax: 0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "WithholdingTax": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": {
+          "amount": 208119.98,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.975,
+        "method": "AzurePrebuiltInvoice"
       },
       "ShippingHandling": {
         "value": "na",
@@ -223,15 +198,33 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 81305.24,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.947,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "AmountDue": {
+        "value": {
+          "amount": 81305.24,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.972,
+        "method": "AzurePrebuiltInvoice"
+      },
       "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "Sales Tax calculated by AvaTax for 7666-V0 at Fri Mar 7 07:58:33 UTC 2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "QRCode": {
         "value": "na",
@@ -378,31 +371,38 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.975,
-        "VendorAddress": 0.886,
-        "VendorContactPerson": 0.933,
-        "CustomerName": 0.937,
-        "BillingAddress": 0.886,
-        "InvoiceId": 0.976,
-        "InvoiceDate": 0.975,
-        "DueDate": 0.975,
-        "InvoiceTotal": 0.947,
-        "Subtotal": 0.975,
-        "AmountDue": 0.972,
-        "VendorEmail": 0.7,
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorCountry": 0.8,
         "VendorTaxId": 0.7,
-        "PaymentMethod": 0.7
+        "VendorContactEmail": 0.8,
+        "VendorContactPerson": 0.9,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.9,
+        "InvoiceType": 0.8,
+        "PaymentTerms": 0.8,
+        "LineItems_Count": 0.8,
+        "TotalTax": 0.8,
+        "TaxTypeBreakdown": 0.8,
+        "Subtotal": 0.9,
+        "InvoiceTotal": 0.9,
+        "AmountDue": 0.9,
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T17:57:35.160183",
+      "processing_timestamp": "2025-11-20T20:13:29.578368",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

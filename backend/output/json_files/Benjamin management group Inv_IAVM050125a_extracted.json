@@ -13,85 +13,10 @@
           "street_address": "100 Spectrum Center Drive Suite # 900",
           "city": "Irvine",
           "state": "CA",
-          "postal_code": "92618",
-          "house_number": "100",
-          "road": "Spectrum Center Drive",
-          "unit": "Suite # 900"
+          "postal_code": "92618"
         },
         "confidence": 0.88,
         "method": "AzurePrebuiltInvoice"
-      },
-      "VendorContactPerson": {
-        "value": "Benjamin Management Group, Inc.",
-        "confidence": 0.926,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "Consolidated Analytics",
-        "confidence": 0.943,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "BillingAddress": {
-        "value": {
-          "street_address": "1500 South Douglass Road Suite 110 B",
-          "city": "Anaheim",
-          "state": "CA",
-          "postal_code": "92806",
-          "house_number": "1500",
-          "road": "South Douglass Road",
-          "unit": "Suite 110 B"
-        },
-        "confidence": 0.879,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "IAVM050125a",
-        "confidence": 0.972,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-05-01",
-        "confidence": 0.972,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "DueDate": {
-        "value": "2025-05-30",
-        "confidence": 0.972,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "ServicePeriodStart": {
-        "value": "2025-04-01",
-        "confidence": 0.424,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "ServicePeriodEnd": {
-        "value": "2025-04-30",
-        "confidence": 0.443,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 2660.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.969,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CostCenter": {
-        "value": "A",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.969,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 4,
-        "confidence": 1.0,
-        "method": "Calculated"
       },
       "VendorCountry": {
         "value": "na",
@@ -128,10 +53,30 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "VendorContactPerson": {
+        "value": "Benjamin Management Group, Inc.",
+        "confidence": 0.926,
+        "method": "AzurePrebuiltInvoice"
+      },
       "VendorWebsite": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics",
+        "confidence": 0.943,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1500 South Douglass Road Suite 110 B",
+          "city": "Anaheim",
+          "state": "CA",
+          "postal_code": "92806"
+        },
+        "confidence": 0.879,
+        "method": "AzurePrebuiltInvoice"
       },
       "ShippingAddress": {
         "value": "na",
@@ -158,6 +103,26 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceId": {
+        "value": "IAVM050125a",
+        "confidence": 0.972,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-05-01",
+        "confidence": 0.972,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-05-30",
+        "confidence": 0.972,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "InvoiceType": {
         "value": "na",
         "confidence": 0.0,
@@ -177,6 +142,26 @@
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "2025-04-01",
+        "confidence": 0.424,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodEnd": {
+        "value": "2025-04-30",
+        "confidence": 0.443,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "LineItems_Count": {
+        "value": 4,
+        "confidence": 1.0,
+        "method": "Calculated"
       },
       "TotalTax": {
         "value": "na",
@@ -208,6 +193,15 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 2660.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.969,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
         "value": "na",
         "confidence": 0.0,
@@ -219,9 +213,9 @@
         "method": "NotAvailable"
       },
       "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "It's been a pleasure working with you!",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "QRCode": {
         "value": "na",
@@ -322,29 +316,31 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.919,
-        "VendorAddress": 0.88,
-        "VendorContactPerson": 0.926,
-        "CustomerName": 0.943,
-        "BillingAddress": 0.879,
-        "InvoiceId": 0.972,
-        "InvoiceDate": 0.972,
-        "DueDate": 0.972,
-        "ServicePeriodStart": 0.424,
-        "ServicePeriodEnd": 0.443,
-        "InvoiceTotal": 0.969,
-        "CostCenter": 0.7
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorContactPerson": 0.9,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.9,
+        "ServicePeriodStart": 0.9,
+        "ServicePeriodEnd": 0.9,
+        "LineItems_Count": 0.8,
+        "InvoiceTotal": 0.9,
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T17:54:47.862071",
+      "processing_timestamp": "2025-11-20T20:09:27.680940",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

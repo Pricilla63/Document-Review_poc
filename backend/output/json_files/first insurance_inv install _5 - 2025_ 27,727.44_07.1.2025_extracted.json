@@ -13,66 +13,10 @@
           "street_address": "450 Skokie Blvd. Suite 1000",
           "city": "Northbrook",
           "state": "IL",
-          "postal_code": "60062-7917",
-          "house_number": "450",
-          "road": "Skokie Blvd.",
-          "unit": "Suite 1000"
+          "postal_code": "60062-7917"
         },
         "confidence": 0.885,
         "method": "AzurePrebuiltInvoice"
-      },
-      "VendorContactPerson": {
-        "value": "FIRST INSURANCE\nFUNDING",
-        "confidence": 0.888,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "CA HOLDING COMPANY II LLC",
-        "confidence": 0.91,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerContactPerson": {
-        "value": "CA HOLDING COMPANY II LLC",
-        "confidence": 0.91,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-07-11",
-        "confidence": 0.927,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "DueDate": {
-        "value": "2025-08-01",
-        "confidence": 0.93,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 27727.44,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.535,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "AmountDue": {
-        "value": {
-          "amount": 27727.44,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.894,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.535,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 0,
-        "confidence": 1.0,
-        "method": "Calculated"
       },
       "VendorCountry": {
         "value": "na",
@@ -109,10 +53,20 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "VendorContactPerson": {
+        "value": "FIRST INSURANCE\nFUNDING",
+        "confidence": 0.888,
+        "method": "AzurePrebuiltInvoice"
+      },
       "VendorWebsite": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "CA HOLDING COMPANY II LLC",
+        "confidence": 0.91,
+        "method": "AzurePrebuiltInvoice"
       },
       "BillingAddress": {
         "value": "na",
@@ -139,7 +93,27 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "CustomerContactPerson": {
+        "value": "CA HOLDING COMPANY II LLC",
+        "confidence": 0.91,
+        "method": "AzurePrebuiltInvoice"
+      },
       "InvoiceId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-11",
+        "confidence": 0.927,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-08-01",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -179,6 +153,11 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "LineItems_Count": {
+        "value": 0,
+        "confidence": 0.0,
+        "method": "Calculated"
+      },
       "TotalTax": {
         "value": "na",
         "confidence": 0.0,
@@ -209,10 +188,28 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 27727.44,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.535,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 27727.44,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.894,
+        "method": "AzurePrebuiltInvoice"
       },
       "Notes": {
         "value": "na",
@@ -258,25 +255,25 @@
     "items": [],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence"
       ],
       "confidence_scores": {
-        "VendorName": 0.888,
-        "VendorAddress": 0.885,
-        "VendorContactPerson": 0.888,
-        "CustomerName": 0.91,
-        "CustomerContactPerson": 0.91,
-        "InvoiceDate": 0.927,
-        "DueDate": 0.93,
-        "InvoiceTotal": 0.535,
-        "AmountDue": 0.894
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorContactPerson": 0.9,
+        "CustomerName": 0.9,
+        "CustomerContactPerson": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.9,
+        "InvoiceTotal": 0.9,
+        "AmountDue": 0.9
       },
-      "processing_timestamp": "2025-11-20T17:56:30.479909",
+      "processing_timestamp": "2025-11-20T20:11:59.372132",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "None"
     }
   }
 ]

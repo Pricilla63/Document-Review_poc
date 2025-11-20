@@ -13,55 +13,10 @@
           "street_address": "880 Third Avenue",
           "city": "New York",
           "state": "NY",
-          "postal_code": "10022",
-          "house_number": "880",
-          "road": "Third Avenue"
+          "postal_code": "10022"
         },
         "confidence": 0.885,
         "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "Eos Management, LLC",
-        "confidence": 0.253,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerContactPerson": {
-        "value": "Eric S. Uvaney\nChief Financial Officer\nConsolidated Analytics, Inc.\nUvaney,",
-        "confidence": 0.32,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-07-07",
-        "confidence": 0.917,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 37953.81,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.965,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "AmountDue": {
-        "value": {
-          "amount": 37953.81,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.965,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.965,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 2,
-        "confidence": 1.0,
-        "method": "Calculated"
       },
       "VendorCountry": {
         "value": "na",
@@ -108,6 +63,11 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "CustomerName": {
+        "value": "Eos Management, LLC",
+        "confidence": 0.253,
+        "method": "AzurePrebuiltInvoice"
+      },
       "BillingAddress": {
         "value": "na",
         "confidence": 0.0,
@@ -133,12 +93,27 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "CustomerContactPerson": {
+        "value": "Eric S. Uvaney\nChief Financial Officer\nConsolidated Analytics, Inc.\nUvaney,",
+        "confidence": 0.32,
+        "method": "AzurePrebuiltInvoice"
+      },
       "InvoiceId": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceDate": {
+        "value": "2025-07-07",
+        "confidence": 0.917,
+        "method": "AzurePrebuiltInvoice"
+      },
       "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceCurrency": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -178,6 +153,11 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "LineItems_Count": {
+        "value": 2,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
       "TotalTax": {
         "value": "na",
         "confidence": 0.0,
@@ -208,10 +188,28 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 37953.81,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.965,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 37953.81,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.965,
+        "method": "AzurePrebuiltInvoice"
       },
       "Notes": {
         "value": "na",
@@ -276,23 +274,23 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence"
       ],
       "confidence_scores": {
-        "VendorName": 0.948,
-        "VendorAddress": 0.885,
-        "CustomerName": 0.253,
-        "CustomerContactPerson": 0.32,
-        "InvoiceDate": 0.917,
-        "InvoiceTotal": 0.965,
-        "AmountDue": 0.965
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "CustomerName": 0.9,
+        "CustomerContactPerson": 0.9,
+        "InvoiceDate": 0.9,
+        "InvoiceTotal": 0.9,
+        "AmountDue": 0.9
       },
-      "processing_timestamp": "2025-11-20T17:55:59.286178",
+      "processing_timestamp": "2025-11-20T20:11:14.480223",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

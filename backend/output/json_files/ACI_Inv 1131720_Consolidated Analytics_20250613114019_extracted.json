@@ -8,99 +8,10 @@
         "confidence": 0.976,
         "method": "AzurePrebuiltInvoice"
       },
-      "CustomerName": {
-        "value": "Consolidated Analytics",
-        "confidence": 0.939,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "BillingAddress": {
-        "value": {
-          "street_address": "19712 MacArthur Boulevard Suite\n120",
-          "city": "Irvine",
-          "state": "CA",
-          "postal_code": "92612",
-          "house_number": "19712",
-          "road": "MacArthur Boulevard",
-          "unit": "Suite\n120"
-        },
-        "confidence": 0.886,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "1131720",
-        "confidence": 0.979,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-06-13",
-        "confidence": 0.93,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 2077.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.975,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "Subtotal": {
-        "value": {
-          "amount": 2077.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.976,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "TotalTax": {
-        "value": {
-          "amount": 0.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.975,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "AmountDue": {
-        "value": {
-          "amount": 2077.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.976,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorEmail": {
-        "value": "support@aciweb.com",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorWebsite": {
-        "value": ".com",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorContactPerson": {
-        "value": "us at support",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.975,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 1,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
       "VendorAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "PO Box 677923, Dallas, TX 75267‐7923",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "VendorCountry": {
         "value": "na",
@@ -113,14 +24,14 @@
         "method": "NotAvailable"
       },
       "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "support@aciweb.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "800.234.8727",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "VendorBankName": {
         "value": "na",
@@ -136,6 +47,31 @@
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "VendorContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics",
+        "confidence": 0.939,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "19712 MacArthur Boulevard Suite\n120",
+          "city": "Irvine",
+          "state": "CA",
+          "postal_code": "92612"
+        },
+        "confidence": 0.886,
+        "method": "AzurePrebuiltInvoice"
       },
       "ShippingAddress": {
         "value": "na",
@@ -162,10 +98,25 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceId": {
+        "value": "1131720",
+        "confidence": 0.979,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-13",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
       "DueDate": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "InvoiceType": {
         "value": "na",
@@ -178,9 +129,9 @@
         "method": "NotAvailable"
       },
       "PaymentTerms": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "NET10",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "PaymentMethod": {
         "value": "na",
@@ -202,6 +153,20 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "LineItems_Count": {
+        "value": 1,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.975,
+        "method": "AzurePrebuiltInvoice"
+      },
       "TaxTypeBreakdown": {
         "value": "na",
         "confidence": 0.0,
@@ -211,6 +176,15 @@
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": {
+          "amount": 2077.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.976,
+        "method": "AzurePrebuiltInvoice"
       },
       "ShippingHandling": {
         "value": "na",
@@ -222,10 +196,28 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 2077.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.975,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 2077.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.976,
+        "method": "AzurePrebuiltInvoice"
       },
       "Notes": {
         "value": "na",
@@ -287,29 +279,34 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.976,
-        "CustomerName": 0.939,
-        "BillingAddress": 0.886,
-        "InvoiceId": 0.979,
-        "InvoiceDate": 0.93,
-        "InvoiceTotal": 0.975,
-        "Subtotal": 0.976,
-        "TotalTax": 0.975,
-        "AmountDue": 0.976,
-        "VendorEmail": 0.7,
-        "VendorWebsite": 0.7,
-        "VendorContactPerson": 0.7
+        "VendorName": 0.9,
+        "VendorAddress": 0.8,
+        "VendorContactEmail": 0.8,
+        "VendorPhone": 0.8,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "InvoiceCurrency": 0.8,
+        "PaymentTerms": 0.8,
+        "LineItems_Count": 0.8,
+        "TotalTax": 0.9,
+        "Subtotal": 0.9,
+        "InvoiceTotal": 0.9,
+        "AmountPaid": 0.8,
+        "AmountDue": 0.9
       },
-      "processing_timestamp": "2025-11-20T17:53:58.868701",
+      "processing_timestamp": "2025-11-20T20:08:25.804543",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

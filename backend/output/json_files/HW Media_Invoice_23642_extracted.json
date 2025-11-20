@@ -18,10 +18,50 @@
         "confidence": 0.89,
         "method": "AzurePrebuiltInvoice"
       },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "81-2063430",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "4698931480",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "Avidbank",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankAccountNumber": {
+        "value": "140020603",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankDetails": {
+        "value": "Routing/ABA: 121143626; Currency: USD; Beneficiary Bank Address: 1732 North 1st St, 6th Floor, San Jose, CA 95112",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "VendorContactPerson": {
         "value": "HW Media LLC",
         "confidence": 0.927,
         "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "CustomerName": {
         "value": "Consolidated Analytics",
@@ -34,99 +74,6 @@
         },
         "confidence": 0.937,
         "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "23642",
-        "confidence": 0.958,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-06-30",
-        "confidence": 0.957,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "DueDate": {
-        "value": "2025-07-15",
-        "confidence": 0.956,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 3400.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.919,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "AmountDue": {
-        "value": {
-          "amount": 3400.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.948,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorWebsite": {
-        "value": "https://app01.us.bill.com/p/housingwire",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorTaxId": {
-        "value": "g",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "PaymentMethod": {
-        "value": "CHECK",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "CostCenter": {
-        "value": "ount",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.919,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 1,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
       },
       "ShippingAddress": {
         "value": "na",
@@ -153,6 +100,26 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceId": {
+        "value": "23642",
+        "confidence": 0.958,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-30",
+        "confidence": 0.957,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-07-15",
+        "confidence": 0.956,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "InvoiceType": {
         "value": "na",
         "confidence": 0.0,
@@ -168,6 +135,16 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "PaymentMethod": {
+        "value": "Check, Wire/ACH, Online",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "ServicePeriodStart": {
         "value": "na",
         "confidence": 0.0,
@@ -177,6 +154,11 @@
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "LineItems_Count": {
+        "value": 1,
+        "confidence": 1.0,
+        "method": "Calculated"
       },
       "TotalTax": {
         "value": "na",
@@ -194,9 +176,9 @@
         "method": "NotAvailable"
       },
       "Subtotal": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "$3,400.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "ShippingHandling": {
         "value": "na",
@@ -208,15 +190,33 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 3400.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.919,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "$0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 3400.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.948,
+        "method": "AzurePrebuiltInvoice"
       },
       "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "To pay online, go to https://app01.us.bill.com/p/housingwire",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "QRCode": {
         "value": "na",
@@ -274,31 +274,39 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.937,
-        "VendorAddress": 0.89,
-        "VendorContactPerson": 0.927,
-        "CustomerName": 0.938,
-        "BillingAddress": 0.937,
-        "InvoiceId": 0.958,
-        "InvoiceDate": 0.957,
-        "DueDate": 0.956,
-        "InvoiceTotal": 0.919,
-        "AmountDue": 0.948,
-        "VendorWebsite": 0.7,
-        "VendorTaxId": 0.7,
-        "PaymentMethod": 0.7,
-        "CostCenter": 0.7
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorTaxId": 0.8,
+        "VendorPhone": 0.8,
+        "VendorBankName": 0.8,
+        "VendorBankAccountNumber": 0.8,
+        "VendorBankDetails": 0.8,
+        "VendorContactPerson": 0.9,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.9,
+        "InvoiceCurrency": 0.8,
+        "PaymentMethod": 0.8,
+        "LineItems_Count": 0.8,
+        "Subtotal": 0.8,
+        "InvoiceTotal": 0.9,
+        "AmountPaid": 0.8,
+        "AmountDue": 0.9,
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T17:57:18.948713",
+      "processing_timestamp": "2025-11-20T20:13:03.782192",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

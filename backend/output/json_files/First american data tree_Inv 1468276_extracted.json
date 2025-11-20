@@ -8,141 +8,65 @@
         "confidence": 0.537,
         "method": "AzurePrebuiltInvoice"
       },
-      "CustomerName": {
-        "value": "Consolidated Analytics\nATTN:Accounts Payable",
-        "confidence": 0.915,
-        "method": "AzurePrebuiltInvoice"
+      "VendorAddress": {
+        "value": "PO Box 31001-2268, Pasadena CA 91110-2268, USA",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
-      "CustomerContactPerson": {
-        "value": "Consolidated Analytics\nATTN:Accounts Payable",
-        "confidence": 0.915,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "1468276",
-        "confidence": 0.928,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-06-03",
-        "confidence": 0.927,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 3410.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.94,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "Subtotal": {
-        "value": {
-          "amount": 3410.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.93,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "TotalTax": {
-        "value": {
-          "amount": 0.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.938,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "AmountDue": {
-        "value": {
-          "amount": 3410.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.936,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorEmail": {
-        "value": "mortgageanalytics.support@firstam.com",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorWebsite": {
-        "value": "https://faanalytics.sharefile.com/Authentication/Login",
-        "confidence": 0.7,
-        "method": "Regex"
+      "VendorCountry": {
+        "value": "USA",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "VendorTaxId": {
-        "value": "g",
-        "confidence": 0.7,
-        "method": "Regex"
+        "value": "27-4029120",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactEmail": {
+        "value": "mortgageanalytics.support@firstam.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "800-795-0391",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "First American Trust, FSB",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankAccountNumber": {
+        "value": "1016910000",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankDetails": {
+        "value": "Routing Number: 122241255; Account: First American Mortgage Solutions, LLC.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "VendorContactPerson": {
         "value": "Accounts Payable",
         "confidence": 0.7,
         "method": "Regex"
       },
-      "PaymentMethod": {
-        "value": "WIRE",
-        "confidence": 0.7,
-        "method": "Regex"
+      "VendorWebsite": {
+        "value": "https://faanalytics.sharefile.com/Authentication/Login",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
-      "CostCenter": {
-        "value": "ounts",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.94,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 1,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "VendorAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+      "CustomerName": {
+        "value": "Consolidated Analytics\nATTN:Accounts Payable",
+        "confidence": 0.915,
+        "method": "AzurePrebuiltInvoice"
       },
       "BillingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "1 Macarthur Pl, Santa Ana CA 92707, United States",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "ShippingAddress": {
         "value": "na",
@@ -164,15 +88,35 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "CustomerContactPerson": {
+        "value": "Consolidated Analytics\nATTN:Accounts Payable",
+        "confidence": 0.915,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "1468276",
+        "confidence": 0.928,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-03",
+        "confidence": 0.927,
+        "method": "AzurePrebuiltInvoice"
+      },
       "DueDate": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "InvoiceType": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "INVOICE",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "PurchaseOrder": {
         "value": "na",
@@ -180,6 +124,16 @@
         "method": "NotAvailable"
       },
       "PaymentTerms": {
+        "value": "Net 8",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CostCenter": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -194,15 +148,40 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "LineItems_Count": {
+        "value": 1,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
+      },
       "TaxTypeBreakdown": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": {
+          "Sales Tax": "0.00"
+        },
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "WithholdingTax": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": {
+          "amount": 3410.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
       },
       "ShippingHandling": {
         "value": "na",
@@ -214,15 +193,33 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 3410.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.94,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "AmountDue": {
+        "value": {
+          "amount": 3410.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.936,
+        "method": "AzurePrebuiltInvoice"
+      },
       "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "PLEASE REFERENCE BILLING NUMBER ALONG WITH YOUR PAYMENT.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "QRCode": {
         "value": "na",
@@ -279,32 +276,44 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.537,
-        "CustomerName": 0.915,
-        "CustomerContactPerson": 0.915,
-        "InvoiceId": 0.928,
-        "InvoiceDate": 0.927,
-        "InvoiceTotal": 0.94,
-        "Subtotal": 0.93,
-        "TotalTax": 0.938,
-        "AmountDue": 0.936,
-        "VendorEmail": 0.7,
-        "VendorWebsite": 0.7,
-        "VendorTaxId": 0.7,
+        "VendorName": 0.9,
+        "VendorAddress": 0.8,
+        "VendorCountry": 0.8,
+        "VendorTaxId": 0.8,
+        "VendorContactEmail": 0.8,
+        "VendorPhone": 0.8,
+        "VendorBankName": 0.8,
+        "VendorBankAccountNumber": 0.8,
+        "VendorBankDetails": 0.8,
         "VendorContactPerson": 0.7,
-        "PaymentMethod": 0.7,
-        "CostCenter": 0.7
+        "VendorWebsite": 0.8,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.8,
+        "CustomerContactPerson": 0.9,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "InvoiceCurrency": 0.8,
+        "InvoiceType": 0.8,
+        "PaymentTerms": 0.8,
+        "LineItems_Count": 0.8,
+        "TotalTax": 0.9,
+        "TaxTypeBreakdown": 0.8,
+        "Subtotal": 0.9,
+        "InvoiceTotal": 0.9,
+        "AmountDue": 0.9,
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T17:56:22.644204",
+      "processing_timestamp": "2025-11-20T20:11:44.734663",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

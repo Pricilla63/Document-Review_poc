@@ -3,316 +3,174 @@
     "invoice_number": 1,
     "source_file": "Loan logic process solutions_Invoice_INV79823_1749239459138.pdf",
     "fields": {
-      "VendorName": {
-        "value": "loanlogics®",
-        "confidence": 0.947,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorAddress": {
-        "value": {
-          "street_address": "4600 Touchton Road E\nBuilding Suite 150",
-          "city": "Jacksonville",
-          "state": "FL",
-          "postal_code": "32246",
-          "house_number": "4600",
-          "road": "Touchton Road E\nBuilding",
-          "unit": "Suite 150"
-        },
-        "confidence": 0.866,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorContactPerson": {
-        "value": "LoanLogics Risk Analytics, Inc.\nLoanLogics, Inc.",
-        "confidence": 0.503,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "Consolidated Analytics, Inc.",
-        "confidence": 0.928,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "BillingAddress": {
-        "value": {
-          "street_address": "1500 S Douglass Rd",
-          "city": "Anaheim",
-          "state": "CA",
-          "postal_code": "92806",
-          "country": "United States",
-          "house_number": "1500",
-          "road": "S Douglass Rd"
-        },
-        "confidence": 0.88,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "INV79823",
-        "confidence": 0.967,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-05-31",
-        "confidence": 0.967,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "DueDate": {
-        "value": "2025-06-30",
-        "confidence": 0.966,
-        "method": "AzurePrebuiltInvoice"
-      },
+      "VendorName": "loanlogics®",
+      "VendorAddress": "4600 Touchton Road E, Suite 150, Jacksonville, FL 32246",
+      "VendorCountry": "United States",
+      "VendorTaxId": "71-1023152",
+      "VendorContactEmail": "accounts.receivable@loanlogics.com",
+      "VendorPhone": "(866) 557-6959",
+      "VendorBankName": "PNC Bank, N.A.",
+      "VendorBankAccountNumber": "5368606134",
+      "VendorBankDetails": "ACH Routing Number: 054000030, Wire Routing Number: 031000053, Name on Account: LoanLogics Process Solutions, Inc.",
+      "VendorContactPerson": "LoanLogics Risk Analytics, Inc.\nLoanLogics, Inc.",
+      "VendorWebsite": "na",
+      "CustomerName": "Consolidated Analytics, Inc.",
+      "BillingAddress": "1500 S Douglass Rd, Anaheim, CA 92806, United States",
+      "ShippingAddress": "na",
+      "CustomerPhone": "na",
+      "CustomerEmail": "AccountsPayable@ca-usa.com",
+      "CustomerTaxId": "na",
+      "CustomerContactPerson": "na",
+      "InvoiceId": "INV79823",
+      "InvoiceDate": "2025-05-31",
+      "DueDate": "2025-06-30",
+      "InvoiceCurrency": "USD",
+      "InvoiceType": "na",
+      "PurchaseOrder": "na",
+      "PaymentTerms": "Net 30",
+      "PaymentMethod": "Wire, ACH, Check",
+      "CostCenter": "na",
+      "ServicePeriodStart": "na",
+      "ServicePeriodEnd": "na",
+      "LineItems_Count": "na",
+      "TotalTax": "0.00 USD",
+      "TaxTypeBreakdown": "na",
+      "WithholdingTax": "na",
+      "Subtotal": "33,945.40 USD",
+      "ShippingHandling": "0.00 USD",
+      "Surcharges": "0.00 USD",
       "InvoiceTotal": {
-        "value": {
-          "amount": 33945.4,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "confidence": 0.747,
-        "method": "AzurePrebuiltInvoice"
+        "amount": 33945.4,
+        "currency": null,
+        "currency_code": "USD"
       },
+      "AmountPaid": "0.00 USD",
       "AmountDue": {
-        "value": {
-          "amount": 33945.4,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.956,
-        "method": "AzurePrebuiltInvoice"
+        "amount": 33945.4,
+        "currency": "$",
+        "currency_code": "USD"
       },
-      "VendorEmail": {
-        "value": "accounts.receivable@loanlogics.com",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorTaxId": {
-        "value": "g",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "PaymentMethod": {
-        "value": "wire",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "CostCenter": {
-        "value": "ounts",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.747,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 1,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "CustomerEmail": {
-        "value": "accounts.receivable@loanlogics.com",
-        "confidence": 0.8,
-        "method": "TextAnalysis"
-      },
-      "CustomerPhone": {
-        "value": "\n(866) 557-6959",
-        "confidence": 0.8,
-        "method": "TextAnalysis"
-      },
-      "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorWebsite": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ShippingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerTaxId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerContactPerson": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "InvoiceType": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PurchaseOrder": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PaymentTerms": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ServicePeriodStart": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ServicePeriodEnd": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "TotalTax": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "TaxTypeBreakdown": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "WithholdingTax": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "Subtotal": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ShippingHandling": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "Surcharges": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "AmountPaid": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "QRCode": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CompanyRegistration": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalWorkflowID": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalRequired": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApproverList": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalStatus": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalTimestamps": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      }
+      "Notes": "Payments should be mailed to: LoanLogics Process Solutions, Inc., Accounts Receivable, PO Box 713373, Chicago, IL 60677-1539. Please make all checks payable to: LoanLogics Process Solutions, Inc.",
+      "QRCode": "na",
+      "CompanyRegistration": "na",
+      "ApprovalWorkflowID": "na",
+      "ApprovalRequired": "na",
+      "ApproverList": "na",
+      "ApprovalStatus": "na",
+      "ApprovalTimestamps": "na"
     },
-    "items": [
-      {
-        "item_number": 1,
-        "Description": "IDEA loan processing",
-        "Quantity": 1225.0,
-        "UnitPrice": {
-          "amount": 0.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 33945.4,
-          "currency": null,
-          "currency_code": "USD"
-        }
-      }
-    ],
+    "items": [],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.947,
-        "VendorAddress": 0.866,
-        "VendorContactPerson": 0.503,
-        "CustomerName": 0.928,
-        "BillingAddress": 0.88,
-        "InvoiceId": 0.967,
-        "InvoiceDate": 0.967,
-        "DueDate": 0.966,
-        "InvoiceTotal": 0.747,
-        "AmountDue": 0.956,
-        "VendorEmail": 0.7,
-        "VendorTaxId": 0.7,
-        "PaymentMethod": 0.7,
-        "CostCenter": 0.7
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorCountry": 0.8,
+        "VendorTaxId": 0.8,
+        "VendorContactEmail": 0.8,
+        "VendorPhone": 0.8,
+        "VendorBankName": 0.8,
+        "VendorBankAccountNumber": 0.8,
+        "VendorBankDetails": 0.8,
+        "VendorContactPerson": 0.9,
+        "VendorWebsite": 0.0,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "ShippingAddress": 0.0,
+        "CustomerPhone": 0.0,
+        "CustomerEmail": 0.8,
+        "CustomerTaxId": 0.0,
+        "CustomerContactPerson": 0.0,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.9,
+        "InvoiceCurrency": 0.8,
+        "InvoiceType": 0.0,
+        "PurchaseOrder": 0.0,
+        "PaymentTerms": 0.8,
+        "PaymentMethod": 0.8,
+        "CostCenter": 0.0,
+        "ServicePeriodStart": 0.0,
+        "ServicePeriodEnd": 0.0,
+        "LineItems_Count": 0.0,
+        "TotalTax": 0.8,
+        "TaxTypeBreakdown": 0.8,
+        "WithholdingTax": 0.0,
+        "Subtotal": 0.8,
+        "ShippingHandling": 0.8,
+        "Surcharges": 0.8,
+        "InvoiceTotal": 0.9,
+        "AmountPaid": 0.8,
+        "AmountDue": 0.9,
+        "Notes": 0.8,
+        "QRCode": 0.0,
+        "CompanyRegistration": 0.0,
+        "ApprovalWorkflowID": 0.0,
+        "ApprovalRequired": 0.0,
+        "ApproverList": 0.0,
+        "ApprovalStatus": 0.0,
+        "ApprovalTimestamps": 0.0
       },
-      "processing_timestamp": "2025-11-20T17:57:56.517583",
+      "processing_timestamp": "2025-11-20T19:43:21.152479",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
+        "LLM_Text_Analysis",
         "RegexPatterns",
-        "DerivedFields",
-        "TextAnalysis",
         "MissingFieldHandling"
-      ]
+      ],
+      "source_breakdown": {
+        "VendorName": "azure",
+        "VendorAddress": "azure",
+        "VendorCountry": "llm",
+        "VendorTaxId": "llm",
+        "VendorContactEmail": "llm",
+        "VendorPhone": "llm",
+        "VendorBankName": "llm",
+        "VendorBankAccountNumber": "llm",
+        "VendorBankDetails": "llm",
+        "VendorContactPerson": "azure",
+        "VendorWebsite": "NotAvailable",
+        "CustomerName": "azure",
+        "BillingAddress": "azure",
+        "ShippingAddress": "NotAvailable",
+        "CustomerPhone": "NotAvailable",
+        "CustomerEmail": "llm",
+        "CustomerTaxId": "NotAvailable",
+        "CustomerContactPerson": "NotAvailable",
+        "InvoiceId": "azure",
+        "InvoiceDate": "azure",
+        "DueDate": "azure",
+        "InvoiceCurrency": "llm",
+        "InvoiceType": "NotAvailable",
+        "PurchaseOrder": "NotAvailable",
+        "PaymentTerms": "llm",
+        "PaymentMethod": "llm",
+        "CostCenter": "NotAvailable",
+        "ServicePeriodStart": "NotAvailable",
+        "ServicePeriodEnd": "NotAvailable",
+        "LineItems_Count": "NotAvailable",
+        "TotalTax": "llm",
+        "TaxTypeBreakdown": "llm",
+        "WithholdingTax": "NotAvailable",
+        "Subtotal": "llm",
+        "ShippingHandling": "llm",
+        "Surcharges": "llm",
+        "InvoiceTotal": "azure",
+        "AmountPaid": "llm",
+        "AmountDue": "azure",
+        "Notes": "llm",
+        "QRCode": "NotAvailable",
+        "CompanyRegistration": "NotAvailable",
+        "ApprovalWorkflowID": "NotAvailable",
+        "ApprovalRequired": "NotAvailable",
+        "ApproverList": "NotAvailable",
+        "ApprovalStatus": "NotAvailable",
+        "ApprovalTimestamps": "NotAvailable"
+      }
     }
   }
 ]

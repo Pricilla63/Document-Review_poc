@@ -18,10 +18,62 @@
         "confidence": 0.887,
         "method": "AzurePrebuiltInvoice"
       },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "Billing@indeed.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": [
+          {
+            "SWIFT": "CITIUS33"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorBankAccountNumber": {
+        "value": [
+          {
+            "SWIFT": "CITIUS33"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorBankDetails": {
+        "value": [
+          {
+            "SWIFT": "CITIUS33"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
       "VendorContactPerson": {
         "value": "Indeed, Inc\nMail Code 5160",
         "confidence": 0.883,
         "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "CustomerName": {
         "value": "Consolidated Analytics, Inc.",
@@ -33,130 +85,10 @@
           "street_address": "1 MacArthur Place Suite 100",
           "city": "SANTA ANA",
           "state": "CA",
-          "postal_code": "92707",
-          "house_number": "1",
-          "road": "MacArthur Place",
-          "unit": "Suite 100"
+          "postal_code": "92707"
         },
         "confidence": 0.868,
         "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "109274729",
-        "confidence": 0.939,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-07-22",
-        "confidence": 0.939,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "DueDate": {
-        "value": "2025-08-21",
-        "confidence": 0.939,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "ServicePeriodStart": {
-        "value": "2025-07-22",
-        "confidence": 0.416,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 240.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.676,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "TotalTax": {
-        "value": {
-          "amount": 0.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "confidence": 0.793,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "AmountDue": {
-        "value": {
-          "amount": 240.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.572,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorEmail": {
-        "value": "Billing@indeed.com",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorTaxId": {
-        "value": "g",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceType": {
-        "value": "Standard",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "PaymentMethod": {
-        "value": "ACH",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "CostCenter": {
-        "value": "ount",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.676,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 1,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorWebsite": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
       },
       "ShippingAddress": {
         "value": "na",
@@ -183,25 +115,83 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceId": {
+        "value": "109274729",
+        "confidence": 0.939,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-22",
+        "confidence": 0.939,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-08-21",
+        "confidence": 0.939,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "INVOICE",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "PurchaseOrder": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
       "PaymentTerms": {
+        "value": "Net 30",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": [
+          {
+            "SWIFT": "CITIUS33"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CostCenter": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "2025-07-22",
+        "confidence": 0.416,
+        "method": "AzurePrebuiltInvoice"
       },
       "ServicePeriodEnd": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "08/21/2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "LineItems_Count": {
+        "value": 1,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.793,
+        "method": "AzurePrebuiltInvoice"
       },
       "TaxTypeBreakdown": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "Sales tax: 0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "WithholdingTax": {
         "value": "na",
@@ -209,9 +199,9 @@
         "method": "NotAvailable"
       },
       "Subtotal": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "240.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "ShippingHandling": {
         "value": "na",
@@ -223,15 +213,33 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 240.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.676,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "AmountDue": {
+        "value": {
+          "amount": 240.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.572,
+        "method": "AzurePrebuiltInvoice"
+      },
       "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "Please ensure the invoice number is included in your payment reference. A complete list of all invoices associated with each payment must be emailed to billing@indeed.com.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "QRCode": {
         "value": "na",
@@ -282,34 +290,43 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.938,
-        "VendorAddress": 0.887,
-        "VendorContactPerson": 0.883,
-        "CustomerName": 0.917,
-        "BillingAddress": 0.868,
-        "InvoiceId": 0.939,
-        "InvoiceDate": 0.939,
-        "DueDate": 0.939,
-        "ServicePeriodStart": 0.416,
-        "InvoiceTotal": 0.676,
-        "TotalTax": 0.793,
-        "AmountDue": 0.572,
-        "VendorEmail": 0.7,
-        "VendorTaxId": 0.7,
-        "InvoiceType": 0.7,
-        "PaymentMethod": 0.7,
-        "CostCenter": 0.7
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorContactEmail": 0.8,
+        "VendorBankName": 0.9,
+        "VendorBankAccountNumber": 0.9,
+        "VendorBankDetails": 0.9,
+        "VendorContactPerson": 0.9,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.9,
+        "InvoiceCurrency": 0.8,
+        "InvoiceType": 0.8,
+        "PaymentTerms": 0.8,
+        "PaymentMethod": 0.9,
+        "ServicePeriodStart": 0.9,
+        "ServicePeriodEnd": 0.8,
+        "LineItems_Count": 0.8,
+        "TotalTax": 0.9,
+        "TaxTypeBreakdown": 0.8,
+        "Subtotal": 0.8,
+        "InvoiceTotal": 0.9,
+        "AmountDue": 0.9,
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T17:57:26.820384",
+      "processing_timestamp": "2025-11-20T20:13:16.680910",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

@@ -18,90 +18,6 @@
         "confidence": 0.995,
         "method": "AzurePrebuiltInvoice"
       },
-      "VendorContactPerson": {
-        "value": "AT&T",
-        "confidence": 0.971,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "CONSOLIDATED ANALYTICS, INC.",
-        "confidence": 0.891,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerContactPerson": {
-        "value": "CONSOLIDATED ANALYTICS, INC.",
-        "confidence": 0.891,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "8821934010",
-        "confidence": 0.937,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-07-11",
-        "confidence": 0.915,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "DueDate": {
-        "value": "2025-08-10",
-        "confidence": 0.915,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "ServicePeriodStart": {
-        "value": "2025-07-11",
-        "confidence": 0.443,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "ServicePeriodEnd": {
-        "value": "2025-08-10",
-        "confidence": 0.436,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 848.7,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "confidence": 0.92,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "TotalTax": {
-        "value": {
-          "amount": 13.99,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "confidence": 0.447,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "AmountDue": {
-        "value": {
-          "amount": 848.7,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.936,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.92,
-        "method": "DerivedFromTotal"
-      },
-      "TaxTypeBreakdown": {
-        "value": {
-          "Property Tax Allotment - ADI": 13.99
-        },
-        "confidence": 0.8,
-        "method": "CalculatedFromItems"
-      },
-      "LineItems_Count": {
-        "value": 4,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
       "VendorCountry": {
         "value": "na",
         "confidence": 0.0,
@@ -137,10 +53,20 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "VendorContactPerson": {
+        "value": "AT&T",
+        "confidence": 0.971,
+        "method": "AzurePrebuiltInvoice"
+      },
       "VendorWebsite": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "CONSOLIDATED ANALYTICS, INC.",
+        "confidence": 0.891,
+        "method": "AzurePrebuiltInvoice"
       },
       "BillingAddress": {
         "value": "na",
@@ -163,6 +89,31 @@
         "method": "NotAvailable"
       },
       "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "CONSOLIDATED ANALYTICS, INC.",
+        "confidence": 0.891,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "8821934010",
+        "confidence": 0.937,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-11",
+        "confidence": 0.915,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-08-10",
+        "confidence": 0.915,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -192,6 +143,35 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "ServicePeriodStart": {
+        "value": "2025-07-11",
+        "confidence": 0.443,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodEnd": {
+        "value": "2025-08-10",
+        "confidence": 0.436,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "LineItems_Count": {
+        "value": 4,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 13.99,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.447,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "WithholdingTax": {
         "value": "na",
         "confidence": 0.0,
@@ -212,10 +192,28 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 848.7,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.92,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 848.7,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.936,
+        "method": "AzurePrebuiltInvoice"
       },
       "Notes": {
         "value": "na",
@@ -298,29 +296,29 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence"
       ],
       "confidence_scores": {
-        "VendorName": 0.938,
-        "VendorAddress": 0.995,
-        "VendorContactPerson": 0.971,
-        "CustomerName": 0.891,
-        "CustomerContactPerson": 0.891,
-        "InvoiceId": 0.937,
-        "InvoiceDate": 0.915,
-        "DueDate": 0.915,
-        "ServicePeriodStart": 0.443,
-        "ServicePeriodEnd": 0.436,
-        "InvoiceTotal": 0.92,
-        "TotalTax": 0.447,
-        "AmountDue": 0.936
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorContactPerson": 0.9,
+        "CustomerName": 0.9,
+        "CustomerContactPerson": 0.9,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.9,
+        "ServicePeriodStart": 0.9,
+        "ServicePeriodEnd": 0.9,
+        "TotalTax": 0.9,
+        "InvoiceTotal": 0.9,
+        "AmountDue": 0.9
       },
-      "processing_timestamp": "2025-11-20T17:54:24.061675",
+      "processing_timestamp": "2025-11-20T20:08:59.255104",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

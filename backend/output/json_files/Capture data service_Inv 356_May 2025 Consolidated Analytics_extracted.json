@@ -13,87 +13,10 @@
           "street_address": "3 Beechurst Woods Lane",
           "city": "Cincinnati",
           "state": "OH",
-          "postal_code": "45233",
-          "house_number": "3",
-          "road": "Beechurst Woods Lane"
+          "postal_code": "45233"
         },
         "confidence": 0.888,
         "method": "AzurePrebuiltInvoice"
-      },
-      "VendorContactPerson": {
-        "value": "Capture Data Services LLC",
-        "confidence": 0.918,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "Consolidated Analytics, Inc.",
-        "confidence": 0.929,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "BillingAddress": {
-        "value": {
-          "street_address": "1 McArthur Place Ste 100",
-          "city": "Santa Anna",
-          "state": "CA",
-          "postal_code": "92707",
-          "house_number": "1",
-          "road": "McArthur Place",
-          "unit": "Ste 100"
-        },
-        "confidence": 0.878,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "ShippingAddress": {
-        "value": {
-          "street_address": "1 McArthur Place Ste 100",
-          "city": "Santa Anna",
-          "state": "CA",
-          "postal_code": "92707",
-          "house_number": "1",
-          "road": "McArthur Place",
-          "unit": "Ste 100"
-        },
-        "confidence": 0.875,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "356",
-        "confidence": 0.983,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-06-12",
-        "confidence": 0.983,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 875.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.982,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "PaymentMethod": {
-        "value": "ach",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "CostCenter": {
-        "value": "Total",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.982,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 3,
-        "confidence": 1.0,
-        "method": "Calculated"
       },
       "VendorCountry": {
         "value": "na",
@@ -130,10 +53,40 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "VendorContactPerson": {
+        "value": "Capture Data Services LLC",
+        "confidence": 0.918,
+        "method": "AzurePrebuiltInvoice"
+      },
       "VendorWebsite": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics, Inc.",
+        "confidence": 0.929,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1 McArthur Place Ste 100",
+          "city": "Santa Anna",
+          "state": "CA",
+          "postal_code": "92707"
+        },
+        "confidence": 0.878,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": {
+          "street_address": "1 McArthur Place Ste 100",
+          "city": "Santa Anna",
+          "state": "CA",
+          "postal_code": "92707"
+        },
+        "confidence": 0.875,
+        "method": "AzurePrebuiltInvoice"
       },
       "CustomerPhone": {
         "value": "na",
@@ -155,7 +108,22 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceId": {
+        "value": "356",
+        "confidence": 0.983,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-12",
+        "confidence": 0.983,
+        "method": "AzurePrebuiltInvoice"
+      },
       "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceCurrency": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -171,6 +139,16 @@
         "method": "NotAvailable"
       },
       "PaymentTerms": {
+        "value": "Due on receipt",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CostCenter": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -184,6 +162,11 @@
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "LineItems_Count": {
+        "value": 3,
+        "confidence": 1.0,
+        "method": "Calculated"
       },
       "TotalTax": {
         "value": "na",
@@ -201,9 +184,9 @@
         "method": "NotAvailable"
       },
       "Subtotal": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "875.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "ShippingHandling": {
         "value": "na",
@@ -214,6 +197,15 @@
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 875.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.982,
+        "method": "AzurePrebuiltInvoice"
       },
       "AmountPaid": {
         "value": "na",
@@ -313,28 +305,30 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.918,
-        "VendorAddress": 0.888,
-        "VendorContactPerson": 0.918,
-        "CustomerName": 0.929,
-        "BillingAddress": 0.878,
-        "ShippingAddress": 0.875,
-        "InvoiceId": 0.983,
-        "InvoiceDate": 0.983,
-        "InvoiceTotal": 0.982,
-        "PaymentMethod": 0.7,
-        "CostCenter": 0.7
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorContactPerson": 0.9,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "ShippingAddress": 0.9,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "PaymentTerms": 0.8,
+        "LineItems_Count": 0.8,
+        "Subtotal": 0.8,
+        "InvoiceTotal": 0.9
       },
-      "processing_timestamp": "2025-11-20T17:55:37.622516",
+      "processing_timestamp": "2025-11-20T20:10:40.416845",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

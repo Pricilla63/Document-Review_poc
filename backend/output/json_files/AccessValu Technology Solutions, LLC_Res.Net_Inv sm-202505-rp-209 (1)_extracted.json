@@ -13,96 +13,10 @@
           "street_address": "27442 Portola Pkwy STE 300",
           "city": "Foothill Ranch",
           "state": "CA",
-          "postal_code": "92610-2822",
-          "house_number": "27442",
-          "road": "Portola Pkwy",
-          "unit": "STE 300"
+          "postal_code": "92610-2822"
         },
         "confidence": 0.885,
         "method": "AzurePrebuiltInvoice"
-      },
-      "VendorContactPerson": {
-        "value": "RES.NET®",
-        "confidence": 0.926,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "Consolidated Analytics, Inc.",
-        "confidence": 0.893,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "BillingAddress": {
-        "value": {
-          "street_address": "1500 S. Douglas Road Suite 110B",
-          "city": "Anaheim",
-          "state": "CA",
-          "postal_code": "92806",
-          "house_number": "1500",
-          "road": "S. Douglas Road",
-          "unit": "Suite 110B"
-        },
-        "confidence": 0.885,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "ShippingAddress": {
-        "value": {
-          "street_address": "1500 S. Douglas Road Suite 110B",
-          "city": "Anaheim",
-          "state": "CA",
-          "postal_code": "92806",
-          "house_number": "1500",
-          "road": "S. Douglas Road",
-          "unit": "Suite 110B"
-        },
-        "confidence": 0.882,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "SM-202505-RP-209",
-        "confidence": 0.97,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-05-31",
-        "confidence": 0.97,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 500.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.928,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "Subtotal": {
-        "value": {
-          "amount": 500.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.969,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "TotalTax": {
-        "value": {
-          "amount": 0.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.966,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.928,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 1,
-        "confidence": 1.0,
-        "method": "Calculated"
       },
       "VendorCountry": {
         "value": "na",
@@ -120,9 +34,9 @@
         "method": "NotAvailable"
       },
       "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "(949) 598-9920",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "VendorBankName": {
         "value": "na",
@@ -139,10 +53,40 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "VendorContactPerson": {
+        "value": "RES.NET®",
+        "confidence": 0.926,
+        "method": "AzurePrebuiltInvoice"
+      },
       "VendorWebsite": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics, Inc.",
+        "confidence": 0.893,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1500 S. Douglas Road Suite 110B",
+          "city": "Anaheim",
+          "state": "CA",
+          "postal_code": "92806"
+        },
+        "confidence": 0.885,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": {
+          "street_address": "1500 S. Douglas Road Suite 110B",
+          "city": "Anaheim",
+          "state": "CA",
+          "postal_code": "92806"
+        },
+        "confidence": 0.882,
+        "method": "AzurePrebuiltInvoice"
       },
       "CustomerPhone": {
         "value": "na",
@@ -160,11 +104,26 @@
         "method": "NotAvailable"
       },
       "CustomerContactPerson": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "Mike Chew",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceId": {
+        "value": "SM-202505-RP-209",
+        "confidence": 0.97,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-05-31",
+        "confidence": 0.97,
+        "method": "AzurePrebuiltInvoice"
       },
       "DueDate": {
+        "value": "Upon Receipt",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceCurrency": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -180,9 +139,9 @@
         "method": "NotAvailable"
       },
       "PaymentTerms": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "Upon Receipt",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "PaymentMethod": {
         "value": "na",
@@ -204,6 +163,20 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "LineItems_Count": {
+        "value": 1,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.966,
+        "method": "AzurePrebuiltInvoice"
+      },
       "TaxTypeBreakdown": {
         "value": "na",
         "confidence": 0.0,
@@ -214,15 +187,33 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "Subtotal": {
+        "value": {
+          "amount": 500.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.969,
+        "method": "AzurePrebuiltInvoice"
+      },
       "ShippingHandling": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "$0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "Surcharges": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "$0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 500.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.928,
+        "method": "AzurePrebuiltInvoice"
       },
       "AmountPaid": {
         "value": "na",
@@ -230,14 +221,14 @@
         "method": "NotAvailable"
       },
       "AmountDue": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "$500.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "Monthly Subscriber Billing: Minimum $500.00 Maintenance Fee. Please reference invoice numbers on all payments.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "QRCode": {
         "value": "na",
@@ -295,27 +286,38 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.926,
-        "VendorAddress": 0.885,
-        "VendorContactPerson": 0.926,
-        "CustomerName": 0.893,
-        "BillingAddress": 0.885,
-        "ShippingAddress": 0.882,
-        "InvoiceId": 0.97,
-        "InvoiceDate": 0.97,
-        "InvoiceTotal": 0.928,
-        "Subtotal": 0.969,
-        "TotalTax": 0.966
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorPhone": 0.8,
+        "VendorContactPerson": 0.9,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "ShippingAddress": 0.9,
+        "CustomerContactPerson": 0.8,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.8,
+        "PaymentTerms": 0.8,
+        "LineItems_Count": 0.8,
+        "TotalTax": 0.9,
+        "Subtotal": 0.9,
+        "ShippingHandling": 0.8,
+        "Surcharges": 0.8,
+        "InvoiceTotal": 0.9,
+        "AmountDue": 0.8,
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T17:53:50.613409",
+      "processing_timestamp": "2025-11-20T20:08:12.717899",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

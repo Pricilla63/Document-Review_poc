@@ -1009,12 +1009,6 @@
 
 
 
-
-
-
-
-
-
 import os
 import json
 import re
@@ -1023,10 +1017,13 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.documentintelligence import DocumentIntelligenceClient
+from openai import AzureOpenAI
 from dotenv import find_dotenv, load_dotenv
 import tempfile
 from datetime import datetime
 import fitz  # PyMuPDF
+import base64
+import time
 
 load_dotenv(find_dotenv())
 
@@ -1039,6 +1036,13 @@ key = os.environ["DOCUMENTINTELLIGENCE_API_KEY"]
 
 document_intelligence_client = DocumentIntelligenceClient(
     endpoint=endpoint, credential=AzureKeyCredential(key)
+)
+
+# Azure OpenAI setup
+azure_openai_client = AzureOpenAI(
+    api_key=os.environ["AZURE_OPENAI_API_KEY"],
+    api_version="2024-02-01",
+    azure_endpoint=os.environ["AZURE_OPENAI_ENDPOINT"]
 )
 
 # Create output folders
@@ -1110,11 +1114,63 @@ ENHANCED_FIELD_MAPPINGS = {
     "AmountDue": "AmountDue",
     
     # Payment Details
-    "VendorBankName": "PaymentDetails",  # Will extract from PaymentDetails object
+    "VendorBankName": "PaymentDetails",
     "VendorBankAccountNumber": "PaymentDetails",
     "VendorBankDetails": "PaymentDetails",
     "PaymentMethod": "PaymentDetails",
 }
+
+# Comprehensive Regex Patterns for all fields
+COMPREHENSIVE_REGEX_PATTERNS = {
+    "VendorName": [r'(?:From|Vendor|Supplier)[:\s]*([^\n]+)'],
+    "VendorAddress": [r'(?:Vendor\s*Address)[:\s]*([^\n]+(?:\n[^\n]+){0,2})'],
+    "VendorTaxId": [r'(?:Tax\s*ID|VAT|GST)[\s#:]*([A-Z0-9-]+)'],
+    "VendorContactEmail": [r'\b([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,})\b'],
+    "VendorPhone": [r'(?:Phone|Tel)[\s:]*([+\d\s\-\(\)]{7,})'],
+    "VendorBankName": [r'(?:Bank\s*Name)[\s:]*([A-Za-z0-9\s\.&]+)'],
+    "VendorBankAccountNumber": [r'(?:Account\s*Number)[\s:]*([A-Z0-9-]+)'],
+    "VendorBankDetails": [r'(?:IBAN)[\s:]*([A-Z0-9-]+)'],
+    "VendorContactPerson": [r'(?:Attention|Attn)[\s:]*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)'],
+    "VendorWebsite": [r'(?:Website)[\s:]*((?:https?://)?[^\s]+\.[a-z]{2,})'],
+    
+    "CustomerName": [r'(?:To|Bill\s*To|Customer)[\s:]*([^\n]+)'],
+    "BillingAddress": [r'(?:Billing\s*Address)[\s:]*([^\n]+(?:\n[^\n]+){0,2})'],
+    "ShippingAddress": [r'(?:Shipping\s*Address)[\s:]*([^\n]+(?:\n[^\n]+){0,2})'],
+    "CustomerPhone": [r'(?:Customer\s*Phone)[\s:]*([+\d\s\-\(\)]{7,})'],
+    "CustomerEmail": [r'(?:Customer\s*Email)[\s:]*([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,})'],
+    "CustomerTaxId": [r'(?:Customer\s*Tax\s*ID)[\s#:]*([A-Z0-9-]+)'],
+    "CustomerContactPerson": [r'(?:Customer\s*Contact)[\s:]*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)'],
+    
+    "InvoiceId": [r'(?:Invoice\s*#|Invoice\s*Number)[\s:]*([A-Z0-9-]+)'],
+    "InvoiceDate": [r'(?:Invoice\s*Date|Date)[\s:]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})'],
+    "DueDate": [r'(?:Due\s*Date)[\s:]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})'],
+    "InvoiceCurrency": [r'(?:Currency)[\s:]*([A-Z]{3})'],
+    "InvoiceType": [r'(?:Invoice\s*Type)[\s:]*([A-Za-z\s]+)'],
+    "PurchaseOrder": [r'(?:PO\s*#|Purchase\s*Order)[\s:]*([A-Z0-9-]+)'],
+    "PaymentTerms": [r'(?:Payment\s*Terms)[\s:]*([^\n\r]+)'],
+    "PaymentMethod": [r'(?:Payment\s*Method)[\s:]*([A-Za-z\s]+)'],
+    "CostCenter": [r'(?:Cost\s*Center)[\s:]*([A-Z0-9-]+)'],
+    "ServicePeriodStart": [r'(?:Service\s*Period|From)[\s:]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})'],
+    "ServicePeriodEnd": [r'(?:To|End)[\s:]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})'],
+    
+    "TotalTax": [r'(?:Total\s*Tax)[\s:]*\$?([\d,]+\.?\d*)'],
+    "WithholdingTax": [r'(?:Withholding\s*Tax)[\s:]*\$?([\d,]+\.?\d*)'],
+    
+    "Subtotal": [r'(?:Subtotal)[\s:]*\$?([\d,]+\.?\d*)'],
+    "ShippingHandling": [r'(?:Shipping|Handling)[\s:]*\$?([\d,]+\.?\d*)'],
+    "Surcharges": [r'(?:Surcharge)[\s:]*\$?([\d,]+\.?\d*)'],
+    "InvoiceTotal": [r'(?:Invoice\s*Total|Grand\s*Total)[\s:]*\$?([\d,]+\.?\d*)'],
+    "AmountPaid": [r'(?:Amount\s*Paid)[\s:]*\$?([\d,]+\.?\d*)'],
+    "AmountDue": [r'(?:Amount\s*Due)[\s:]*\$?([\d,]+\.?\d*)'],
+    
+    "Notes": [r'(?:Notes|Remarks)[\s:]*(.*?)(?=\n\s*\n|\Z)'],
+    "QRCode": [r'(?:QR\s*Code)[\s:]*([A-Z0-9]{10,})'],
+    "CompanyRegistration": [r'(?:Company\s*Reg\.)[\s:]*([A-Z0-9-]+)'],
+}
+
+# =============================================================================
+# CORE EXTRACTION FUNCTIONS
+# =============================================================================
 
 def extract_text_from_pdf(file_path):
     """Extract raw text from PDF for fallback processing"""
@@ -1152,9 +1208,6 @@ def extract_field_value(field):
                 "state": getattr(field.value_address, 'state', ''),
                 "postal_code": getattr(field.value_address, 'postal_code', ''),
                 "country": getattr(field.value_address, 'country_region', ''),
-                "house_number": getattr(field.value_address, 'house_number', ''),
-                "road": getattr(field.value_address, 'road', ''),
-                "unit": getattr(field.value_address, 'unit', '')
             }
             return {k: v for k, v in address_data.items() if v}
         elif hasattr(field, 'value_phone_number') and field.value_phone_number:
@@ -1170,40 +1223,40 @@ def extract_field_value(field):
     
     return None
 
-def extract_payment_details(payment_details_field):
-    """Extract detailed payment information from PaymentDetails"""
-    if not payment_details_field:
-        return {}
-    
-    payment_details = {}
-    
-    try:
-        payment_data = extract_field_value(payment_details_field)
-        if isinstance(payment_data, dict):
-            # Common payment detail fields
-            if 'bank_name' in payment_data:
-                payment_details['bank_name'] = payment_data['bank_name']
-            if 'bank_account_number' in payment_data:
-                payment_details['bank_account_number'] = payment_data['bank_account_number']
-            if 'iban' in payment_data:
-                payment_details['iban'] = payment_data['iban']
-            if 'swift' in payment_data:
-                payment_details['swift'] = payment_data['swift']
-            if 'routing_number' in payment_data:
-                payment_details['routing_number'] = payment_data['routing_number']
-            if 'payment_method' in payment_data:
-                payment_details['payment_method'] = payment_data['payment_method']
-                
-    except Exception as e:
-        print(f"⚠️ Error extracting payment details: {e}")
-    
-    return payment_details
+# =============================================================================
+# LINE ITEM EXTRACTION - COMPREHENSIVE IMPLEMENTATION
+# =============================================================================
 
-def extract_line_items(items_field):
-    """Extract comprehensive line item information"""
-    if not items_field or not hasattr(items_field, 'value_array'):
-        return []
+def extract_line_items_enhanced(items_field, text_content=""):
+    """Enhanced line item extraction with multiple fallback strategies"""
+    line_items = []
     
+    # Strategy 1: Azure Document Intelligence Line Items
+    if items_field and hasattr(items_field, 'value_array'):
+        azure_items = extract_line_items_from_azure(items_field)
+        if azure_items:
+            line_items.extend(azure_items)
+            print(f"✅ Azure extracted {len(azure_items)} line items")
+    
+    # Strategy 2: If no items from Azure, try text-based extraction
+    if not line_items and text_content:
+        text_items = extract_line_items_from_text(text_content)
+        if text_items:
+            line_items.extend(text_items)
+            print(f"✅ Text extraction found {len(text_items)} line items")
+    
+    # Strategy 3: If still no items, try LLM-based extraction
+    if not line_items and text_content:
+        llm_items = extract_line_items_with_llm(text_content)
+        if llm_items:
+            line_items.extend(llm_items)
+            print(f"✅ LLM extracted {len(llm_items)} line items")
+    
+    print(f"📊 Total line items extracted: {len(line_items)}")
+    return line_items
+
+def extract_line_items_from_azure(items_field):
+    """Extract line items from Azure Document Intelligence response"""
     line_items = []
     
     try:
@@ -1223,20 +1276,297 @@ def extract_line_items(items_field):
                     "TaxAmount": extract_field_value(item_data.get('TaxAmount')),
                     "GrossAmount": extract_field_value(item_data.get('TotalPrice')),
                 }
-                # Remove None values
-                line_item = {k: v for k, v in line_item.items() if v is not None}
+                # Remove None values and empty fields
+                line_item = {k: v for k, v in line_item.items() if v is not None and v != ""}
                 if line_item:
                     line_items.append(line_item)
                     
     except Exception as e:
-        print(f"⚠️ Error extracting line items: {e}")
+        print(f"⚠️ Error extracting line items from Azure: {e}")
     
     return line_items
 
-def extract_with_azure_invoice(file_path):
-    """Strategy 1: Azure Document Intelligence Primary Extraction"""
+def extract_line_items_from_text(text_content):
+    """Extract line items from raw text using pattern matching"""
+    line_items = []
+    
     try:
-        print(f"🔍 Azure extraction: {os.path.basename(file_path)}")
+        lines = text_content.split('\n')
+        
+        # Table header patterns - more comprehensive
+        table_header_patterns = [
+            r'description.*qty.*price.*amount',
+            r'item.*quantity.*unit.*total',
+            r'product.*qty.*rate.*amount',
+            r'description.*quantity.*unit price.*total',
+            r'item.*description.*amount',
+            r'sr.*no.*description.*amount',
+            r'no.*description.*quantity.*price',
+            r'line.*item.*description.*total',
+            r'service.*description.*amount',
+            r'charge.*description.*amount',
+        ]
+        
+        # Find table start by looking for headers
+        table_start = -1
+        for i, line in enumerate(lines):
+            line_lower = line.lower().strip()
+            if any(re.search(pattern, line_lower) for pattern in table_header_patterns):
+                table_start = i + 1
+                print(f"📋 Found table header at line {i}: {line}")
+                break
+        
+        # If no clear header found, look for numbered items
+        if table_start == -1:
+            for i, line in enumerate(lines):
+                if (re.match(r'^\d+\.', line.strip()) or 
+                    re.match(r'^item\s*\d+', line.lower().strip()) or
+                    re.match(r'^\d+\s+[A-Za-z]', line.strip())):
+                    table_start = i
+                    break
+        
+        if table_start == -1:
+            print("❌ No line item table found in text")
+            return line_items
+        
+        print(f"🔍 Scanning for line items starting from line {table_start}")
+        
+        # Extract table rows - more lines to handle multi-line descriptions
+        for i in range(table_start, min(table_start + 100, len(lines))):
+            line = lines[i].strip()
+            if not line:
+                continue
+                
+            # Skip lines that are clearly not line items
+            if any(keyword in line.lower() for keyword in [
+                'subtotal', 'total', 'tax', 'balance', 'grand total', 
+                'amount due', 'thank you', 'terms', 'payment'
+            ]):
+                print(f"⏹️ Stopping at summary line: {line}")
+                break
+                
+            # Skip header-like lines
+            if any(keyword in line.lower() for keyword in [
+                'description', 'qty', 'quantity', 'price', 'amount', 
+                'unit', 'rate', 'total', 'item no', 'sr no'
+            ]):
+                continue
+            
+            # Try to parse as line item
+            line_item = parse_line_item_text(line, len(line_items) + 1)
+            if line_item and validate_line_item(line_item):
+                line_items.append(line_item)
+                print(f"   ✅ Line item {len(line_items)}: {line_item.get('Description', 'N/A')[:50]}...")
+    
+    except Exception as e:
+        print(f"⚠️ Error extracting line items from text: {e}")
+    
+    return line_items
+
+def parse_line_item_text(line_text, item_number):
+    """Parse a line of text into line item components"""
+    try:
+        # Clean the text
+        clean_text = re.sub(r'\s+', ' ', line_text.strip())
+        
+        # Common line item patterns with better matching
+        patterns = [
+            # Pattern: "1. Description Qty UnitPrice Amount"
+            r'^(\d+)\.?\s+(.+?)\s+(\d+\.?\d*)\s+(\d+\.?\d*)\s+(\d+\.?\d*)$',
+            # Pattern: "Description Qty UnitPrice Amount"
+            r'^(.+?)\s+(\d+\.?\d*)\s+(\d+\.?\d*)\s+(\d+\.?\d*)$',
+            # Pattern: "ItemNo Description Amount"
+            r'^(\d+)\.?\s+(.+?)\s+([$\d,\.]+)$',
+            # Pattern: "Description - Quantity x UnitPrice = Amount"
+            r'^(.+?)\s+[-]?\s*(\d+\.?\d*)\s*[x×]\s*([$\d,\.]+)\s*[=]?\s*([$\d,\.]+)$',
+            # Pattern: "Description Amount"
+            r'^(.+?)\s+([$\d,\.]+)$',
+        ]
+        
+        for pattern in patterns:
+            match = re.match(pattern, clean_text)
+            if match:
+                groups = match.groups()
+                line_item = {"item_number": item_number}
+                
+                if len(groups) >= 5:
+                    # Pattern with item no, description, qty, unit price, amount
+                    line_item["ItemCode"] = groups[0]
+                    line_item["Description"] = groups[1].strip()
+                    line_item["Quantity"] = extract_number(groups[2])
+                    line_item["UnitPrice"] = extract_currency(groups[3])
+                    line_item["NetAmount"] = extract_currency(groups[4])
+                elif len(groups) >= 4:
+                    # Pattern with description, qty, unit price, amount
+                    line_item["Description"] = groups[0].strip()
+                    line_item["Quantity"] = extract_number(groups[1])
+                    line_item["UnitPrice"] = extract_currency(groups[2])
+                    line_item["NetAmount"] = extract_currency(groups[3])
+                elif len(groups) >= 3:
+                    # Pattern with item no, description, amount
+                    if groups[0].isdigit():
+                        line_item["ItemCode"] = groups[0]
+                        line_item["Description"] = groups[1].strip()
+                        line_item["NetAmount"] = extract_currency(groups[2])
+                    else:
+                        line_item["Description"] = groups[0].strip()
+                        line_item["Quantity"] = extract_number(groups[1])
+                        line_item["UnitPrice"] = extract_currency(groups[2])
+                elif len(groups) >= 2:
+                    # Simple pattern with description and amount
+                    line_item["Description"] = groups[0].strip()
+                    line_item["NetAmount"] = extract_currency(groups[1])
+                
+                # Calculate missing fields if possible
+                if line_item.get("Quantity") and line_item.get("UnitPrice") and not line_item.get("NetAmount"):
+                    line_item["NetAmount"] = line_item["Quantity"] * line_item["UnitPrice"]
+                
+                return line_item
+        
+        # Fallback: If no pattern matches, treat as description only
+        amount = extract_currency_from_text(line_text)
+        return {
+            "item_number": item_number,
+            "Description": clean_text,
+            "NetAmount": amount
+        }
+        
+    except Exception as e:
+        print(f"⚠️ Error parsing line item text: {e}")
+        return None
+
+def extract_line_items_with_llm(text_content):
+    """Use LLM to extract line items from complex text"""
+    try:
+        system_prompt = """
+        You are an expert at extracting line items from invoices. Extract all line items and return as JSON array.
+        Each line item should have: Description, Quantity, UnitPrice, NetAmount.
+        Return ONLY valid JSON, no explanations.
+        """
+        
+        user_prompt = f"""
+        Extract line items from this invoice text. Return as JSON array:
+        
+        {text_content[:6000]}  # Limit text to avoid token limits
+        
+        Return format:
+        [
+          {{
+            "item_number": 1,
+            "Description": "Product or service name",
+            "ItemCode": "SKU or code if available",
+            "Quantity": 1,
+            "UnitOfMeasure": "units/pcs/etc",
+            "UnitPrice": 100.00,
+            "Discount": 0.00,
+            "NetAmount": 100.00,
+            "TaxRate": 10.0,
+            "TaxAmount": 10.00,
+            "GrossAmount": 110.00
+          }}
+        ]
+        For missing fields, use null. Return ONLY JSON.
+        """
+        
+        response = azure_openai_client.chat.completions.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+            temperature=0.1,
+            max_tokens=2000
+        )
+        
+        llm_content = response.choices[0].message.content.strip()
+        llm_content = re.sub(r'^```json\s*|\s*```$', '', llm_content)
+        
+        line_items = json.loads(llm_content)
+        print(f"🧠 LLM extracted {len(line_items)} line items")
+        return line_items
+        
+    except Exception as e:
+        print(f"❌ LLM line item extraction failed: {e}")
+        return []
+
+def validate_line_item(line_item):
+    """Validate if a line item is meaningful"""
+    if not line_item:
+        return False
+    
+    # Must have at least description or amount
+    has_description = line_item.get("Description") and len(str(line_item["Description"]).strip()) > 2
+    has_amount = line_item.get("NetAmount") is not None
+    
+    if not has_description and not has_amount:
+        return False
+    
+    # Check if it's actually a total or summary line
+    description = str(line_item.get("Description", "")).lower()
+    if any(term in description for term in [
+        'total', 'subtotal', 'tax', 'balance', 'amount due', 
+        'grand total', 'balance due', 'payment', 'thank you'
+    ]):
+        return False
+    
+    # Check if description is too generic
+    if description in ['', 'description', 'item', 'service', 'product']:
+        return False
+    
+    return True
+
+def extract_number(text):
+    """Extract number from text"""
+    if text is None:
+        return None
+    match = re.search(r'(\d+\.?\d*)', str(text))
+    return float(match.group(1)) if match else None
+
+def extract_currency(text):
+    """Extract currency amount from text"""
+    if text is None:
+        return None
+    # Handle both string and object types
+    text_str = str(text)
+    match = re.search(r'[\$€£¥]?\s*(\d+[,.]?\d*\.?\d*)', text_str)
+    if match:
+        return float(match.group(1).replace(',', ''))
+    return None
+
+def extract_currency_from_text(text):
+    """Extract currency amount from any text"""
+    matches = re.findall(r'[\$€£¥]?\s*(\d+[,.]?\d*\.?\d*)', str(text))
+    if matches:
+        return float(matches[-1].replace(',', ''))  # Take the last amount found
+    return None
+
+# =============================================================================
+# LINE ITEMS COUNT CALCULATION
+# =============================================================================
+
+def calculate_line_items_count(invoice_dict):
+    """Calculate and set LineItems_Count field"""
+    line_items = invoice_dict.get("items", [])
+    line_items_count = len(line_items)
+    
+    # Always set LineItems_Count, never "na"
+    invoice_dict["fields"]["LineItems_Count"] = {
+        "value": line_items_count,
+        "confidence": 1.0 if line_items_count > 0 else 0.0,
+        "method": "Calculated"
+    }
+    
+    print(f"📈 LineItems_Count set to: {line_items_count}")
+    return line_items_count
+
+# =============================================================================
+# AZURE DOCUMENT INTELLIGENCE EXTRACTION
+# =============================================================================
+
+def extract_with_azure_invoice(file_path):
+    """Azure Document Intelligence Primary Extraction"""
+    try:
+        print(f"🔍 Azure DI extraction: {os.path.basename(file_path)}")
         
         with open(file_path, "rb") as f:
             poller = document_intelligence_client.begin_analyze_document(
@@ -1262,50 +1592,25 @@ def extract_with_azure_invoice(file_path):
             }
             
             fields = invoice.fields
-            confidence_scores = invoice_dict["extraction_metadata"]["confidence_scores"]
             
             # Extract mapped fields
             for target_field, source_field in ENHANCED_FIELD_MAPPINGS.items():
                 if source_field in fields:
                     field_value = extract_field_value(fields[source_field])
-                    if field_value:
-                        # Special handling for PaymentDetails
-                        if source_field == "PaymentDetails":
-                            payment_details = extract_payment_details(fields[source_field])
-                            if payment_details:
-                                if 'bank_name' in payment_details:
-                                    invoice_dict["fields"]["VendorBankName"] = {
-                                        "value": payment_details['bank_name'],
-                                        "confidence": fields[source_field].confidence,
-                                        "method": "AzurePrebuiltInvoice"
-                                    }
-                                if 'bank_account_number' in payment_details:
-                                    invoice_dict["fields"]["VendorBankAccountNumber"] = {
-                                        "value": payment_details['bank_account_number'],
-                                        "confidence": fields[source_field].confidence,
-                                        "method": "AzurePrebuiltInvoice"
-                                    }
-                                if 'payment_method' in payment_details:
-                                    invoice_dict["fields"]["PaymentMethod"] = {
-                                        "value": payment_details['payment_method'],
-                                        "confidence": fields[source_field].confidence,
-                                        "method": "AzurePrebuiltInvoice"
-                                    }
-                        else:
-                            invoice_dict["fields"][target_field] = {
-                                "value": field_value,
-                                "confidence": fields[source_field].confidence,
-                                "method": "AzurePrebuiltInvoice"
-                            }
-                            confidence_scores[target_field] = fields[source_field].confidence
+                    if field_value and field_value != "na":
+                        invoice_dict["fields"][target_field] = {
+                            "value": field_value,
+                            "confidence": getattr(fields[source_field], 'confidence', 0.8),
+                            "method": "AzurePrebuiltInvoice"
+                        }
             
-            # Extract line items
+            # Extract line items using enhanced method
             if 'Items' in fields:
-                line_items = extract_line_items(fields['Items'])
+                text_content = extract_text_from_pdf(file_path)  # Get text for fallback
+                line_items = extract_line_items_enhanced(fields['Items'], text_content)
                 invoice_dict["items"] = line_items
             
             invoice_data.append(invoice_dict)
-            print(f"✅ Azure extracted {len(invoice_dict['fields'])} fields and {len(invoice_dict['items'])} line items")
         
         return invoice_data[0] if invoice_data else None
         
@@ -1313,103 +1618,177 @@ def extract_with_azure_invoice(file_path):
         print(f"❌ Azure extraction failed: {e}")
         return None
 
+# =============================================================================
+# OPENAI LLM EXTRACTION
+# =============================================================================
+
+def extract_with_openai_llm(text_content, file_path=None):
+    """Use OpenAI LLM for intelligent field extraction"""
+    print("🧠 Using OpenAI LLM for field extraction...")
+    
+    try:
+        system_prompt = """
+        You are an expert invoice data extraction specialist. Extract fields from the invoice text.
+        Return ONLY valid JSON format with the exact field names. For missing fields, use "na".
+        """
+
+        user_prompt = f"""
+        Extract invoice fields from this text. Return ONLY JSON:
+
+        {text_content[:8000]}
+
+        Return JSON format with these fields:
+        {json.dumps(ALL_56_FIELDS, indent=2)}
+
+        Important: For LineItems_Count, provide the actual number of line items found in the invoice.
+        """
+
+        response = azure_openai_client.chat.completions.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+            temperature=0.1,
+            max_tokens=3000
+        )
+
+        llm_content = response.choices[0].message.content.strip()
+        llm_content = re.sub(r'^```json\s*|\s*```$', '', llm_content)
+        
+        llm_data = json.loads(llm_content)
+        print(f"✅ OpenAI LLM extracted {len([v for v in llm_data.values() if v != 'na'])} fields")
+        
+        return llm_data
+        
+    except Exception as e:
+        print(f"❌ OpenAI LLM extraction failed: {e}")
+        return {}
+
+# =============================================================================
+# REGEX EXTRACTION
+# =============================================================================
+
 def extract_missing_fields_with_regex(text_content, invoice_dict):
-    """Strategy 2: Regex Pattern Extraction for Missing Fields"""
+    """Extract fields using comprehensive regex patterns"""
     print("🔍 Applying regex extraction for missing fields...")
     
-    regex_patterns = {
-        # Vendor Information
-        "VendorEmail": [
-            r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b',
-            r'(?:Email|E-mail)[:\s]*([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,})'
-        ],
-        "VendorWebsite": [
-            r'(https?://[^\s]+|www\.[^\s]+\.[a-z]{2,})',
-            r'(?:Website|Web|Site)[:\s]*([^\s]+)'
-        ],
-        "VendorTaxId": [
-            r'(?:EIN|TIN|Tax\s*ID|VAT|GST)[:\s]*([A-Z0-9-]+)',
-            r'(?:Federal\s*ID|Tax\s*Identification)[:\s]*([A-Z0-9-]+)'
-        ],
-        "VendorContactPerson": [
-            r'(?:Attention|Attn|Contact)[:\s]*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',
-            r'(?:Contact\s*Person)[:\s]*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)'
-        ],
-        
-        # Invoice Details
-        "InvoiceType": [
-            r'(?:Invoice\s*Type|Type)[:\s]*([A-Za-z\s]+)',
-            r'(Pro\s*Forma|Credit\s*Note|Debit\s*Note|Standard)'
-        ],
-        "PaymentMethod": [
-            r'(?:Payment\s*Method|Method)[:\s]*([A-Za-z\s]+)',
-            r'(Credit\s*Card|Bank\s*Transfer|Check|Cash|Wire|ACH)'
-        ],
-        "CostCenter": [
-            r'(?:Cost\s*Center|Cost\s*Code|Project\s*Code)[:\s]*([A-Z0-9-]+)',
-            r'(?:CC|Project)[:\s]*([A-Z0-9-]+)'
-        ],
-        
-        # Financial Fields
-        "ShippingHandling": [
-            r'(?:Shipping|Handling|Freight)[:\s]*\$?([\d,]+\.?\d*)',
-            r'(?:Shipping\s*&\s*Handling)[:\s]*\$?([\d,]+\.?\d*)'
-        ],
-        "Surcharges": [
-            r'(?:Surcharge|Additional\s*Fee|Service\s*Charge)[:\s]*\$?([\d,]+\.?\d*)'
-        ],
-        "AmountPaid": [
-            r'(?:Amount\s*Paid|Paid)[:\s]*\$?([\d,]+\.?\d*)',
-            r'(?:Payment\s*Received)[:\s]*\$?([\d,]+\.?\d*)'
-        ],
-        
-        # Compliance
-        "Notes": [
-            r'(?:Notes|Remarks|Comments)[:\s]*(.*?)(?=\n\s*\n|\Z)',
-            r'(?:Terms\s*&\s*Conditions)[:\s]*(.*?)(?=\n\s*\n|\Z)'
-        ],
-        "CompanyRegistration": [
-            r'(?:Company\s*Registration|Reg\.|Registration\s*#)[:\s]*([A-Z0-9-]+)',
-            r'(?:CRN|Reg\s*Number)[:\s]*([A-Z0-9-]+)'
-        ],
-        
-        # Service Periods
-        "ServicePeriodStart": [
-            r'(?:Service\s*Period|From|Start\s*Date)[:\s]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})',
-            r'(?:Period\s*Start)[:\s]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})'
-        ],
-        "ServicePeriodEnd": [
-            r'(?:To|End\s*Date|Until)[:\s]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})',
-            r'(?:Period\s*End)[:\s]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})'
-        ]
-    }
-    
+    regex_data = {}
     extracted_count = 0
-    for field_name, patterns in regex_patterns.items():
-        if field_name not in invoice_dict["fields"]:
-            for pattern in patterns:
-                match = re.search(pattern, text_content, re.IGNORECASE | re.DOTALL)
-                if match:
-                    value = match.group(1).strip() if match.groups() else match.group(0).strip()
-                    invoice_dict["fields"][field_name] = {
+    
+    for field_name, patterns in COMPREHENSIVE_REGEX_PATTERNS.items():
+        # Skip if field already exists
+        if field_name in invoice_dict.get("fields", {}):
+            continue
+            
+        for pattern in patterns:
+            match = re.search(pattern, text_content, re.IGNORECASE | re.MULTILINE)
+            if match:
+                value = match.group(1).strip() if match.groups() else match.group(0).strip()
+                if value and len(value) > 0:
+                    regex_data[field_name] = {
                         "value": value,
                         "confidence": 0.7,
                         "method": "Regex"
                     }
-                    invoice_dict["extraction_metadata"]["confidence_scores"][field_name] = 0.7
                     extracted_count += 1
                     break
     
     print(f"✅ Regex extracted {extracted_count} additional fields")
-    return extracted_count
+    return regex_data
+
+# =============================================================================
+# INTELLIGENT FIELD FUSION
+# =============================================================================
+
+def intelligent_field_fusion(azure_data, llm_data, regex_data):
+    """Intelligently fuse data from all extraction sources"""
+    print("🔄 Performing intelligent field fusion...")
+    
+    fused_fields = {}
+    confidence_scores = {}
+    extraction_methods = {}
+    
+    for field in ALL_56_FIELDS:
+        candidates = []
+        
+        # Collect candidates from all sources
+        if field in azure_data:
+            candidates.append(("azure", azure_data[field], 0.9))
+        
+        if field in llm_data and llm_data[field] != "na":
+            # Convert LLM simple values to structured format
+            llm_value = {
+                "value": llm_data[field],
+                "confidence": 0.8,
+                "method": "OpenAI_LLM"
+            }
+            candidates.append(("llm", llm_value, 0.8))
+            
+        if field in regex_data:
+            candidates.append(("regex", regex_data[field], 0.7))
+        
+        if not candidates:
+            fused_fields[field] = {
+                "value": "na",
+                "confidence": 0.0,
+                "method": "NotAvailable"
+            }
+            continue
+        
+        # Sort by confidence and select best candidate
+        candidates.sort(key=lambda x: x[2], reverse=True)
+        best_source, best_value, best_confidence = candidates[0]
+        
+        fused_fields[field] = best_value
+        confidence_scores[field] = best_confidence
+        extraction_methods[field] = best_source
+    
+    return fused_fields, confidence_scores, extraction_methods
+
+# =============================================================================
+# DERIVED FIELDS CALCULATION
+# =============================================================================
 
 def calculate_derived_fields(invoice_dict, text_content=""):
-    """Strategy 3: Calculate Derived Fields"""
+    """Calculate derived fields from extracted data"""
     print("🔍 Calculating derived fields...")
     
     derived_count = 0
     
-    # Extract VendorCountry from VendorAddress
+    # Calculate tax breakdown from line items
+    line_items = invoice_dict.get("items", [])
+    if line_items and "TaxTypeBreakdown" not in invoice_dict["fields"]:
+        tax_breakdown = {}
+        total_tax_from_items = 0.0
+        
+        for item in line_items:
+            tax_amount = item.get("TaxAmount")
+            if isinstance(tax_amount, (int, float)) and tax_amount > 0:
+                total_tax_from_items += tax_amount
+                tax_type = "Sales Tax"
+                
+                # Try to determine tax type from description
+                description = str(item.get("Description", "")).lower()
+                if 'vat' in description:
+                    tax_type = "VAT"
+                elif 'gst' in description:
+                    tax_type = "GST"
+                
+                if tax_type in tax_breakdown:
+                    tax_breakdown[tax_type] += tax_amount
+                else:
+                    tax_breakdown[tax_type] = tax_amount
+        
+        if tax_breakdown:
+            invoice_dict["fields"]["TaxTypeBreakdown"] = {
+                "value": tax_breakdown,
+                "confidence": 0.7,
+                "method": "CalculatedFromItems"
+            }
+            derived_count += 1
+    
+    # Set VendorCountry from VendorAddress if available
     if "VendorAddress" in invoice_dict["fields"] and "VendorCountry" not in invoice_dict["fields"]:
         vendor_address = invoice_dict["fields"]["VendorAddress"]["value"]
         if isinstance(vendor_address, dict) and vendor_address.get("country"):
@@ -1420,191 +1799,111 @@ def calculate_derived_fields(invoice_dict, text_content=""):
             }
             derived_count += 1
     
-    # Extract InvoiceCurrency from InvoiceTotal
-    if "InvoiceTotal" in invoice_dict["fields"] and "InvoiceCurrency" not in invoice_dict["fields"]:
-        invoice_total = invoice_dict["fields"]["InvoiceTotal"]["value"]
-        if isinstance(invoice_total, dict) and invoice_total.get("currency_code"):
-            invoice_dict["fields"]["InvoiceCurrency"] = {
-                "value": invoice_total["currency_code"],
-                "confidence": invoice_dict["fields"]["InvoiceTotal"]["confidence"],
-                "method": "DerivedFromTotal"
-            }
-            derived_count += 1
-    
-    # Calculate TaxTypeBreakdown from line items
-    if "items" in invoice_dict and invoice_dict["items"] and "TaxTypeBreakdown" not in invoice_dict["fields"]:
-        tax_breakdown = {}
-        for item in invoice_dict["items"]:
-            description = item.get("Description", "")
-            tax_amount = item.get("TaxAmount")
-            net_amount = item.get("NetAmount")
-            
-            # Look for tax-related descriptions
-            if any(tax_term in str(description).lower() for tax_term in ['tax', 'vat', 'gst', 'sales tax']):
-                tax_type = str(description)
-                amount_value = None
-                
-                if tax_amount and isinstance(tax_amount, dict):
-                    amount_value = tax_amount.get("amount")
-                elif net_amount and isinstance(net_amount, dict):
-                    amount_value = net_amount.get("amount")
-                
-                if amount_value:
-                    tax_breakdown[tax_type] = amount_value
-        
-        if tax_breakdown:
-            invoice_dict["fields"]["TaxTypeBreakdown"] = {
-                "value": tax_breakdown,
-                "confidence": 0.8,
-                "method": "CalculatedFromItems"
-            }
-            derived_count += 1
-    
-    # Calculate LineItems_Count
-    if "LineItems_Count" not in invoice_dict["fields"]:
-        line_items_count = len(invoice_dict.get("items", []))
-        invoice_dict["fields"]["LineItems_Count"] = {
-            "value": line_items_count,
-            "confidence": 1.0,
-            "method": "Calculated"
-        }
-        derived_count += 1
-    
     print(f"✅ Derived {derived_count} calculated fields")
     return derived_count
 
-def extract_with_text_analysis(text_content, invoice_dict):
-    """Strategy 4: Advanced Text Analysis for Complex Fields"""
-    print("🔍 Applying advanced text analysis...")
-    
-    analysis_count = 0
-    
-    # Extract vendor and customer contact information
-    if text_content:
-        # Vendor contact block (usually at top)
-        vendor_section = re.search(r'(?:From|Vendor|Seller).*?(?=To|Customer|$)', text_content, re.IGNORECASE | re.DOTALL)
-        if vendor_section:
-            vendor_text = vendor_section.group(0)
-            
-            # Extract vendor email if not found
-            if "VendorContactEmail" not in invoice_dict["fields"]:
-                email_match = re.search(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', vendor_text)
-                if email_match:
-                    invoice_dict["fields"]["VendorContactEmail"] = {
-                        "value": email_match.group(0),
-                        "confidence": 0.8,
-                        "method": "TextAnalysis"
-                    }
-                    analysis_count += 1
-            
-            # Extract vendor phone if not found
-            if "VendorPhone" not in invoice_dict["fields"]:
-                phone_match = re.search(r'(\+?1?[-.\s]?\(?[0-9]{3}\)?[-.\s]?[0-9]{3}[-.\s]?[0-9]{4})', vendor_text)
-                if phone_match:
-                    invoice_dict["fields"]["VendorPhone"] = {
-                        "value": phone_match.group(0),
-                        "confidence": 0.8,
-                        "method": "TextAnalysis"
-                    }
-                    analysis_count += 1
-        
-        # Customer contact block (usually in middle)
-        customer_section = re.search(r'(?:To|Customer|Bill\s*To).*?(?=Invoice|$)', text_content, re.IGNORECASE | re.DOTALL)
-        if customer_section:
-            customer_text = customer_section.group(0)
-            
-            # Extract customer email if not found
-            if "CustomerEmail" not in invoice_dict["fields"]:
-                email_match = re.search(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', customer_text)
-                if email_match:
-                    invoice_dict["fields"]["CustomerEmail"] = {
-                        "value": email_match.group(0),
-                        "confidence": 0.8,
-                        "method": "TextAnalysis"
-                    }
-                    analysis_count += 1
-            
-            # Extract customer phone if not found
-            if "CustomerPhone" not in invoice_dict["fields"]:
-                phone_match = re.search(r'(\+?1?[-.\s]?\(?[0-9]{3}\)?[-.\s]?[0-9]{3}[-.\s]?[0-9]{4})', customer_text)
-                if phone_match:
-                    invoice_dict["fields"]["CustomerPhone"] = {
-                        "value": phone_match.group(0),
-                        "confidence": 0.8,
-                        "method": "TextAnalysis"
-                    }
-                    analysis_count += 1
-    
-    print(f"✅ Text analysis extracted {analysis_count} additional fields")
-    return analysis_count
-
-def set_missing_fields_to_na(invoice_dict):
-    """Strategy 5: Set remaining missing fields to 'na'"""
-    missing_count = 0
-    for field in ALL_56_FIELDS:
-        if field not in invoice_dict["fields"]:
-            invoice_dict["fields"][field] = {
-                "value": "na",
-                "confidence": 0.0,
-                "method": "NotAvailable"
-            }
-            missing_count += 1
-    
-    print(f"📋 Set {missing_count} fields as 'na' (not available)")
-    return missing_count
+# =============================================================================
+# MAIN EXTRACTION FUNCTION
+# =============================================================================
 
 def enhanced_extract_invoice_data(file_path):
-    """Comprehensive extraction using all 5 strategies"""
-    print(f"🚀 Starting comprehensive extraction for: {os.path.basename(file_path)}")
+    """Comprehensive extraction with enhanced line item focus"""
+    print(f"🚀 Starting enhanced extraction: {os.path.basename(file_path)}")
     
     # Initialize result structure
     final_result = {
         "invoice_number": 1,
         "source_file": os.path.basename(file_path),
         "fields": {},
-        "items": [],
+        "items": [],  # This will store our line items
         "extraction_metadata": {
             "methods_used": [],
             "confidence_scores": {},
             "processing_timestamp": datetime.now().isoformat(),
-            "extraction_strategies": []
+            "extraction_strategies": [],
+            "line_items_method": "None"
         }
     }
     
-    # Extract text for fallback methods
+    # Extract text for all methods
     text_content = extract_text_from_pdf(file_path)
     
-    # Strategy 1: Azure Document Intelligence (Primary)
-    azure_result = extract_with_azure_invoice(file_path)
-    if azure_result:
-        final_result["fields"] = azure_result["fields"]
-        final_result["items"] = azure_result["items"]
-        final_result["extraction_metadata"]["methods_used"].extend(azure_result["extraction_metadata"]["methods_used"])
-        final_result["extraction_metadata"]["confidence_scores"].update(azure_result["extraction_metadata"]["confidence_scores"])
-        final_result["extraction_metadata"]["extraction_strategies"].append("AzurePrebuiltInvoice")
-        print(f"✅ Azure primary extraction completed")
-    else:
-        print("⚠️ Azure extraction failed, relying on fallback methods")
+    # STRATEGY 1: Azure Document Intelligence
+    azure_data = {}
+    azure_items = []
     
-    # Strategy 2: Regex Pattern Extraction
+    try:
+        azure_result = extract_with_azure_invoice(file_path)
+        if azure_result:
+            azure_data = azure_result.get("fields", {})
+            azure_items = azure_result.get("items", [])
+            final_result["extraction_metadata"]["methods_used"].append("AzureDocumentIntelligence")
+            final_result["extraction_metadata"]["extraction_strategies"].append("AzurePrebuiltInvoice")
+            
+            if azure_items:
+                final_result["extraction_metadata"]["line_items_method"] = "Azure"
+                print(f"✅ Azure extracted {len(azure_items)} line items")
+    except Exception as e:
+        print(f"❌ Azure extraction failed: {e}")
+    
+    # STRATEGY 2: Extract line items (priority)
+    all_line_items = azure_items  # Start with Azure items
+    
+    # Fallback to text extraction if no Azure items
+    if not all_line_items and text_content:
+        text_items = extract_line_items_from_text(text_content)
+        if text_items:
+            all_line_items.extend(text_items)
+            final_result["extraction_metadata"]["line_items_method"] = "TextExtraction"
+            final_result["extraction_metadata"]["methods_used"].append("TextLineItems")
+            print(f"✅ Text extraction found {len(text_items)} line items")
+    
+    # Final fallback to LLM
+    if not all_line_items and text_content:
+        llm_items = extract_line_items_with_llm(text_content)
+        if llm_items:
+            all_line_items.extend(llm_items)
+            final_result["extraction_metadata"]["line_items_method"] = "LLM"
+            final_result["extraction_metadata"]["methods_used"].append("LLMLineItems")
+            print(f"✅ LLM extracted {len(llm_items)} line items")
+    
+    # Store the line items
+    final_result["items"] = all_line_items
+    
+    # STRATEGY 3: Field extraction from other sources
+    llm_data = {}
     if text_content:
-        regex_count = extract_missing_fields_with_regex(text_content, final_result)
-        if regex_count > 0:
-            final_result["extraction_metadata"]["extraction_strategies"].append("RegexPatterns")
+        llm_data = extract_with_openai_llm(text_content, file_path)
+        if llm_data:
+            final_result["extraction_metadata"]["methods_used"].append("OpenAI_LLM_Text")
     
-    # Strategy 3: Calculate Derived Fields
-    derived_count = calculate_derived_fields(final_result, text_content)
-    if derived_count > 0:
-        final_result["extraction_metadata"]["extraction_strategies"].append("DerivedFields")
-    
-    # Strategy 4: Advanced Text Analysis
+    # STRATEGY 4: Regex extraction
+    regex_data = {}
     if text_content:
-        analysis_count = extract_with_text_analysis(text_content, final_result)
-        if analysis_count > 0:
-            final_result["extraction_metadata"]["extraction_strategies"].append("TextAnalysis")
+        regex_data = extract_missing_fields_with_regex(text_content, final_result)
+        final_result["extraction_metadata"]["methods_used"].append("EnhancedRegex")
     
-    # Strategy 5: Set missing fields to 'na'
-    na_count = set_missing_fields_to_na(final_result)
+    # Fuse all field data
+    fused_fields, confidence_scores, extraction_methods = intelligent_field_fusion(
+        azure_data, llm_data, regex_data
+    )
+    
+    final_result["fields"] = fused_fields
+    final_result["extraction_metadata"]["confidence_scores"] = confidence_scores
+    
+    # STRATEGY 5: Calculate derived fields including line items count
+    calculate_line_items_count(final_result)
+    calculate_derived_fields(final_result, text_content)
+    
+    # STRATEGY 6: Set missing fields to 'na'
+    for field in ALL_56_FIELDS:
+        if field not in final_result["fields"]:
+            final_result["fields"][field] = {
+                "value": "na",
+                "confidence": 0.0,
+                "method": "NotAvailable"
+            }
+    
     final_result["extraction_metadata"]["extraction_strategies"].append("MissingFieldHandling")
     
     # Calculate extraction statistics
@@ -1612,12 +1911,20 @@ def enhanced_extract_invoice_data(file_path):
     extracted_fields = len([f for f in final_result["fields"].keys() if final_result["fields"][f]["value"] != "na"])
     extraction_rate = (extracted_fields / total_fields) * 100
     
-    print(f"📊 EXTRACTION SUMMARY: {extracted_fields}/{total_fields} fields ({extraction_rate:.1f}%)")
-    print(f"🎯 Strategies used: {', '.join(final_result['extraction_metadata']['extraction_strategies'])}")
+    line_items_count = len(all_line_items)
+    
+    print(f"📊 EXTRACTION SUMMARY:")
+    print(f"   📈 Fields: {extracted_fields}/{total_fields} ({extraction_rate:.1f}%)")
+    print(f"   📦 Line Items: {line_items_count}")
+    print(f"   🔧 Line Items Method: {final_result['extraction_metadata']['line_items_method']}")
+    print(f"   🎯 Methods: {', '.join(final_result['extraction_metadata']['methods_used'])}")
     
     return [final_result]
 
-# Rest of the Flask app and helper functions remain the same...
+# =============================================================================
+# FLASK APP AND PROCESSING FUNCTIONS
+# =============================================================================
+
 def sanitize_filename(filename):
     """Sanitize filename to be safe for Windows file system"""
     sanitized = re.sub(r'[<>:"/\\|?*#&${}~%]', '_', filename)
@@ -1786,8 +2093,12 @@ def create_excel_from_json_files():
                     else:
                         row[field_name] = "na"
                 
+                # Add line items count explicitly
+                line_items = invoice.get("items", [])
+                row["LineItems_Count_Actual"] = len(line_items)
+                
                 rows.append(row)
-                print(f"📝 Added row from {json_file}")
+                print(f"📝 Added row from {json_file} with {len(line_items)} line items")
                 
         except Exception as e:
             print(f"❌ Error processing JSON file {json_file}: {e}")
@@ -1910,26 +2221,29 @@ def health_check():
     """Health check endpoint"""
     return jsonify({
         "status": "healthy",
-        "service": "Advanced Invoice Extraction API",
-        "version": "2.0.0",
+        "service": "Enhanced Invoice Extraction API with Line Items",
+        "version": "4.1.0",
         "fields_supported": 56,
-        "extraction_strategies": [
-            "Azure Document Intelligence",
-            "Regex Pattern Matching", 
-            "Derived Field Calculation",
-            "Text Analysis",
-            "Missing Field Handling"
-        ]
+        "line_item_extraction": {
+            "methods": ["Azure DI", "Text Pattern", "LLM Analysis"],
+            "fields_per_item": ["Description", "Quantity", "UnitPrice", "NetAmount", "TaxRate", "TaxAmount", "GrossAmount"]
+        }
     })
 
 if __name__ == '__main__':
-    print("🚀 Starting Advanced Invoice Extraction API...")
+    print("🚀 Starting Enhanced Invoice Extraction API with Line Items...")
     print("📁 Folder structure:")
     print(f"   - PDF Source: ./invoices/")
     print(f"   - JSON Output: {json_output_folder}")
     print(f"   - Excel Output: {output_folder}")
-    print("\n💡 Usage:")
-    print("   - POST /process-folder - Process all PDFs with 5 extraction strategies")
+    print("\n📦 Line Item Extraction Features:")
+    print("   - Azure Document Intelligence (Primary)")
+    print("   - Text pattern matching (Fallback)")
+    print("   - LLM analysis (Complex cases)")
+    print("   - Automatic LineItems_Count calculation")
+    print("   - Tax breakdown from line items")
+    print("\n🎯 Usage:")
+    print("   - POST /process-folder - Process all PDFs with enhanced line item extraction")
     print("   - POST /create-excel-from-json - Create Excel from existing JSONs")
     print("   - GET /check-folders - Check folder status")
     

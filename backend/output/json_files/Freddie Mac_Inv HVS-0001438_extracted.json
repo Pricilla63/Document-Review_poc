@@ -13,17 +13,55 @@
           "street_address": "8250 Jones Branch Drive",
           "city": "McLean",
           "state": "Virginia",
-          "postal_code": "22102",
-          "house_number": "8250",
-          "road": "Jones Branch Drive"
+          "postal_code": "22102"
         },
         "confidence": 0.886,
         "method": "AzurePrebuiltInvoice"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "home_value_suite@freddiemac.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "JP Morgan",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "Attn: Freddie Mac 93458, 131 S. Dearborn - 6th Floor, Chicago, IL 60603",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "VendorContactPerson": {
         "value": "Freddie Mac",
         "confidence": 0.574,
         "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "CustomerName": {
         "value": "Consolidated Analytics (Real Info, Inc)",
@@ -35,13 +73,35 @@
           "street_address": "1 MacArthur Place Suite 100",
           "city": "Santa Ana",
           "state": "CA",
-          "postal_code": "92707",
-          "house_number": "1",
-          "road": "MacArthur Place",
-          "unit": "Suite 100"
+          "postal_code": "92707"
         },
         "confidence": 0.878,
         "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": "8250 Jones Branch Drive, McLean, Virginia 22102",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "SIS01()",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "InvoiceId": {
         "value": "SIS0106302025920",
@@ -58,122 +118,15 @@
         "confidence": 0.926,
         "method": "AzurePrebuiltInvoice"
       },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 65.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.929,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "Subtotal": {
-        "value": {
-          "amount": 65.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.818,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "AmountDue": {
-        "value": {
-          "amount": 275.0,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.95,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorEmail": {
-        "value": "home_value_suite@freddiemac.com",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceType": {
-        "value": "Check",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "PaymentMethod": {
-        "value": "Check",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
       "InvoiceCurrency": {
         "value": "USD",
-        "confidence": 0.929,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 7,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "CustomerEmail": {
-        "value": "home_value_suite@freddiemac.com",
         "confidence": 0.8,
-        "method": "TextAnalysis"
+        "method": "OpenAI_LLM"
       },
-      "CustomerPhone": {
-        "value": "0106302025",
+      "InvoiceType": {
+        "value": "Statement",
         "confidence": 0.8,
-        "method": "TextAnalysis"
-      },
-      "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorTaxId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorWebsite": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ShippingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerTaxId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerContactPerson": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "method": "OpenAI_LLM"
       },
       "PurchaseOrder": {
         "value": "na",
@@ -181,6 +134,11 @@
         "method": "NotAvailable"
       },
       "PaymentTerms": {
+        "value": "EOM-NEXT",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -200,10 +158,15 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "LineItems_Count": {
+        "value": 7,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
       "TotalTax": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "TaxTypeBreakdown": {
         "value": "na",
@@ -215,6 +178,15 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "Subtotal": {
+        "value": {
+          "amount": 65.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.818,
+        "method": "AzurePrebuiltInvoice"
+      },
       "ShippingHandling": {
         "value": "na",
         "confidence": 0.0,
@@ -225,15 +197,33 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 65.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.929,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "AmountDue": {
+        "value": {
+          "amount": 275.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.95,
+        "method": "AzurePrebuiltInvoice"
       },
       "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "For billing inquiries please email home_value_suite@freddiemac.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "QRCode": {
         "value": "na",
@@ -332,32 +322,41 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.574,
-        "VendorAddress": 0.886,
-        "VendorContactPerson": 0.574,
-        "CustomerName": 0.895,
-        "BillingAddress": 0.878,
-        "InvoiceId": 0.656,
-        "InvoiceDate": 0.927,
-        "DueDate": 0.926,
-        "InvoiceTotal": 0.929,
-        "Subtotal": 0.818,
-        "AmountDue": 0.95,
-        "VendorEmail": 0.7,
-        "InvoiceType": 0.7,
-        "PaymentMethod": 0.7
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorContactEmail": 0.8,
+        "VendorBankName": 0.8,
+        "VendorBankDetails": 0.8,
+        "VendorContactPerson": 0.9,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "ShippingAddress": 0.8,
+        "CustomerContactPerson": 0.8,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.9,
+        "InvoiceCurrency": 0.8,
+        "InvoiceType": 0.8,
+        "PaymentTerms": 0.8,
+        "LineItems_Count": 0.8,
+        "TotalTax": 0.8,
+        "Subtotal": 0.9,
+        "InvoiceTotal": 0.9,
+        "AmountPaid": 0.8,
+        "AmountDue": 0.9,
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T17:56:45.058363",
+      "processing_timestamp": "2025-11-20T20:12:14.697841",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
-        "DerivedFields",
-        "TextAnalysis",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

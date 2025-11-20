@@ -3,327 +3,203 @@
     "invoice_number": 1,
     "source_file": "PBAS Networking_Inv NET97054_.pdf",
     "fields": {
-      "VendorName": {
-        "value": "PBAS Networking\nIT & NETWORK SOLUTIONS",
-        "confidence": 0.545,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorAddress": {
-        "value": {
-          "street_address": "15\\72 Thirunagar, 15th Block 15th Street",
-          "city": "Chennai -600049",
-          "state": "Tamil Nadu",
-          "postal_code": "600002",
-          "country": "India",
-          "house_number": "15\\72",
-          "road": "Thirunagar, 15th Block 15th Street"
-        },
-        "confidence": 0.829,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorContactPerson": {
-        "value": "PBAS Networking",
-        "confidence": 0.969,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "ATTN: Panneer Selvam\nConsolidated Analytics Inc",
-        "confidence": 0.914,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "BillingAddress": {
-        "value": {
-          "street_address": "1 MacArthur Place",
-          "city": "Santa Ana",
-          "house_number": "1",
-          "road": "MacArthur Place"
-        },
-        "confidence": 0.526,
-        "method": "AzurePrebuiltInvoice"
-      },
+      "VendorName": "PBAS Networking\nIT & NETWORK SOLUTIONS",
+      "VendorAddress": "15/72 Thirunagar, 15th Block 15th Street, Villivakkam, Chennai -600049, Tamil Nadu 600002, India",
+      "VendorCountry": "India",
+      "VendorTaxId": "na",
+      "VendorContactEmail": "pbasnetworking@gmail.com",
+      "VendorPhone": "+9144 24793738",
+      "VendorBankName": [
+        {
+          "SWIFT": "CNRBINBBMMR"
+        }
+      ],
+      "VendorBankAccountNumber": [
+        {
+          "SWIFT": "CNRBINBBMMR"
+        }
+      ],
+      "VendorBankDetails": [
+        {
+          "SWIFT": "CNRBINBBMMR"
+        }
+      ],
+      "VendorContactPerson": "PBAS Networking",
+      "VendorWebsite": "na",
+      "CustomerName": "ATTN: Panneer Selvam\nConsolidated Analytics Inc",
+      "BillingAddress": "1 MacArthur Place, Santa Ana, CA 92707",
       "ShippingAddress": {
-        "value": {
-          "street_address": "1 MacArthur Place",
-          "city": "Santa Ana",
-          "state": "CA",
-          "postal_code": "-92707",
-          "house_number": "1",
-          "road": "MacArthur Place"
-        },
-        "confidence": 0.891,
-        "method": "AzurePrebuiltInvoice"
+        "street_address": "1 MacArthur Place",
+        "city": "Santa Ana",
+        "state": "CA",
+        "postal_code": "-92707",
+        "house_number": "1",
+        "road": "MacArthur Place"
       },
-      "InvoiceId": {
-        "value": "NET97054",
-        "confidence": 0.979,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-09-06",
-        "confidence": 0.978,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 915.75,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.957,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "Subtotal": {
-        "value": {
-          "amount": 825.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "confidence": 0.978,
-        "method": "AzurePrebuiltInvoice"
-      },
+      "CustomerPhone": "949-988-7204",
+      "CustomerEmail": "pselvam@ca-usa.com",
+      "CustomerTaxId": "na",
+      "CustomerContactPerson": "Panneer Selvam",
+      "InvoiceId": "NET97054",
+      "InvoiceDate": "2025-09-06",
+      "DueDate": "na",
+      "InvoiceCurrency": "USD",
+      "InvoiceType": "na",
+      "PurchaseOrder": "na",
+      "PaymentTerms": "Net 7 Days",
+      "PaymentMethod": [
+        {
+          "SWIFT": "CNRBINBBMMR"
+        }
+      ],
+      "CostCenter": "na",
+      "ServicePeriodStart": "na",
+      "ServicePeriodEnd": "na",
+      "LineItems_Count": "na",
       "TotalTax": {
-        "value": {
-          "amount": 90.75,
-          "currency": null,
-          "currency_code": "INR"
-        },
-        "confidence": 0.978,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorEmail": {
-        "value": "pbasnetworking@gmail.com",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "CostCenter": {
-        "value": "ount",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "Notes": {
-        "value": "/ Instructions:\npbasnetworking@gmail.com\nBank Details :\nAccount Name : M.Surya\nAccount Number : 2782101011454\nBank Name : Canara Bank\nIFSC Code : CNRB0002782\nBranch : Koyambedu Branch \nSwift Code : CNRBINBBMMR\nBranch Code : 002782\nAddress : 5, Kaliamma Koil Street, , Koyambedu, , Chennai 600107\nPhone : +9144 24793738\nInvoice\n   pselvam@ca-usa.com\nATTN: Panneer Selvam\nINVOICE NO.\nNET97054\nCUSTOMER ID\nSHIP TO:\nDESCRIPTION\nMonthly Network Security Charges for the month of May 2025\nBank Charges\nFor questions concerning this invoice, please contact\nSUBTOTAL\nTAX (11%)\nTOTAL",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorCountry": {
-        "value": "India",
-        "confidence": 0.7461,
-        "method": "DerivedFromAddress"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.957,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 2,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "CustomerEmail": {
-        "value": "pselvam@ca-usa.com",
-        "confidence": 0.8,
-        "method": "TextAnalysis"
-      },
-      "CustomerPhone": {
-        "value": "\n949-988-7204",
-        "confidence": 0.8,
-        "method": "TextAnalysis"
-      },
-      "VendorTaxId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorWebsite": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerTaxId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerContactPerson": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "DueDate": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "InvoiceType": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PurchaseOrder": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PaymentTerms": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PaymentMethod": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ServicePeriodStart": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ServicePeriodEnd": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "amount": 90.75,
+        "currency": null,
+        "currency_code": "INR"
       },
       "TaxTypeBreakdown": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "TAX (11%)": "90.75 USD"
       },
-      "WithholdingTax": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+      "WithholdingTax": "0.00 USD",
+      "Subtotal": {
+        "amount": 825.0,
+        "currency": null,
+        "currency_code": "USD"
       },
-      "ShippingHandling": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+      "ShippingHandling": "25.00 USD",
+      "Surcharges": "na",
+      "InvoiceTotal": {
+        "amount": 915.75,
+        "currency": "$",
+        "currency_code": "USD"
       },
-      "Surcharges": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "AmountPaid": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "AmountDue": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "QRCode": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CompanyRegistration": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalWorkflowID": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalRequired": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApproverList": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalStatus": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalTimestamps": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      }
+      "AmountPaid": "na",
+      "AmountDue": "915.75 USD",
+      "Notes": "Remarks / Instructions: pbasnetworking@gmail.com",
+      "QRCode": "na",
+      "CompanyRegistration": "na",
+      "ApprovalWorkflowID": "na",
+      "ApprovalRequired": "na",
+      "ApproverList": "na",
+      "ApprovalStatus": "na",
+      "ApprovalTimestamps": "na"
     },
-    "items": [
-      {
-        "item_number": 1,
-        "Description": "Monthly Network Security Charges for the month of May 2025",
-        "NetAmount": {
-          "amount": 800.0,
-          "currency": null,
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 2,
-        "Description": "Bank Charges",
-        "NetAmount": {
-          "amount": 25.0,
-          "currency": null,
-          "currency_code": "INR"
-        }
-      }
-    ],
+    "items": [],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.545,
-        "VendorAddress": 0.829,
-        "VendorContactPerson": 0.969,
-        "CustomerName": 0.914,
-        "BillingAddress": 0.526,
-        "ShippingAddress": 0.891,
-        "InvoiceId": 0.979,
-        "InvoiceDate": 0.978,
-        "InvoiceTotal": 0.957,
-        "Subtotal": 0.978,
-        "TotalTax": 0.978,
-        "VendorEmail": 0.7,
-        "CostCenter": 0.7,
-        "Notes": 0.7
+        "VendorName": 0.9,
+        "VendorAddress": 0.9,
+        "VendorCountry": 0.8,
+        "VendorTaxId": 0.0,
+        "VendorContactEmail": 0.8,
+        "VendorPhone": 0.8,
+        "VendorBankName": 0.9,
+        "VendorBankAccountNumber": 0.9,
+        "VendorBankDetails": 0.9,
+        "VendorContactPerson": 0.9,
+        "VendorWebsite": 0.0,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "ShippingAddress": 0.9,
+        "CustomerPhone": 0.8,
+        "CustomerEmail": 0.8,
+        "CustomerTaxId": 0.0,
+        "CustomerContactPerson": 0.8,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.0,
+        "InvoiceCurrency": 0.8,
+        "InvoiceType": 0.0,
+        "PurchaseOrder": 0.0,
+        "PaymentTerms": 0.8,
+        "PaymentMethod": 0.9,
+        "CostCenter": 0.0,
+        "ServicePeriodStart": 0.0,
+        "ServicePeriodEnd": 0.0,
+        "LineItems_Count": 0.0,
+        "TotalTax": 0.9,
+        "TaxTypeBreakdown": 0.8,
+        "WithholdingTax": 0.8,
+        "Subtotal": 0.9,
+        "ShippingHandling": 0.8,
+        "Surcharges": 0.0,
+        "InvoiceTotal": 0.9,
+        "AmountPaid": 0.0,
+        "AmountDue": 0.8,
+        "Notes": 0.8,
+        "QRCode": 0.0,
+        "CompanyRegistration": 0.0,
+        "ApprovalWorkflowID": 0.0,
+        "ApprovalRequired": 0.0,
+        "ApproverList": 0.0,
+        "ApprovalStatus": 0.0,
+        "ApprovalTimestamps": 0.0
       },
-      "processing_timestamp": "2025-11-20T18:42:05.475458",
+      "processing_timestamp": "2025-11-20T19:51:49.677615",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
+        "LLM_Text_Analysis",
         "RegexPatterns",
-        "DerivedFields",
-        "TextAnalysis",
         "MissingFieldHandling"
-      ]
+      ],
+      "source_breakdown": {
+        "VendorName": "azure",
+        "VendorAddress": "azure",
+        "VendorCountry": "llm",
+        "VendorTaxId": "NotAvailable",
+        "VendorContactEmail": "llm",
+        "VendorPhone": "llm",
+        "VendorBankName": "azure",
+        "VendorBankAccountNumber": "azure",
+        "VendorBankDetails": "azure",
+        "VendorContactPerson": "azure",
+        "VendorWebsite": "NotAvailable",
+        "CustomerName": "azure",
+        "BillingAddress": "azure",
+        "ShippingAddress": "azure",
+        "CustomerPhone": "llm",
+        "CustomerEmail": "llm",
+        "CustomerTaxId": "NotAvailable",
+        "CustomerContactPerson": "llm",
+        "InvoiceId": "azure",
+        "InvoiceDate": "azure",
+        "DueDate": "NotAvailable",
+        "InvoiceCurrency": "llm",
+        "InvoiceType": "NotAvailable",
+        "PurchaseOrder": "NotAvailable",
+        "PaymentTerms": "llm",
+        "PaymentMethod": "azure",
+        "CostCenter": "NotAvailable",
+        "ServicePeriodStart": "NotAvailable",
+        "ServicePeriodEnd": "NotAvailable",
+        "LineItems_Count": "NotAvailable",
+        "TotalTax": "azure",
+        "TaxTypeBreakdown": "llm",
+        "WithholdingTax": "llm",
+        "Subtotal": "azure",
+        "ShippingHandling": "llm",
+        "Surcharges": "NotAvailable",
+        "InvoiceTotal": "azure",
+        "AmountPaid": "NotAvailable",
+        "AmountDue": "llm",
+        "Notes": "llm",
+        "QRCode": "NotAvailable",
+        "CompanyRegistration": "NotAvailable",
+        "ApprovalWorkflowID": "NotAvailable",
+        "ApprovalRequired": "NotAvailable",
+        "ApproverList": "NotAvailable",
+        "ApprovalStatus": "NotAvailable",
+        "ApprovalTimestamps": "NotAvailable"
+      }
     }
   }
 ]

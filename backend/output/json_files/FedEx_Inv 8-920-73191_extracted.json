@@ -8,6 +8,56 @@
         "confidence": 0.95,
         "method": "AzurePrebuiltInvoice"
       },
+      "VendorAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "800.622.1147",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "XXXX-X587-7",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "fedex.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "CustomerName": {
         "value": "CONSOLIDATED ANALYTICS, INC.",
         "confidence": 0.93,
@@ -31,109 +81,6 @@
         "confidence": 0.917,
         "method": "AzurePrebuiltInvoice"
       },
-      "CustomerContactPerson": {
-        "value": "Consolidated Analytics, Inc.",
-        "confidence": 0.416,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "8-920-73191",
-        "confidence": 0.956,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-07-11",
-        "confidence": 0.93,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 129.07,
-          "currency": "USD",
-          "currency_code": "USD"
-        },
-        "confidence": 0.815,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "Subtotal": {
-        "value": {
-          "amount": 92.17,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.798,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorWebsite": {
-        "value": "https://www.fedex.com/EarnedDiscounts/.",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorTaxId": {
-        "value": "g",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorContactPerson": {
-        "value": "FedEx Revenue Services\nPhone",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceType": {
-        "value": "FedEx Ground Shipments",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "CostCenter": {
-        "value": "ount",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.815,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 13,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "VendorAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
       "CustomerPhone": {
         "value": "na",
         "confidence": 0.0,
@@ -149,7 +96,32 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "CustomerContactPerson": {
+        "value": "Consolidated Analytics, Inc.",
+        "confidence": 0.416,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "8-920-73191",
+        "confidence": 0.956,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-11",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
       "DueDate": {
+        "value": "Jul 26, 2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
@@ -160,24 +132,34 @@
         "method": "NotAvailable"
       },
       "PaymentTerms": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "Payments not received by Jul 26, 2025 are subject to a late fee.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "PaymentMethod": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
-      "ServicePeriodStart": {
+      "CostCenter": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "ServicePeriodStart": {
+        "value": "Jun 24, 2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "ServicePeriodEnd": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "Jul 01, 2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "LineItems_Count": {
+        "value": 13,
+        "confidence": 1.0,
+        "method": "Calculated"
       },
       "TotalTax": {
         "value": "na",
@@ -194,6 +176,15 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "Subtotal": {
+        "value": {
+          "amount": 92.17,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.798,
+        "method": "AzurePrebuiltInvoice"
+      },
       "ShippingHandling": {
         "value": "na",
         "confidence": 0.0,
@@ -204,20 +195,29 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 129.07,
+          "currency": "USD",
+          "currency_code": "USD"
+        },
+        "confidence": 0.815,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
       "AmountDue": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "129.07",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "You saved $41.26 in discounts this period! Payments not received by Jul 26, 2025 are subject to a late fee.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "QRCode": {
         "value": "na",
@@ -378,31 +378,38 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.95,
-        "CustomerName": 0.93,
-        "BillingAddress": 0.888,
-        "ShippingAddress": 0.917,
-        "CustomerContactPerson": 0.416,
-        "InvoiceId": 0.956,
-        "InvoiceDate": 0.93,
-        "InvoiceTotal": 0.815,
-        "Subtotal": 0.798,
-        "VendorWebsite": 0.7,
-        "VendorTaxId": 0.7,
-        "VendorContactPerson": 0.7,
-        "InvoiceType": 0.7,
-        "CostCenter": 0.7
+        "VendorName": 0.9,
+        "VendorPhone": 0.8,
+        "VendorBankAccountNumber": 0.7,
+        "VendorWebsite": 0.8,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.9,
+        "ShippingAddress": 0.9,
+        "CustomerContactPerson": 0.9,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.8,
+        "InvoiceCurrency": 0.8,
+        "PaymentTerms": 0.8,
+        "ServicePeriodStart": 0.8,
+        "ServicePeriodEnd": 0.8,
+        "LineItems_Count": 0.8,
+        "Subtotal": 0.9,
+        "InvoiceTotal": 0.9,
+        "AmountDue": 0.8,
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T17:56:07.952576",
+      "processing_timestamp": "2025-11-20T20:11:23.421498",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]

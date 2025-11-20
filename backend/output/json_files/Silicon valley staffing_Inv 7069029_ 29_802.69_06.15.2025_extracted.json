@@ -3,645 +3,170 @@
     "invoice_number": 1,
     "source_file": "Silicon valley staffing_Inv 7069029_$ 29_802.69_06.15.2025.pdf",
     "fields": {
-      "VendorName": {
-        "value": "5\nSVS Group",
-        "confidence": 0.661,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "CustomerName": {
-        "value": "Consolidated Analytics",
-        "confidence": 0.938,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceId": {
-        "value": "7069029",
-        "confidence": 0.965,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "InvoiceDate": {
-        "value": "2025-06-15",
-        "confidence": 0.963,
-        "method": "AzurePrebuiltInvoice"
-      },
+      "VendorName": "5\nSVS Group",
+      "VendorAddress": "na",
+      "VendorCountry": "na",
+      "VendorTaxId": "na",
+      "VendorContactEmail": "na",
+      "VendorPhone": "na",
+      "VendorBankName": "na",
+      "VendorBankAccountNumber": "na",
+      "VendorBankDetails": "na",
+      "VendorContactPerson": "na",
+      "VendorWebsite": "na",
+      "CustomerName": "Consolidated Analytics",
+      "BillingAddress": "na",
+      "ShippingAddress": "na",
+      "CustomerPhone": "na",
+      "CustomerEmail": "na",
+      "CustomerTaxId": "na",
+      "CustomerContactPerson": "na",
+      "InvoiceId": "7069029",
+      "InvoiceDate": "2025-06-15",
+      "DueDate": "na",
+      "InvoiceCurrency": "na",
+      "InvoiceType": "na",
+      "PurchaseOrder": "na",
+      "PaymentTerms": "na",
+      "PaymentMethod": "na",
+      "CostCenter": "na",
+      "ServicePeriodStart": "na",
+      "ServicePeriodEnd": "na",
+      "LineItems_Count": "na",
+      "TotalTax": "na",
+      "TaxTypeBreakdown": "na",
+      "WithholdingTax": "na",
+      "Subtotal": "na",
+      "ShippingHandling": "na",
+      "Surcharges": "na",
       "InvoiceTotal": {
-        "value": {
-          "amount": 29802.69,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.543,
-        "method": "AzurePrebuiltInvoice"
+        "amount": 29802.69,
+        "currency": "$",
+        "currency_code": "USD"
       },
+      "AmountPaid": "na",
       "AmountDue": {
-        "value": {
-          "amount": 29802.69,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.352,
-        "method": "AzurePrebuiltInvoice"
+        "amount": 29802.69,
+        "currency": "$",
+        "currency_code": "USD"
       },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.543,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 25,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "VendorAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorTaxId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactPerson": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorWebsite": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "BillingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ShippingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerTaxId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerContactPerson": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "DueDate": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "InvoiceType": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PurchaseOrder": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PaymentTerms": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "PaymentMethod": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CostCenter": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ServicePeriodStart": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ServicePeriodEnd": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "TotalTax": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "TaxTypeBreakdown": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "WithholdingTax": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "Subtotal": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ShippingHandling": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "Surcharges": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "AmountPaid": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "Notes": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "QRCode": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CompanyRegistration": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalWorkflowID": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalRequired": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApproverList": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalStatus": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ApprovalTimestamps": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      }
+      "Notes": "na",
+      "QRCode": "na",
+      "CompanyRegistration": "na",
+      "ApprovalWorkflowID": "na",
+      "ApprovalRequired": "na",
+      "ApproverList": "na",
+      "ApprovalStatus": "na",
+      "ApprovalTimestamps": "na"
     },
-    "items": [
-      {
-        "item_number": 1,
-        "Description": "Regular Hours",
-        "Quantity": 42.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1596.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 2,
-        "Description": "Regular Hours",
-        "Quantity": 42.25,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1605.5,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 3,
-        "Description": "Regular Hours",
-        "Quantity": 40.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1520.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 4,
-        "Description": "Overtime Hours",
-        "Quantity": 10.0,
-        "UnitPrice": {
-          "amount": 57.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 570.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 5,
-        "Description": "Reg",
-        "Quantity": 1.0,
-        "UnitPrice": {
-          "amount": 560.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 560.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 6,
-        "Description": "Regular Hours",
-        "Quantity": 45.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1710.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 7,
-        "Description": "Regular Hours",
-        "Quantity": 40.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1520.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 8,
-        "Description": "Regular Hours",
-        "Quantity": 40.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1520.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 9,
-        "Description": "Overtime Hours",
-        "Quantity": 10.25,
-        "UnitPrice": {
-          "amount": 57.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 584.25,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 10,
-        "Description": "Reg",
-        "Quantity": 1.0,
-        "UnitPrice": {
-          "amount": 340.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 340.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 11,
-        "Description": "Regular Hours",
-        "Quantity": 32.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1216.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 12,
-        "Description": "Regular Hours",
-        "Quantity": 40.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1520.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 13,
-        "Description": "Overtime Hours",
-        "Quantity": 3.22,
-        "UnitPrice": {
-          "amount": 57.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 183.54,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 14,
-        "Description": "Regular Hours",
-        "Quantity": 40.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1520.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 15,
-        "Description": "Overtime Hours",
-        "Quantity": 10.7,
-        "UnitPrice": {
-          "amount": 57.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 609.9,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 16,
-        "Description": "Reg",
-        "Quantity": 1.0,
-        "UnitPrice": {
-          "amount": 420.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 420.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 17,
-        "Description": "Regular Hours",
-        "Quantity": 36.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1368.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 18,
-        "Description": "Regular Hours",
-        "Quantity": 33.83,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1285.54,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 19,
-        "Description": "Regular Hours",
-        "Quantity": 51.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1938.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 20,
-        "Description": "Reg",
-        "Quantity": 1.0,
-        "UnitPrice": {
-          "amount": 120.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 120.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 21,
-        "Description": "Regular Hours",
-        "Quantity": 41.42,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1573.96,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 22,
-        "Description": "Regular Hours",
-        "Quantity": 32.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 1216.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 23,
-        "Description": "Regular Hours",
-        "Quantity": 59.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 2242.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 24,
-        "Description": "Regular Hours",
-        "Quantity": 78.0,
-        "UnitPrice": {
-          "amount": 38.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 2964.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      },
-      {
-        "item_number": 25,
-        "Description": "Reg",
-        "Quantity": 1.0,
-        "UnitPrice": {
-          "amount": 100.0,
-          "currency": null,
-          "currency_code": "USD"
-        },
-        "NetAmount": {
-          "amount": 100.0,
-          "currency": "$",
-          "currency_code": "USD"
-        }
-      }
-    ],
+    "items": [],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence"
       ],
       "confidence_scores": {
-        "VendorName": 0.661,
-        "CustomerName": 0.938,
-        "InvoiceId": 0.965,
-        "InvoiceDate": 0.963,
-        "InvoiceTotal": 0.543,
-        "AmountDue": 0.352
+        "VendorName": 0.9,
+        "VendorAddress": 0.0,
+        "VendorCountry": 0.0,
+        "VendorTaxId": 0.0,
+        "VendorContactEmail": 0.0,
+        "VendorPhone": 0.0,
+        "VendorBankName": 0.0,
+        "VendorBankAccountNumber": 0.0,
+        "VendorBankDetails": 0.0,
+        "VendorContactPerson": 0.0,
+        "VendorWebsite": 0.0,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.0,
+        "ShippingAddress": 0.0,
+        "CustomerPhone": 0.0,
+        "CustomerEmail": 0.0,
+        "CustomerTaxId": 0.0,
+        "CustomerContactPerson": 0.0,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "DueDate": 0.0,
+        "InvoiceCurrency": 0.0,
+        "InvoiceType": 0.0,
+        "PurchaseOrder": 0.0,
+        "PaymentTerms": 0.0,
+        "PaymentMethod": 0.0,
+        "CostCenter": 0.0,
+        "ServicePeriodStart": 0.0,
+        "ServicePeriodEnd": 0.0,
+        "LineItems_Count": 0.0,
+        "TotalTax": 0.0,
+        "TaxTypeBreakdown": 0.0,
+        "WithholdingTax": 0.0,
+        "Subtotal": 0.0,
+        "ShippingHandling": 0.0,
+        "Surcharges": 0.0,
+        "InvoiceTotal": 0.9,
+        "AmountPaid": 0.0,
+        "AmountDue": 0.9,
+        "Notes": 0.0,
+        "QRCode": 0.0,
+        "CompanyRegistration": 0.0,
+        "ApprovalWorkflowID": 0.0,
+        "ApprovalRequired": 0.0,
+        "ApproverList": 0.0,
+        "ApprovalStatus": 0.0,
+        "ApprovalTimestamps": 0.0
       },
-      "processing_timestamp": "2025-11-20T18:43:17.052682",
+      "processing_timestamp": "2025-11-20T19:53:46.720753",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "DerivedFields",
         "MissingFieldHandling"
-      ]
+      ],
+      "source_breakdown": {
+        "VendorName": "azure",
+        "VendorAddress": "NotAvailable",
+        "VendorCountry": "NotAvailable",
+        "VendorTaxId": "NotAvailable",
+        "VendorContactEmail": "NotAvailable",
+        "VendorPhone": "NotAvailable",
+        "VendorBankName": "NotAvailable",
+        "VendorBankAccountNumber": "NotAvailable",
+        "VendorBankDetails": "NotAvailable",
+        "VendorContactPerson": "NotAvailable",
+        "VendorWebsite": "NotAvailable",
+        "CustomerName": "azure",
+        "BillingAddress": "NotAvailable",
+        "ShippingAddress": "NotAvailable",
+        "CustomerPhone": "NotAvailable",
+        "CustomerEmail": "NotAvailable",
+        "CustomerTaxId": "NotAvailable",
+        "CustomerContactPerson": "NotAvailable",
+        "InvoiceId": "azure",
+        "InvoiceDate": "azure",
+        "DueDate": "NotAvailable",
+        "InvoiceCurrency": "NotAvailable",
+        "InvoiceType": "NotAvailable",
+        "PurchaseOrder": "NotAvailable",
+        "PaymentTerms": "NotAvailable",
+        "PaymentMethod": "NotAvailable",
+        "CostCenter": "NotAvailable",
+        "ServicePeriodStart": "NotAvailable",
+        "ServicePeriodEnd": "NotAvailable",
+        "LineItems_Count": "NotAvailable",
+        "TotalTax": "NotAvailable",
+        "TaxTypeBreakdown": "NotAvailable",
+        "WithholdingTax": "NotAvailable",
+        "Subtotal": "NotAvailable",
+        "ShippingHandling": "NotAvailable",
+        "Surcharges": "NotAvailable",
+        "InvoiceTotal": "azure",
+        "AmountPaid": "NotAvailable",
+        "AmountDue": "azure",
+        "Notes": "NotAvailable",
+        "QRCode": "NotAvailable",
+        "CompanyRegistration": "NotAvailable",
+        "ApprovalWorkflowID": "NotAvailable",
+        "ApprovalRequired": "NotAvailable",
+        "ApproverList": "NotAvailable",
+        "ApprovalStatus": "NotAvailable",
+        "ApprovalTimestamps": "NotAvailable"
+      }
     }
   }
 ]

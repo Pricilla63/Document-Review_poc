@@ -8,10 +8,97 @@
         "confidence": 0.938,
         "method": "AzurePrebuiltInvoice"
       },
+      "VendorAddress": {
+        "value": "P.O. Box 742971, Los Angeles, CA 90074-2971",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "ion",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorContactEmail": {
+        "value": "AccountsReceivablebk@ice.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": [
+          {
+            "SWIFT": "BOFAUS3N"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorBankAccountNumber": {
+        "value": [
+          {
+            "SWIFT": "BOFAUS3N"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorBankDetails": {
+        "value": [
+          {
+            "SWIFT": "BOFAUS3N"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "CustomerName": {
         "value": "Consolidated Analytics, Inc.\nAccounts Payable",
         "confidence": 0.915,
         "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": "6032 Innovation Way, Fort Worth, TX 76244",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "CustomerContactPerson": {
         "value": "Consolidated Analytics, Inc.\nAccounts Payable",
@@ -28,133 +115,15 @@
         "confidence": 0.938,
         "method": "AzurePrebuiltInvoice"
       },
-      "InvoiceTotal": {
-        "value": {
-          "amount": 3155.36,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.446,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "TotalTax": {
-        "value": {
-          "amount": 195.36,
-          "currency": "$",
-          "currency_code": "USD"
-        },
-        "confidence": 0.647,
-        "method": "AzurePrebuiltInvoice"
-      },
-      "VendorEmail": {
-        "value": "AccountsReceivablebk@ice.com",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorWebsite": {
-        "value": "Direct",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "VendorTaxId": {
-        "value": "g",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "PaymentMethod": {
-        "value": "Wire",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "CostCenter": {
-        "value": "ount",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "Notes": {
-        "value": "taxable line item\nInvoice Detail\nNo.\nDate\nClient #\n0177780\nJul 22, 2025\nL6Q\nName\nSSR / Ref\nT\nConsolidated Analytics, Inc.\nInterChange - InterChange Products / Services\nInterChange Service Subscription Fee for the month of June, 2025\n$1,000.00\nT\nWeb Direct\nActual Views:\n1,192\nBillable Views :\n1,192\nMinimum Amount:\n$875.00\nAmount\nViews\nCharge\n826 to\n1,650\n$1,480.00\n$1,480.00\n$1,480.00\nT\n$1,480.00\nWeb Direct Base Fee for the month of June, 2025\n414 - ServiceMac, LLC (1,192 Views) \nActual Users:\n16\nBillable Users :\n16\nAmount\nUsers\nRate\n1 to\n16\n30.000000\n$480.00\n$480.00\nT\n$480.00\nWeb Direct User Fee for the month of June, 2025\nSales Tax\nTEXAS State Sales Tax (6.25%)\n$148.00\nFORT WORTH City Sales Tax (1.00%)\n$23.68\nFORT WORTH METROPOLITAN TRANSIT AUTHORITY Other Sales Tax (0.50%)\n$11.84\nFORT WORTH CRIME CONTROL DISTRICT Other Sales Tax (0.50%)\n$11.84\nPage 1 of 1",
-        "confidence": 0.7,
-        "method": "Regex"
-      },
-      "InvoiceCurrency": {
-        "value": "USD",
-        "confidence": 0.446,
-        "method": "DerivedFromTotal"
-      },
-      "LineItems_Count": {
-        "value": 4,
-        "confidence": 1.0,
-        "method": "Calculated"
-      },
-      "CustomerPhone": {
-        "value": " 1235025530",
-        "confidence": 0.8,
-        "method": "TextAnalysis"
-      },
-      "VendorAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorPhone": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankName": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankAccountNumber": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorBankDetails": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "VendorContactPerson": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "BillingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "ShippingAddress": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerEmail": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
-      "CustomerTaxId": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
-      },
       "DueDate": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "InvoiceType": {
         "value": "na",
@@ -167,24 +136,57 @@
         "method": "NotAvailable"
       },
       "PaymentTerms": {
+        "value": "PAST DUE BALANCES SUBJECT TO INTEREST PER CONTRACT TERMS",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": [
+          {
+            "SWIFT": "BOFAUS3N"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CostCenter": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
       "ServicePeriodStart": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "June, 2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "ServicePeriodEnd": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "June, 2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "LineItems_Count": {
+        "value": 4,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": {
+          "amount": 195.36,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.647,
+        "method": "AzurePrebuiltInvoice"
       },
       "TaxTypeBreakdown": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": {
+          "TEXAS State Sales Tax (6.25%)": "148.00",
+          "FORT WORTH City Sales Tax (1.00%)": "23.68",
+          "FORT WORTH METROPOLITAN TRANSIT AUTHORITY Other Sales Tax (0.50%)": "11.84",
+          "FORT WORTH CRIME CONTROL DISTRICT Other Sales Tax (0.50%)": "11.84"
+        },
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "WithholdingTax": {
         "value": "na",
@@ -206,15 +208,29 @@
         "confidence": 0.0,
         "method": "NotAvailable"
       },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 3155.36,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.446,
+        "method": "AzurePrebuiltInvoice"
+      },
       "AmountPaid": {
         "value": "na",
         "confidence": 0.0,
         "method": "NotAvailable"
       },
       "AmountDue": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "3,155.36",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "Notes": {
+        "value": "PAST DUE BALANCES SUBJECT TO INTEREST PER CONTRACT TERMS",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "QRCode": {
         "value": "na",
@@ -287,31 +303,41 @@
     ],
     "extraction_metadata": {
       "methods_used": [
-        "AzurePrebuiltInvoice"
+        "AzureDocumentIntelligence",
+        "OpenAI_LLM_Text",
+        "EnhancedRegex"
       ],
       "confidence_scores": {
-        "VendorName": 0.938,
-        "CustomerName": 0.915,
-        "CustomerContactPerson": 0.915,
-        "InvoiceId": 0.977,
-        "InvoiceDate": 0.938,
-        "InvoiceTotal": 0.446,
-        "TotalTax": 0.647,
-        "VendorEmail": 0.7,
-        "VendorWebsite": 0.7,
+        "VendorName": 0.9,
+        "VendorAddress": 0.8,
         "VendorTaxId": 0.7,
-        "PaymentMethod": 0.7,
-        "CostCenter": 0.7,
-        "Notes": 0.7
+        "VendorContactEmail": 0.8,
+        "VendorBankName": 0.9,
+        "VendorBankAccountNumber": 0.9,
+        "VendorBankDetails": 0.9,
+        "CustomerName": 0.9,
+        "BillingAddress": 0.8,
+        "CustomerContactPerson": 0.9,
+        "InvoiceId": 0.9,
+        "InvoiceDate": 0.9,
+        "InvoiceCurrency": 0.8,
+        "PaymentTerms": 0.8,
+        "PaymentMethod": 0.9,
+        "ServicePeriodStart": 0.8,
+        "ServicePeriodEnd": 0.8,
+        "LineItems_Count": 0.8,
+        "TotalTax": 0.9,
+        "TaxTypeBreakdown": 0.8,
+        "InvoiceTotal": 0.9,
+        "AmountDue": 0.8,
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T17:54:55.962438",
+      "processing_timestamp": "2025-11-20T20:09:39.534178",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
-        "DerivedFields",
-        "TextAnalysis",
         "MissingFieldHandling"
-      ]
+      ],
+      "line_items_method": "Azure"
     }
   }
 ]
