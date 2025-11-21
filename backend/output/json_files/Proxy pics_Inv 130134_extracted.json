@@ -3,59 +3,269 @@
     "invoice_number": 1,
     "source_file": "Proxy pics_Inv 130134.pdf",
     "fields": {
-      "VendorName": "ProxyPics",
-      "VendorAddress": "6103 W Montrose Ave, Chicago, IL 60634",
-      "VendorCountry": "na",
-      "VendorTaxId": "na",
-      "VendorContactEmail": "accounting@proxypics.com",
-      "VendorPhone": "na",
-      "VendorBankName": "Chase Bank",
-      "VendorBankAccountNumber": "668292805",
-      "VendorBankDetails": "Routing: 071000013; Wire Domestic Routing: 021000021; International SWIFT Code: CHASUS33",
-      "VendorContactPerson": "na",
-      "VendorWebsite": "www.ProxyPics.com",
-      "CustomerName": "Consolidated Analytics",
-      "BillingAddress": "{\"city\": \"Chicago\", \"state\": \"IL\"}",
-      "ShippingAddress": "na",
-      "CustomerPhone": "na",
-      "CustomerEmail": "na",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "na",
-      "InvoiceId": "130134",
-      "InvoiceDate": "2025-07-01",
-      "DueDate": "2025-07-31",
-      "InvoiceCurrency": "USD",
-      "InvoiceType": "na",
-      "PurchaseOrder": "na",
-      "PaymentTerms": "10% interest charge per month on late invoice",
-      "PaymentMethod": "ACH, Wire",
-      "CostCenter": "na",
-      "ServicePeriodStart": "2025-06-11",
-      "ServicePeriodEnd": "2025-06-23",
-      "LineItems_Count": "na",
-      "TotalTax": "na",
-      "TaxTypeBreakdown": "na",
-      "WithholdingTax": "na",
-      "Subtotal": "na",
-      "ShippingHandling": "na",
-      "Surcharges": "na",
-      "InvoiceTotal": {
-        "amount": 300.0,
-        "currency": "$",
-        "currency_code": "USD"
+      "VendorName": {
+        "value": "ProxyPics",
+        "confidence": 0.956,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "na",
-      "AmountDue": "USD 300.00",
-      "Notes": "10% interest charge per month on late invoice",
-      "QRCode": "na",
-      "CompanyRegistration": "na",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "VendorAddress": {
+        "value": "6103 W Montrose Ave., Chicago, IL 60634",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "accounting@proxypics.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "Chase Bank",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankAccountNumber": {
+        "value": "668292805",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankDetails": {
+        "value": "Routing: 071000013; WIRE Domestic Routing: 021000021; International SWIFT Code: CHASUS33",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "www.ProxyPics.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics",
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "city": "Chicago",
+          "state": "IL"
+        },
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceId": {
+        "value": "130134",
+        "confidence": 0.964,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-01",
+        "confidence": 0.926,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-07-31",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "10% interest charge per month on late invoice",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": "ACH, Wire",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "11 June 2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ServicePeriodEnd": {
+        "value": "23 June 2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "LineItems_Count": {
+        "value": 2,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 300.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.796,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountDue": {
+        "value": "$300.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "Notes": {
+        "value": "10% interest charge per month on late invoice",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Loan Number: 506119717\n12533 E 450 N, Idaville, IN 47950",
+        "NetAmount": {
+          "amount": 150.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Loan Number: 0167067362\nMortgage Corporation\n360 E 600 S Cir, Cedar City, UT 84720",
+        "NetAmount": {
+          "amount": 150.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
@@ -65,108 +275,32 @@
       "confidence_scores": {
         "VendorName": 0.9,
         "VendorAddress": 0.8,
-        "VendorCountry": 0.0,
-        "VendorTaxId": 0.0,
         "VendorContactEmail": 0.8,
-        "VendorPhone": 0.0,
         "VendorBankName": 0.8,
         "VendorBankAccountNumber": 0.8,
         "VendorBankDetails": 0.8,
-        "VendorContactPerson": 0.0,
         "VendorWebsite": 0.8,
         "CustomerName": 0.9,
         "BillingAddress": 0.9,
-        "ShippingAddress": 0.0,
-        "CustomerPhone": 0.0,
-        "CustomerEmail": 0.0,
-        "CustomerTaxId": 0.0,
-        "CustomerContactPerson": 0.0,
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
         "DueDate": 0.9,
         "InvoiceCurrency": 0.8,
-        "InvoiceType": 0.0,
-        "PurchaseOrder": 0.0,
         "PaymentTerms": 0.8,
         "PaymentMethod": 0.8,
-        "CostCenter": 0.0,
         "ServicePeriodStart": 0.8,
         "ServicePeriodEnd": 0.8,
-        "LineItems_Count": 0.0,
-        "TotalTax": 0.0,
-        "TaxTypeBreakdown": 0.8,
-        "WithholdingTax": 0.0,
-        "Subtotal": 0.0,
-        "ShippingHandling": 0.0,
-        "Surcharges": 0.0,
+        "LineItems_Count": 0.8,
         "InvoiceTotal": 0.9,
-        "AmountPaid": 0.0,
         "AmountDue": 0.8,
-        "Notes": 0.8,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.0,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:53:05.211251",
+      "processing_timestamp": "2025-11-21T12:17:24.747728",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "LLM_Text_Analysis",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "llm",
-        "VendorCountry": "NotAvailable",
-        "VendorTaxId": "NotAvailable",
-        "VendorContactEmail": "llm",
-        "VendorPhone": "NotAvailable",
-        "VendorBankName": "llm",
-        "VendorBankAccountNumber": "llm",
-        "VendorBankDetails": "llm",
-        "VendorContactPerson": "NotAvailable",
-        "VendorWebsite": "llm",
-        "CustomerName": "azure",
-        "BillingAddress": "azure",
-        "ShippingAddress": "NotAvailable",
-        "CustomerPhone": "NotAvailable",
-        "CustomerEmail": "NotAvailable",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "NotAvailable",
-        "InvoiceId": "azure",
-        "InvoiceDate": "azure",
-        "DueDate": "azure",
-        "InvoiceCurrency": "llm",
-        "InvoiceType": "NotAvailable",
-        "PurchaseOrder": "NotAvailable",
-        "PaymentTerms": "llm",
-        "PaymentMethod": "llm",
-        "CostCenter": "NotAvailable",
-        "ServicePeriodStart": "llm",
-        "ServicePeriodEnd": "llm",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "NotAvailable",
-        "TaxTypeBreakdown": "llm",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "NotAvailable",
-        "ShippingHandling": "NotAvailable",
-        "Surcharges": "NotAvailable",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "NotAvailable",
-        "AmountDue": "llm",
-        "Notes": "llm",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "NotAvailable",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "Azure"
     }
   }
 ]

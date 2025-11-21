@@ -179,9 +179,9 @@
         "method": "NotAvailable"
       },
       "Subtotal": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "2660.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "ShippingHandling": {
         "value": "na",
@@ -332,10 +332,11 @@
         "ServicePeriodStart": 0.9,
         "ServicePeriodEnd": 0.9,
         "LineItems_Count": 0.8,
+        "Subtotal": 0.8,
         "InvoiceTotal": 0.9,
         "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T20:09:27.680940",
+      "processing_timestamp": "2025-11-21T12:03:07.888502",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

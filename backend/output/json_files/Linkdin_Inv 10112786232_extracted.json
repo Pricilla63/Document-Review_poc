@@ -3,106 +3,398 @@
     "invoice_number": 1,
     "source_file": "Linkdin_Inv 10112786232.pdf",
     "fields": {
-      "VendorName": "Linked in\nLinkedIn Corporation",
-      "VendorAddress": "1000 West Maude Ave, Sunnyvale, CA 94085, United States",
-      "VendorCountry": "United States",
-      "VendorTaxId": "47-0912023",
-      "VendorContactEmail": "ar-receipts@linkedin.com",
-      "VendorPhone": "na",
-      "VendorBankName": [
-        {
-          "SWIFT": "BOFAUS3N"
-        },
-        {
-          "SWIFT": "BOFAUS6S"
-        }
-      ],
-      "VendorBankAccountNumber": [
-        {
-          "SWIFT": "BOFAUS3N"
-        },
-        {
-          "SWIFT": "BOFAUS6S"
-        }
-      ],
-      "VendorBankDetails": [
-        {
-          "SWIFT": "BOFAUS3N"
-        },
-        {
-          "SWIFT": "BOFAUS6S"
-        }
-      ],
-      "VendorContactPerson": "Linkedin Corporation",
-      "VendorWebsite": "http://lnkd.in/billinghelp",
-      "CustomerName": "Consolidated Analytics, Inc.\nAttn: Accounts Payable",
-      "BillingAddress": "1 MacArthur Pl Ste 100, Santa Ana, CA 92707-5928, United States",
-      "ShippingAddress": {
-        "street_address": "1 MacArthur Pl Ste 100",
-        "city": "Santa Ana",
-        "state": "CA",
-        "postal_code": "92707-5928",
-        "country": "United States",
-        "house_number": "1",
-        "road": "MacArthur Pl",
-        "unit": "Ste 100"
+      "VendorName": {
+        "value": "Linked in\nLinkedIn Corporation",
+        "confidence": 0.683,
+        "method": "AzurePrebuiltInvoice"
       },
-      "CustomerPhone": "na",
-      "CustomerEmail": "na",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "Accounts Payable",
-      "InvoiceId": "10112786232",
-      "InvoiceDate": "2025-06-23",
-      "DueDate": "2025-07-23",
-      "InvoiceCurrency": "USD",
-      "InvoiceType": "na",
-      "PurchaseOrder": "FLD9882478664",
-      "PaymentTerms": "NET 30",
-      "PaymentMethod": [
-        {
-          "SWIFT": "BOFAUS3N"
+      "VendorAddress": {
+        "value": {
+          "street_address": "1000 West Maude Ave",
+          "city": "Sunnyvale",
+          "state": "CA",
+          "postal_code": "94085",
+          "country": "United States"
         },
-        {
-          "SWIFT": "BOFAUS6S"
-        }
-      ],
-      "CostCenter": "na",
-      "ServicePeriodStart": "2025-06-23",
-      "ServicePeriodEnd": "2025-09-22",
-      "LineItems_Count": "na",
+        "confidence": 0.821,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorCountry": {
+        "value": "United States",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorTaxId": {
+        "value": "47-0912023",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactEmail": {
+        "value": "ar-receipts@linkedin.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": [
+          {
+            "SWIFT": "BOFAUS3N"
+          },
+          {
+            "SWIFT": "BOFAUS6S"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorBankAccountNumber": {
+        "value": [
+          {
+            "SWIFT": "BOFAUS3N"
+          },
+          {
+            "SWIFT": "BOFAUS6S"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorBankDetails": {
+        "value": [
+          {
+            "SWIFT": "BOFAUS3N"
+          },
+          {
+            "SWIFT": "BOFAUS6S"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorContactPerson": {
+        "value": "Linkedin Corporation",
+        "confidence": 0.878,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "http://lnkd.in/billinghelp",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics, Inc.\nAttn: Accounts Payable",
+        "confidence": 0.684,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1 MacArthur Pl Ste 100",
+          "city": "Santa Ana",
+          "state": "CA",
+          "postal_code": "92707-5928",
+          "country": "United States"
+        },
+        "confidence": 0.854,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": {
+          "street_address": "1 MacArthur Pl Ste 100",
+          "city": "Santa Ana",
+          "state": "CA",
+          "postal_code": "92707-5928",
+          "country": "United States"
+        },
+        "confidence": 0.84,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "Accounts Payable",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceId": {
+        "value": "10112786232",
+        "confidence": 0.94,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-23",
+        "confidence": 0.94,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-07-23",
+        "confidence": 0.939,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "Invoice",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PurchaseOrder": {
+        "value": "FLD9882478664",
+        "confidence": 0.788,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "PaymentTerms": {
+        "value": "NET 30",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": [
+          {
+            "SWIFT": "BOFAUS3N"
+          },
+          {
+            "SWIFT": "BOFAUS6S"
+          }
+        ],
+        "confidence": null,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "2025-06-23",
+        "confidence": 0.433,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodEnd": {
+        "value": "22-SEP-2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "LineItems_Count": {
+        "value": 9,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
       "TotalTax": {
-        "amount": 0.0,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.931,
+        "method": "AzurePrebuiltInvoice"
       },
       "TaxTypeBreakdown": {
-        "Sales Tax": "0.00 USD"
+        "value": "0.00%",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
-      "WithholdingTax": "na",
-      "Subtotal": "5,195.70 USD",
-      "ShippingHandling": "0.00 USD",
-      "Surcharges": "0.00 USD",
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "5,195.70",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "InvoiceTotal": {
-        "amount": 31174.2,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 31174.2,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.531,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "0.00 USD",
+      "AmountPaid": {
+        "value": "0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "AmountDue": {
-        "amount": 5195.7,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 5195.7,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
       },
-      "Notes": "Please reference invoice number(s) with your payment. For ACH Payments, include the remittance advice identifier segment RMR*IV, your invoice number and payment amount. For Wire payments, include the reference tag *INV?* and invoice numbers. In all other cases, send remittance advice to ar-receipts@linkedin.com. Special Instructions: na",
-      "QRCode": "na",
-      "CompanyRegistration": "na",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "Notes": {
+        "value": "Special Instructions :  ; Please reference invoice number(s) with your payment.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Job Slots : 6 of 12\nBilling Period From 06/23/2025 To 09/22/2025",
+        "Quantity": 5.0,
+        "UnitPrice": {
+          "amount": 404.8,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 2024.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "TaxRate": "0.00%"
+      },
+      {
+        "item_number": 2,
+        "Description": "Jobs Dashboard Manager : 6 of 12\nBilling Period From 06/23/2025 To 09/22/2025",
+        "Quantity": 3.0,
+        "UnitPrice": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "TaxRate": "0.00%"
+      },
+      {
+        "item_number": 3,
+        "Description": "Recruiter Professional Services (RPS) : 6 of 12\nBilling Period From 06/23/2025 To 09/22/2025",
+        "Quantity": 2.0,
+        "UnitPrice": {
+          "amount": 1585.85,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 3171.7,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "TaxRate": "0.00%"
+      },
+      {
+        "item_number": 4,
+        "NetAmount": {
+          "amount": 5195.7,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "NetAmount": {
+          "amount": 5195.7,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 6,
+        "NetAmount": {
+          "amount": 5195.7,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 7,
+        "NetAmount": {
+          "amount": 5195.7,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 8,
+        "NetAmount": {
+          "amount": 5195.7,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 9,
+        "NetAmount": {
+          "amount": 5195.7,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
@@ -115,7 +407,6 @@
         "VendorCountry": 0.8,
         "VendorTaxId": 0.8,
         "VendorContactEmail": 0.8,
-        "VendorPhone": 0.0,
         "VendorBankName": 0.9,
         "VendorBankAccountNumber": 0.9,
         "VendorBankDetails": 0.9,
@@ -124,96 +415,32 @@
         "CustomerName": 0.9,
         "BillingAddress": 0.9,
         "ShippingAddress": 0.9,
-        "CustomerPhone": 0.0,
-        "CustomerEmail": 0.0,
-        "CustomerTaxId": 0.0,
         "CustomerContactPerson": 0.8,
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
         "DueDate": 0.9,
         "InvoiceCurrency": 0.8,
-        "InvoiceType": 0.0,
+        "InvoiceType": 0.8,
         "PurchaseOrder": 0.9,
         "PaymentTerms": 0.8,
         "PaymentMethod": 0.9,
-        "CostCenter": 0.0,
         "ServicePeriodStart": 0.9,
         "ServicePeriodEnd": 0.8,
-        "LineItems_Count": 0.0,
+        "LineItems_Count": 0.8,
         "TotalTax": 0.9,
         "TaxTypeBreakdown": 0.8,
-        "WithholdingTax": 0.0,
         "Subtotal": 0.8,
-        "ShippingHandling": 0.8,
-        "Surcharges": 0.8,
         "InvoiceTotal": 0.9,
         "AmountPaid": 0.8,
         "AmountDue": 0.9,
-        "Notes": 0.8,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.0,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:43:01.743473",
+      "processing_timestamp": "2025-11-21T12:07:12.174391",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "LLM_Text_Analysis",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "azure",
-        "VendorCountry": "llm",
-        "VendorTaxId": "llm",
-        "VendorContactEmail": "llm",
-        "VendorPhone": "NotAvailable",
-        "VendorBankName": "azure",
-        "VendorBankAccountNumber": "azure",
-        "VendorBankDetails": "azure",
-        "VendorContactPerson": "azure",
-        "VendorWebsite": "llm",
-        "CustomerName": "azure",
-        "BillingAddress": "azure",
-        "ShippingAddress": "azure",
-        "CustomerPhone": "NotAvailable",
-        "CustomerEmail": "NotAvailable",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "llm",
-        "InvoiceId": "azure",
-        "InvoiceDate": "azure",
-        "DueDate": "azure",
-        "InvoiceCurrency": "llm",
-        "InvoiceType": "NotAvailable",
-        "PurchaseOrder": "azure",
-        "PaymentTerms": "llm",
-        "PaymentMethod": "azure",
-        "CostCenter": "NotAvailable",
-        "ServicePeriodStart": "azure",
-        "ServicePeriodEnd": "llm",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "azure",
-        "TaxTypeBreakdown": "llm",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "llm",
-        "ShippingHandling": "llm",
-        "Surcharges": "llm",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "llm",
-        "AmountDue": "azure",
-        "Notes": "llm",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "NotAvailable",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "Azure"
     }
   }
 ]

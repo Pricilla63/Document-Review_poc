@@ -129,9 +129,9 @@
         "method": "NotAvailable"
       },
       "InvoiceType": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "INVOICE",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "PurchaseOrder": {
         "value": "na",
@@ -197,14 +197,14 @@
         "method": "AzurePrebuiltInvoice"
       },
       "ShippingHandling": {
-        "value": "$0.00",
-        "confidence": 0.8,
-        "method": "OpenAI_LLM"
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "Surcharges": {
-        "value": "$0.00",
-        "confidence": 0.8,
-        "method": "OpenAI_LLM"
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "InvoiceTotal": {
         "value": {
@@ -216,9 +216,9 @@
         "method": "AzurePrebuiltInvoice"
       },
       "AmountPaid": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "$0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "AmountDue": {
         "value": "$500.00",
@@ -226,7 +226,7 @@
         "method": "OpenAI_LLM"
       },
       "Notes": {
-        "value": "Monthly Subscriber Billing: Minimum $500.00 Maintenance Fee. Please reference invoice numbers on all payments.",
+        "value": "Please reference invoice numbers on all payments. Monthly Subscriber Billing: Minimum $500.00 Maintenance Fee",
         "confidence": 0.8,
         "method": "OpenAI_LLM"
       },
@@ -302,17 +302,17 @@
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
         "DueDate": 0.8,
+        "InvoiceType": 0.8,
         "PaymentTerms": 0.8,
         "LineItems_Count": 0.8,
         "TotalTax": 0.9,
         "Subtotal": 0.9,
-        "ShippingHandling": 0.8,
-        "Surcharges": 0.8,
         "InvoiceTotal": 0.9,
+        "AmountPaid": 0.8,
         "AmountDue": 0.8,
         "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T20:08:12.717899",
+      "processing_timestamp": "2025-11-21T12:01:53.527120",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

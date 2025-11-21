@@ -3,63 +3,307 @@
     "invoice_number": 1,
     "source_file": "Lucianos utopia realty inc_07292025300-3867.pdf",
     "fields": {
-      "VendorName": "ORSID\nNEW YORK-",
-      "VendorAddress": "156 WEST 56TH STREET, 6TH FLOOR, NEW YORK, NY 10019",
-      "VendorCountry": "na",
-      "VendorTaxId": "na",
-      "VendorContactEmail": "EFILJA@ORSIDNY.COM",
-      "VendorPhone": "212-484-3792",
-      "VendorBankName": "na",
-      "VendorBankAccountNumber": "na",
-      "VendorBankDetails": "na",
-      "VendorContactPerson": "ORSID\nNEW YORK-",
-      "VendorWebsite": "na",
-      "CustomerName": "GOTTESMAN, CHAYA",
-      "BillingAddress": "127 WEST 82ND STREET, APT. 1B, NEW YORK, NY 10024",
-      "ShippingAddress": "na",
-      "CustomerPhone": "na",
-      "CustomerEmail": "na",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "GOTTESMAN, CHAYA",
-      "InvoiceId": "na",
-      "InvoiceDate": "2025-07-28",
-      "DueDate": "2025-08-01",
-      "InvoiceCurrency": "USD",
-      "InvoiceType": "Statement",
-      "PurchaseOrder": "na",
-      "PaymentTerms": "na",
-      "PaymentMethod": "Check",
-      "CostCenter": "na",
-      "ServicePeriodStart": "na",
-      "ServicePeriodEnd": "na",
-      "LineItems_Count": "na",
-      "TotalTax": "na",
-      "TaxTypeBreakdown": "na",
-      "WithholdingTax": "na",
-      "Subtotal": "USD 55281.85",
-      "ShippingHandling": "na",
-      "Surcharges": "na",
+      "VendorName": {
+        "value": "ORSID\nNEW YORK-",
+        "confidence": 0.426,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "156 WEST 56TH STREET",
+          "city": "NEW YORK",
+          "state": "NY",
+          "postal_code": "10019"
+        },
+        "confidence": 0.868,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorCountry": {
+        "value": "USA",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "EFILJA@ORSIDNY.COM",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "631-363-4822",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "154-004",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactPerson": {
+        "value": "ORSID\nNEW YORK-",
+        "confidence": 0.426,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "GOTTESMAN, CHAYA",
+        "confidence": 0.916,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "127 WEST 82ND STREET APT. 1B",
+          "city": "NEW YORK",
+          "state": "NY",
+          "postal_code": "10024"
+        },
+        "confidence": 0.837,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "GOTTESMAN, CHAYA",
+        "confidence": 0.916,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-28",
+        "confidence": 0.654,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-08-01",
+        "confidence": 0.942,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "STATEMENT",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentMethod": {
+        "value": "Check",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "LineItems_Count": {
+        "value": 5,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "InvoiceTotal": {
-        "amount": 55361.35,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 55361.35,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.934,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "USD 1834.71",
+      "AmountPaid": {
+        "value": "1,834.71",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "AmountDue": {
-        "amount": 55361.35,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 55361.35,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.934,
+        "method": "AzurePrebuiltInvoice"
       },
-      "Notes": "This statement includes payments received as of 7/21/25.",
-      "QRCode": "na",
-      "CompanyRegistration": "WebReg#: B3B5BC",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "Notes": {
+        "value": "This statement includes payments received as of 7/21/25. WebReg#: B3B5BC. For general inquiries contact: Manager: Sean Radoncic at 631-363-4822, Admin. Assist: Samantha Rosario 212-621-1841, For payments contact: Bookkeeper: Etleva Filja at 212-484-3792, E-MAIL EFILJA@ORSIDNY.COM.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "OPEN BAL",
+        "NetAmount": {
+          "amount": 55281.85,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "PAYMENTS",
+        "NetAmount": {
+          "amount": -1834.71,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "COMM. CHG",
+        "NetAmount": {
+          "amount": 1018.82,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "LEGAL FEES",
+        "NetAmount": {
+          "amount": 79.5,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "ASSESSMENT",
+        "NetAmount": {
+          "amount": 815.89,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
@@ -69,108 +313,31 @@
       "confidence_scores": {
         "VendorName": 0.9,
         "VendorAddress": 0.9,
-        "VendorCountry": 0.0,
-        "VendorTaxId": 0.0,
+        "VendorCountry": 0.8,
         "VendorContactEmail": 0.8,
         "VendorPhone": 0.8,
-        "VendorBankName": 0.0,
-        "VendorBankAccountNumber": 0.0,
-        "VendorBankDetails": 0.0,
+        "VendorBankAccountNumber": 0.7,
         "VendorContactPerson": 0.9,
-        "VendorWebsite": 0.0,
         "CustomerName": 0.9,
         "BillingAddress": 0.9,
-        "ShippingAddress": 0.0,
-        "CustomerPhone": 0.0,
-        "CustomerEmail": 0.0,
-        "CustomerTaxId": 0.0,
         "CustomerContactPerson": 0.9,
-        "InvoiceId": 0.0,
         "InvoiceDate": 0.9,
         "DueDate": 0.9,
         "InvoiceCurrency": 0.8,
         "InvoiceType": 0.8,
-        "PurchaseOrder": 0.0,
-        "PaymentTerms": 0.0,
         "PaymentMethod": 0.8,
-        "CostCenter": 0.0,
-        "ServicePeriodStart": 0.0,
-        "ServicePeriodEnd": 0.0,
-        "LineItems_Count": 0.0,
-        "TotalTax": 0.0,
-        "TaxTypeBreakdown": 0.8,
-        "WithholdingTax": 0.0,
-        "Subtotal": 0.8,
-        "ShippingHandling": 0.0,
-        "Surcharges": 0.0,
+        "LineItems_Count": 0.8,
         "InvoiceTotal": 0.9,
         "AmountPaid": 0.8,
         "AmountDue": 0.9,
-        "Notes": 0.8,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.8,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:46:57.006287",
+      "processing_timestamp": "2025-11-21T12:11:06.797295",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "LLM_Text_Analysis",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "azure",
-        "VendorCountry": "NotAvailable",
-        "VendorTaxId": "NotAvailable",
-        "VendorContactEmail": "llm",
-        "VendorPhone": "llm",
-        "VendorBankName": "NotAvailable",
-        "VendorBankAccountNumber": "NotAvailable",
-        "VendorBankDetails": "NotAvailable",
-        "VendorContactPerson": "azure",
-        "VendorWebsite": "NotAvailable",
-        "CustomerName": "azure",
-        "BillingAddress": "azure",
-        "ShippingAddress": "NotAvailable",
-        "CustomerPhone": "NotAvailable",
-        "CustomerEmail": "NotAvailable",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "azure",
-        "InvoiceId": "NotAvailable",
-        "InvoiceDate": "azure",
-        "DueDate": "azure",
-        "InvoiceCurrency": "llm",
-        "InvoiceType": "llm",
-        "PurchaseOrder": "NotAvailable",
-        "PaymentTerms": "NotAvailable",
-        "PaymentMethod": "llm",
-        "CostCenter": "NotAvailable",
-        "ServicePeriodStart": "NotAvailable",
-        "ServicePeriodEnd": "NotAvailable",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "NotAvailable",
-        "TaxTypeBreakdown": "llm",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "llm",
-        "ShippingHandling": "NotAvailable",
-        "Surcharges": "NotAvailable",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "llm",
-        "AmountDue": "azure",
-        "Notes": "llm",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "llm",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "Azure"
     }
   }
 ]

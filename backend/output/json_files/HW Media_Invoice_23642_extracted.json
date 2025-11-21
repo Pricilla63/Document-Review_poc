@@ -19,9 +19,9 @@
         "method": "AzurePrebuiltInvoice"
       },
       "VendorCountry": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "United States",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "VendorTaxId": {
         "value": "81-2063430",
@@ -136,7 +136,7 @@
         "method": "NotAvailable"
       },
       "PaymentMethod": {
-        "value": "Check, Wire/ACH, Online",
+        "value": "Check, Wire/ACH, Online (https://app01.us.bill.com/p/housingwire)",
         "confidence": 0.8,
         "method": "OpenAI_LLM"
       },
@@ -214,7 +214,7 @@
         "method": "AzurePrebuiltInvoice"
       },
       "Notes": {
-        "value": "To pay online, go to https://app01.us.bill.com/p/housingwire",
+        "value": "PLEASE MAKE CHECKS PAYABLE TO: HW Media LLC. To pay online, go to https://app01.us.bill.com/p/housingwire",
         "confidence": 0.8,
         "method": "OpenAI_LLM"
       },
@@ -281,6 +281,7 @@
       "confidence_scores": {
         "VendorName": 0.9,
         "VendorAddress": 0.9,
+        "VendorCountry": 0.8,
         "VendorTaxId": 0.8,
         "VendorPhone": 0.8,
         "VendorBankName": 0.8,
@@ -301,7 +302,7 @@
         "AmountDue": 0.9,
         "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T20:13:03.782192",
+      "processing_timestamp": "2025-11-21T12:06:33.990619",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

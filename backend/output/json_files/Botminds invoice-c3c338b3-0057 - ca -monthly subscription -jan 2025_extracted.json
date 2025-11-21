@@ -151,14 +151,14 @@
         "method": "NotAvailable"
       },
       "ServicePeriodStart": {
-        "value": "January 1, 2025",
-        "confidence": 0.8,
-        "method": "OpenAI_LLM"
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "ServicePeriodEnd": {
-        "value": "January 31, 2025",
-        "confidence": 0.8,
-        "method": "OpenAI_LLM"
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "LineItems_Count": {
         "value": 1,
@@ -299,14 +299,12 @@
         "DueDate": 0.9,
         "InvoiceCurrency": 0.8,
         "InvoiceType": 0.8,
-        "ServicePeriodStart": 0.8,
-        "ServicePeriodEnd": 0.8,
         "LineItems_Count": 0.8,
         "Subtotal": 0.9,
         "InvoiceTotal": 0.9,
         "AmountDue": 0.9
       },
-      "processing_timestamp": "2025-11-20T20:10:15.300550",
+      "processing_timestamp": "2025-11-21T12:03:57.834804",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

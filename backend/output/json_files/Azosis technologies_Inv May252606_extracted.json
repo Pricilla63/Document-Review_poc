@@ -50,7 +50,7 @@
         "method": "OpenAI_LLM"
       },
       "VendorBankDetails": {
-        "value": "Routing Number-121000358",
+        "value": "Account Number-325192652575, Routing Number-121000358",
         "confidence": 0.8,
         "method": "OpenAI_LLM"
       },
@@ -313,7 +313,7 @@
         "AmountDue": 0.9,
         "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T20:09:15.604755",
+      "processing_timestamp": "2025-11-21T12:02:55.828338",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

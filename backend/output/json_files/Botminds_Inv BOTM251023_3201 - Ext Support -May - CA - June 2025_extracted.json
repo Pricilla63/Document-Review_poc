@@ -50,7 +50,7 @@
         "method": "OpenAI_LLM"
       },
       "VendorBankDetails": {
-        "value": "Routing Number (ABA): 121145433, Bank Address: 1 Letterman Drive, Building A, Suite A4-700, San Francisco, CA 94129.",
+        "value": "Routing Number (ABA): 121145433; Bank Address: 1 Letterman Drive, Building A, Suite A4-700, San Francisco, CA 94129.",
         "confidence": 0.8,
         "method": "OpenAI_LLM"
       },
@@ -318,7 +318,7 @@
         "InvoiceTotal": 0.9,
         "AmountDue": 0.9
       },
-      "processing_timestamp": "2025-11-20T20:10:27.796062",
+      "processing_timestamp": "2025-11-21T12:04:08.892041",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

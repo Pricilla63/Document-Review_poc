@@ -56,7 +56,7 @@
       },
       "VendorContactPerson": {
         "value": "LauraMac, LLC",
-        "confidence": 0.932,
+        "confidence": 0.933,
         "method": "AzurePrebuiltInvoice"
       },
       "VendorWebsite": {
@@ -120,9 +120,9 @@
         "method": "AzurePrebuiltInvoice"
       },
       "InvoiceCurrency": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "InvoiceType": {
         "value": "INVOICE",
@@ -222,9 +222,9 @@
         "method": "AzurePrebuiltInvoice"
       },
       "Notes": {
-        "value": "Sales Tax calculated by AvaTax for 7666-V0 at Fri Mar 7 07:58:33 UTC 2025",
-        "confidence": 0.8,
-        "method": "OpenAI_LLM"
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "QRCode": {
         "value": "na",
@@ -387,6 +387,7 @@
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
         "DueDate": 0.9,
+        "InvoiceCurrency": 0.8,
         "InvoiceType": 0.8,
         "PaymentTerms": 0.8,
         "LineItems_Count": 0.8,
@@ -394,10 +395,9 @@
         "TaxTypeBreakdown": 0.8,
         "Subtotal": 0.9,
         "InvoiceTotal": 0.9,
-        "AmountDue": 0.9,
-        "Notes": 0.8
+        "AmountDue": 0.9
       },
-      "processing_timestamp": "2025-11-20T20:13:29.578368",
+      "processing_timestamp": "2025-11-21T12:06:59.891099",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

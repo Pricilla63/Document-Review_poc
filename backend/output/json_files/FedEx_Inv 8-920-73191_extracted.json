@@ -182,7 +182,7 @@
           "currency": "$",
           "currency_code": "USD"
         },
-        "confidence": 0.798,
+        "confidence": 0.799,
         "method": "AzurePrebuiltInvoice"
       },
       "ShippingHandling": {
@@ -404,7 +404,7 @@
         "AmountDue": 0.8,
         "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T20:11:23.421498",
+      "processing_timestamp": "2025-11-21T12:04:59.398011",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

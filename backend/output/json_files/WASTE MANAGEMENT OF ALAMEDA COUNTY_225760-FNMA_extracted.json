@@ -3,66 +3,316 @@
     "invoice_number": 1,
     "source_file": "WASTE MANAGEMENT OF ALAMEDA COUNTY_225760-FNMA.pdf",
     "fields": {
-      "VendorName": "WM",
-      "VendorAddress": "172 98th Avenue, Oakland, CA 94603",
-      "VendorCountry": "USA",
-      "VendorTaxId": "065-4413544-2216-0",
-      "VendorContactEmail": "csnorthbay@wm.com",
-      "VendorPhone": "(510) 613-8710",
-      "VendorBankName": "na",
-      "VendorBankAccountNumber": "na",
-      "VendorBankDetails": "na",
-      "VendorContactPerson": "WASTE MANAGEMENT OF ALAMEDA COUNTY, INC.\nWM OF ALAMEDA COUNTY (WMAC)",
-      "VendorWebsite": "wm.com",
-      "CustomerName": "FEDERAL NATL MTG ASSN FNMA C/O\nSUN WEST MORTGAGE",
-      "BillingAddress": "1 MacArthur Pl Ste 100, Santa Ana, CA 92707-5928",
-      "ShippingAddress": "1205 55th St, Oakland, CA 94608-2631",
-      "CustomerPhone": "na",
-      "CustomerEmail": "na",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "FEDERAL NATL MTG ASSN FNMA C/O SUN WEST",
-      "InvoiceId": "6028000-2216-5",
-      "InvoiceDate": "2025-07-01",
-      "DueDate": "2022-10-25",
-      "InvoiceCurrency": "USD",
-      "InvoiceType": "na",
-      "PurchaseOrder": "na",
-      "PaymentTerms": "Due Upon Receipt; delinquent 45 days later",
-      "PaymentMethod": "Mail, Online, Phone, In Person",
-      "CostCenter": "na",
-      "ServicePeriodStart": "2025-07-01",
-      "ServicePeriodEnd": "na",
-      "LineItems_Count": "na",
-      "TotalTax": "na",
+      "VendorName": {
+        "value": "WM",
+        "confidence": 0.93,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "172 98TH AVENUE",
+          "city": "OAKLAND",
+          "state": "CA",
+          "postal_code": "94603"
+        },
+        "confidence": 0.881,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "065-4413544-2216-0",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactEmail": {
+        "value": "CSNORTHBAY@WM.COM",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "(510) 613-8710",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactPerson": {
+        "value": "WASTE MANAGEMENT OF ALAMEDA COUNTY, INC.\nWM OF ALAMEDA COUNTY (WMAC)",
+        "confidence": 0.846,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "wm.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CustomerName": {
+        "value": "FEDERAL NATL MTG ASSN FNMA C/O\nSUN WEST MORTGAGE",
+        "confidence": 0.862,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": "1 MACARTHUR PL STE 100, SANTA ANA CA 92707-5928",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ShippingAddress": {
+        "value": "Federal National Mortgage Association, 1205 55th St, Oakland CA 94608-2631",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "FEDERAL NATL MTG ASSN FNMA C/O SUN WEST",
+        "confidence": 0.875,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "6028000-2216-5",
+        "confidence": 0.937,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-01",
+        "confidence": 0.937,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2022-10-25",
+        "confidence": 0.836,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "INVOICE",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "Due Upon Receipt",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "LineItems_Count": {
+        "value": 6,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "TaxTypeBreakdown": {
-        "MN STATE SOLID WASTE TAX": "9.75%",
-        "COUNTY ENVIRONMENTAL CHARGE": "na"
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
-      "WithholdingTax": "na",
-      "Subtotal": "USD 188.49",
-      "ShippingHandling": "na",
-      "Surcharges": "na",
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "188.49",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "InvoiceTotal": {
-        "amount": 188.49,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 188.49,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.929,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "USD 0.00",
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "AmountDue": {
-        "amount": 188.49,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 188.49,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.924,
+        "method": "AzurePrebuiltInvoice"
       },
-      "Notes": "Payment is due upon receipt and becomes delinquent 45 days after invoice date for quarterly accounts. Late payments may incur additional charges. See NOTICE for details.",
-      "QRCode": "na",
-      "CompanyRegistration": "na",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "Notes": {
+        "value": "Payment is due upon receipt and becomes delinquent 45 days after the invoice date for customer accounts billed quarterly. Late payments may be subject to additional charges including late fees and property assessment.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "AVAILABLE BULKY DAVIS STREET TRANSFER",
+        "Quantity": 4.0,
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Available Bulky Yards Per",
+        "Quantity": 4.0,
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "64 Gallon Cart Service - Organics",
+        "Quantity": 1.0,
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "32 Gallon Toter",
+        "Quantity": 1.0,
+        "NetAmount": {
+          "amount": 188.49,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "96 Gallon Toter",
+        "Quantity": 1.0,
+        "NetAmount": {
+          "amount": 88.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": "COUNTY ENVIRONMENTAL CHARGE",
+        "NetAmount": {
+          "amount": 25.45,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
@@ -72,108 +322,33 @@
       "confidence_scores": {
         "VendorName": 0.9,
         "VendorAddress": 0.9,
-        "VendorCountry": 0.8,
         "VendorTaxId": 0.8,
         "VendorContactEmail": 0.8,
         "VendorPhone": 0.8,
-        "VendorBankName": 0.0,
-        "VendorBankAccountNumber": 0.0,
-        "VendorBankDetails": 0.0,
         "VendorContactPerson": 0.9,
         "VendorWebsite": 0.8,
         "CustomerName": 0.9,
         "BillingAddress": 0.8,
         "ShippingAddress": 0.8,
-        "CustomerPhone": 0.0,
-        "CustomerEmail": 0.0,
-        "CustomerTaxId": 0.0,
         "CustomerContactPerson": 0.9,
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
         "DueDate": 0.9,
         "InvoiceCurrency": 0.8,
-        "InvoiceType": 0.0,
-        "PurchaseOrder": 0.0,
+        "InvoiceType": 0.8,
         "PaymentTerms": 0.8,
-        "PaymentMethod": 0.8,
-        "CostCenter": 0.0,
-        "ServicePeriodStart": 0.8,
-        "ServicePeriodEnd": 0.0,
-        "LineItems_Count": 0.0,
-        "TotalTax": 0.0,
-        "TaxTypeBreakdown": 0.8,
-        "WithholdingTax": 0.0,
+        "LineItems_Count": 0.8,
         "Subtotal": 0.8,
-        "ShippingHandling": 0.0,
-        "Surcharges": 0.0,
         "InvoiceTotal": 0.9,
-        "AmountPaid": 0.8,
         "AmountDue": 0.9,
-        "Notes": 0.8,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.0,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:55:41.017508",
+      "processing_timestamp": "2025-11-21T12:19:59.257780",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "LLM_Text_Analysis",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "azure",
-        "VendorCountry": "llm",
-        "VendorTaxId": "llm",
-        "VendorContactEmail": "llm",
-        "VendorPhone": "llm",
-        "VendorBankName": "NotAvailable",
-        "VendorBankAccountNumber": "NotAvailable",
-        "VendorBankDetails": "NotAvailable",
-        "VendorContactPerson": "azure",
-        "VendorWebsite": "llm",
-        "CustomerName": "azure",
-        "BillingAddress": "llm",
-        "ShippingAddress": "llm",
-        "CustomerPhone": "NotAvailable",
-        "CustomerEmail": "NotAvailable",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "azure",
-        "InvoiceId": "azure",
-        "InvoiceDate": "azure",
-        "DueDate": "azure",
-        "InvoiceCurrency": "llm",
-        "InvoiceType": "NotAvailable",
-        "PurchaseOrder": "NotAvailable",
-        "PaymentTerms": "llm",
-        "PaymentMethod": "llm",
-        "CostCenter": "NotAvailable",
-        "ServicePeriodStart": "llm",
-        "ServicePeriodEnd": "NotAvailable",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "NotAvailable",
-        "TaxTypeBreakdown": "llm",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "llm",
-        "ShippingHandling": "NotAvailable",
-        "Surcharges": "NotAvailable",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "llm",
-        "AmountDue": "azure",
-        "Notes": "llm",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "NotAvailable",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "Azure"
     }
   }
 ]

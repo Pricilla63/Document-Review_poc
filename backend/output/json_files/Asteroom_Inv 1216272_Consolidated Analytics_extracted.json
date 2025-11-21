@@ -95,9 +95,9 @@
         "method": "NotAvailable"
       },
       "CustomerContactPerson": {
-        "value": "Attn: na",
-        "confidence": 0.8,
-        "method": "OpenAI_LLM"
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "InvoiceId": {
         "value": "1216272",
@@ -209,7 +209,7 @@
         "method": "NotAvailable"
       },
       "Notes": {
-        "value": "PLEASE MAKE A PAYMENT TO: Bank Of America. Printed by SAP Business One.",
+        "value": "PLEASE MAKE A PAYMENT TO: Bank Name: Bank Of America Bank Address:2611 North First Street, San Jose, Ca95134 Account name : Asteroom Inc Account Type: checking Account Number: 325084800231 Routing number: 121000358",
         "confidence": 0.8,
         "method": "OpenAI_LLM"
       },
@@ -299,7 +299,6 @@
         "VendorContactPerson": 0.9,
         "CustomerName": 0.9,
         "CustomerEmail": 0.8,
-        "CustomerContactPerson": 0.8,
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
         "DueDate": 0.9,
@@ -309,7 +308,7 @@
         "InvoiceTotal": 0.9,
         "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T20:08:46.886065",
+      "processing_timestamp": "2025-11-21T12:02:26.532841",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

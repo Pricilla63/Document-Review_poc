@@ -3,73 +3,435 @@
     "invoice_number": 1,
     "source_file": "Mercury network_June 2025 Invoice Summary (1011960693).pdf",
     "fields": {
-      "VendorName": "CoreLogic®\nMercury Network",
-      "VendorAddress": "P.O. Box 207250, Dallas, TX 75320-7250",
-      "VendorCountry": "na",
-      "VendorTaxId": "na",
-      "VendorContactEmail": "mercuryinfo@corelogic.com",
-      "VendorPhone": "1-866-789-4048",
-      "VendorBankName": "na",
-      "VendorBankAccountNumber": "na",
-      "VendorBankDetails": "na",
-      "VendorContactPerson": "Mercury Network, LLC",
-      "VendorWebsite": "na",
-      "CustomerName": "Tony Galluzzo\nConsolidated Analytics, Inc.",
-      "BillingAddress": "1 MacArthur PI Ste 100, Santa Ana, CA 92707-5927",
-      "ShippingAddress": "na",
-      "CustomerPhone": "na",
-      "CustomerEmail": "na",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "Tony Galluzzo",
-      "InvoiceId": "1011960693",
-      "InvoiceDate": "2025-07-01",
-      "DueDate": "2000-01-01",
-      "InvoiceCurrency": "USD",
-      "InvoiceType": "na",
-      "PurchaseOrder": "na",
-      "PaymentTerms": "NET 30",
-      "PaymentMethod": "Check or Electronic Transfer or Credit Card",
-      "CostCenter": "na",
-      "ServicePeriodStart": "na",
-      "ServicePeriodEnd": "na",
-      "LineItems_Count": "na",
+      "VendorName": {
+        "value": "CoreLogic®\nMercury Network",
+        "confidence": 0.888,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "P.O. Box 207250",
+          "city": "Dallas",
+          "state": "TX",
+          "postal_code": "75320-7250"
+        },
+        "confidence": 0.886,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "mercuryinfo@corelogic.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "1-866-789-4048",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "1026135106",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactPerson": {
+        "value": "Mercury Network, LLC",
+        "confidence": 0.917,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "Tony Galluzzo\nConsolidated Analytics, Inc.",
+        "confidence": 0.882,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1 MacArthur PI Ste 100",
+          "city": "Santa Ana",
+          "state": "CA",
+          "postal_code": "92707-5927"
+        },
+        "confidence": 0.838,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "Tony Galluzzo",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceId": {
+        "value": "1011960693",
+        "confidence": 0.939,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-01",
+        "confidence": 0.917,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2000-01-01",
+        "confidence": 0.917,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "NET 30",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": "Check or Electronic Transfer/Credit Card",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "LineItems_Count": {
+        "value": 11,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
       "TotalTax": {
-        "amount": 0.0,
-        "currency": "$",
-        "currency_code": "USD"
+        "value": {
+          "amount": 0.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.909,
+        "method": "AzurePrebuiltInvoice"
       },
       "TaxTypeBreakdown": {
-        "Sales Tax": "USD 0.00"
+        "value": "Sales Tax: $0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
-      "WithholdingTax": "na",
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "Subtotal": {
-        "amount": 9804.5,
-        "currency": "$",
-        "currency_code": "USD"
+        "value": {
+          "amount": 9804.5,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.934,
+        "method": "AzurePrebuiltInvoice"
       },
-      "ShippingHandling": "na",
-      "Surcharges": "na",
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "InvoiceTotal": {
-        "amount": 9804.5,
-        "currency": "$",
-        "currency_code": "USD"
+        "value": {
+          "amount": 9804.5,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.786,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "USD 372.25 (Credit on Account)",
+      "AmountPaid": {
+        "value": "372.25",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "AmountDue": {
-        "amount": 9432.25,
-        "currency": "$",
-        "currency_code": "USD"
+        "value": {
+          "amount": 9432.25,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.927,
+        "method": "AzurePrebuiltInvoice"
       },
-      "Notes": "For additional information please email mercuryinfo@corelogic.com or call 1-866-789-4048. *Note: Net transactions determine tiered pricing.",
-      "QRCode": "na",
-      "CompanyRegistration": "na",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "Notes": {
+        "value": "Credit on Account: ($372.25). For additional information please email mercuryinfo@corelogic.com or call 1-866-789-4048.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Paid by Client - Vendor",
+        "Quantity": 565.0,
+        "UnitPrice": {
+          "amount": 10.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 5650.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Paid by Client - Vendor",
+        "Quantity": 511.0,
+        "UnitPrice": {
+          "amount": 8.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 4088.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "Paid by Client - Client Tech Fee",
+        "Quantity": 137.0,
+        "UnitPrice": {
+          "amount": 5.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 685.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "Paid by Client - Vendor",
+        "Quantity": 68.0,
+        "UnitPrice": {
+          "amount": 5.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 340.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "Paid by Client - Vendor",
+        "Quantity": 2.0,
+        "UnitPrice": {
+          "amount": 15.75,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 31.5,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": "Paid by Client - Client Tech Fee",
+        "Quantity": 11.0,
+        "UnitPrice": {
+          "amount": 2.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 22.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 7,
+        "Description": "Cancelled Orders - Paid by Client - Client Tech Fee",
+        "Quantity": 2.0,
+        "UnitPrice": {
+          "amount": -2.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": -4.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 8,
+        "Description": "Cancelled Orders - Paid by Client - Vendor",
+        "Quantity": 2.0,
+        "UnitPrice": {
+          "amount": -5.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": -10.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 9,
+        "Description": "Cancelled Orders - Paid by Client - Vendor",
+        "Quantity": 6.0,
+        "UnitPrice": {
+          "amount": -8.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": -48.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 10,
+        "Description": "Cancelled Orders - Paid by Client - Client Tech Fee",
+        "Quantity": 20.0,
+        "UnitPrice": {
+          "amount": -5.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": -100.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 11,
+        "Description": "Cancelled Orders - Paid by Client - Vendor",
+        "Quantity": 85.0,
+        "UnitPrice": {
+          "amount": -10.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": -850.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
@@ -79,108 +441,34 @@
       "confidence_scores": {
         "VendorName": 0.9,
         "VendorAddress": 0.9,
-        "VendorCountry": 0.0,
-        "VendorTaxId": 0.0,
         "VendorContactEmail": 0.8,
         "VendorPhone": 0.8,
-        "VendorBankName": 0.0,
-        "VendorBankAccountNumber": 0.0,
-        "VendorBankDetails": 0.0,
+        "VendorBankAccountNumber": 0.7,
         "VendorContactPerson": 0.9,
-        "VendorWebsite": 0.0,
         "CustomerName": 0.9,
         "BillingAddress": 0.9,
-        "ShippingAddress": 0.0,
-        "CustomerPhone": 0.0,
-        "CustomerEmail": 0.0,
-        "CustomerTaxId": 0.0,
         "CustomerContactPerson": 0.8,
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
         "DueDate": 0.9,
         "InvoiceCurrency": 0.8,
-        "InvoiceType": 0.0,
-        "PurchaseOrder": 0.0,
         "PaymentTerms": 0.8,
         "PaymentMethod": 0.8,
-        "CostCenter": 0.0,
-        "ServicePeriodStart": 0.0,
-        "ServicePeriodEnd": 0.0,
-        "LineItems_Count": 0.0,
+        "LineItems_Count": 0.8,
         "TotalTax": 0.9,
         "TaxTypeBreakdown": 0.8,
-        "WithholdingTax": 0.0,
         "Subtotal": 0.9,
-        "ShippingHandling": 0.0,
-        "Surcharges": 0.0,
         "InvoiceTotal": 0.9,
         "AmountPaid": 0.8,
         "AmountDue": 0.9,
-        "Notes": 0.8,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.0,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:50:11.806736",
+      "processing_timestamp": "2025-11-21T12:14:26.524559",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "LLM_Text_Analysis",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "azure",
-        "VendorCountry": "NotAvailable",
-        "VendorTaxId": "NotAvailable",
-        "VendorContactEmail": "llm",
-        "VendorPhone": "llm",
-        "VendorBankName": "NotAvailable",
-        "VendorBankAccountNumber": "NotAvailable",
-        "VendorBankDetails": "NotAvailable",
-        "VendorContactPerson": "azure",
-        "VendorWebsite": "NotAvailable",
-        "CustomerName": "azure",
-        "BillingAddress": "azure",
-        "ShippingAddress": "NotAvailable",
-        "CustomerPhone": "NotAvailable",
-        "CustomerEmail": "NotAvailable",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "llm",
-        "InvoiceId": "azure",
-        "InvoiceDate": "azure",
-        "DueDate": "azure",
-        "InvoiceCurrency": "llm",
-        "InvoiceType": "NotAvailable",
-        "PurchaseOrder": "NotAvailable",
-        "PaymentTerms": "llm",
-        "PaymentMethod": "llm",
-        "CostCenter": "NotAvailable",
-        "ServicePeriodStart": "NotAvailable",
-        "ServicePeriodEnd": "NotAvailable",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "azure",
-        "TaxTypeBreakdown": "llm",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "azure",
-        "ShippingHandling": "NotAvailable",
-        "Surcharges": "NotAvailable",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "llm",
-        "AmountDue": "azure",
-        "Notes": "llm",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "NotAvailable",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "Azure"
     }
   }
 ]

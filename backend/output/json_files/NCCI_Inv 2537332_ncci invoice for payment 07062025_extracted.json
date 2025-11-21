@@ -3,168 +3,550 @@
     "invoice_number": 1,
     "source_file": "NCCI_Inv 2537332_ncci invoice for payment 07062025.pdf",
     "fields": {
-      "VendorName": "Ga\nconsolidatedanalytics",
-      "VendorAddress": "na",
-      "VendorCountry": "na",
-      "VendorTaxId": "na",
-      "VendorContactEmail": "na",
-      "VendorPhone": "na",
-      "VendorBankName": "na",
-      "VendorBankAccountNumber": "na",
-      "VendorBankDetails": "na",
-      "VendorContactPerson": "na",
-      "VendorWebsite": "na",
-      "CustomerName": "Sarah Vaughan",
-      "BillingAddress": "na",
-      "ShippingAddress": "na",
-      "CustomerPhone": "na",
-      "CustomerEmail": "na",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "na",
-      "InvoiceId": "na",
-      "InvoiceDate": "2025-07-06",
-      "DueDate": "na",
-      "InvoiceCurrency": "na",
-      "InvoiceType": "na",
-      "PurchaseOrder": "na",
-      "PaymentTerms": "na",
-      "PaymentMethod": "na",
-      "CostCenter": "na",
-      "ServicePeriodStart": "na",
-      "ServicePeriodEnd": "na",
-      "LineItems_Count": "na",
-      "TotalTax": "na",
-      "TaxTypeBreakdown": "na",
-      "WithholdingTax": "na",
-      "Subtotal": "na",
-      "ShippingHandling": "na",
-      "Surcharges": "na",
-      "InvoiceTotal": {
-        "amount": 250.0,
-        "currency": "$",
-        "currency_code": "USD"
+      "VendorName": {
+        "value": "Ga\nconsolidatedanalytics",
+        "confidence": 0.552,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "na",
-      "AmountDue": "na",
-      "Notes": "na",
-      "QRCode": "na",
-      "CompanyRegistration": "na",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "VendorAddress": {
+        "value": "2601 Main Street, Suite 1050, Irvine, CA 92614",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "800-300-0743",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "Sarah Vaughan",
+        "confidence": 0.346,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceId": {
+        "value": "2537332, 2537333",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-06",
+        "confidence": 0.564,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceCurrency": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentMethod": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CostCenter": {
+        "value": "0103",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "LineItems_Count": {
+        "value": 55,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceTotal": {
+        "value": {
+          "amount": 250.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.688,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountDue": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "NCCI Invoice for July 2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "[{\"Name\": \"Lambert Cruz\", \"Title\": \"Director, Operations\"}]",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "1. Complete the Request Information section.",
+        "NetAmount": 1.0
+      },
+      {
+        "item_number": 2,
+        "Description": "2. Obtain proper signed approval in the Approval section.",
+        "NetAmount": 2.0
+      },
+      {
+        "item_number": 3,
+        "Description": "3. Attach the corresponding invoice from the vendor.",
+        "NetAmount": 3.0
+      },
+      {
+        "item_number": 4,
+        "Description": "Note: If this invoice is for a new vendor, attach the vendor W9 as well.",
+        "NetAmount": 9.0
+      },
+      {
+        "item_number": 5,
+        "Description": "4. Submit to Accounts Payable for processing.",
+        "NetAmount": 4.0
+      },
+      {
+        "item_number": 6,
+        "Description": "Request Information",
+        "NetAmount": null
+      },
+      {
+        "item_number": 7,
+        "Description": "Requestor Name:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 8,
+        "Description": "Requestor Extension:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 9,
+        "Description": "Cost Center to Charge:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 10,
+        "Description": "Payee Name:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 11,
+        "Description": "Reference Number (TSS #):",
+        "NetAmount": null
+      },
+      {
+        "item_number": 12,
+        "Description": "Payee Address:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 13,
+        "Description": "Check Distribution:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 14,
+        "Description": "Mail check to vendor",
+        "NetAmount": null
+      },
+      {
+        "item_number": 15,
+        "Description": "Return check to requestor (Requestor to sign below when check is picked up)",
+        "NetAmount": null
+      },
+      {
+        "item_number": 16,
+        "Description": "____________________________ _______",
+        "NetAmount": null
+      },
+      {
+        "item_number": 17,
+        "Description": "Signature",
+        "NetAmount": null
+      },
+      {
+        "item_number": 18,
+        "Description": "Date",
+        "NetAmount": null
+      },
+      {
+        "item_number": 19,
+        "Description": "Notes or Special Requests:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 20,
+        "Description": "Approval *See Attached:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 21,
+        "Description": "*If approval is received by e-mail, check the “See Attached” box and attach a printout of the approval to this form.",
+        "NetAmount": null
+      },
+      {
+        "item_number": 22,
+        "Description": "Approver Name:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 23,
+        "Description": "Title:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 24,
+        "Description": "Signature:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 25,
+        "Description": "Date:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 26,
+        "Description": "Notes:",
+        "NetAmount": null
+      },
+      {
+        "item_number": 27,
+        "Description": "GL Account",
+        "NetAmount": null
+      },
+      {
+        "item_number": 28,
+        "Description": "Cost Center",
+        "NetAmount": null
+      },
+      {
+        "item_number": 29,
+        "Description": "Vendor Code",
+        "NetAmount": null
+      },
+      {
+        "item_number": 30,
+        "Description": "Approved",
+        "NetAmount": null
+      },
+      {
+        "item_number": 31,
+        "Description": "Invoice #",
+        "NetAmount": null
+      },
+      {
+        "item_number": 32,
+        "Description": "Invoice Date",
+        "NetAmount": null
+      },
+      {
+        "item_number": 33,
+        "Description": "Voucher #",
+        "NetAmount": null
+      },
+      {
+        "item_number": 34,
+        "Description": "3/8/2019",
+        "NetAmount": 2019.0
+      },
+      {
+        "item_number": 35,
+        "Description": "Sarah Vaughan",
+        "NetAmount": null
+      },
+      {
+        "item_number": 36,
+        "Description": "76713",
+        "NetAmount": 76713.0
+      },
+      {
+        "item_number": 37,
+        "Description": "0103",
+        "NetAmount": 103.0
+      },
+      {
+        "item_number": 38,
+        "Description": "NCCI",
+        "NetAmount": null
+      },
+      {
+        "item_number": 39,
+        "Description": "NCCI Invoice for July",
+        "NetAmount": 2025.0
+      },
+      {
+        "item_number": 40,
+        "ItemCode": "2601",
+        "Description": "Main Street, Suite",
+        "NetAmount": 1050.0
+      },
+      {
+        "item_number": 41,
+        "Description": "Irvine, CA",
+        "NetAmount": 92614.0
+      },
+      {
+        "item_number": 42,
+        "Description": "800-300-0743",
+        "NetAmount": 743.0
+      },
+      {
+        "item_number": 43,
+        "Description": "$",
+        "NetAmount": 250.0
+      },
+      {
+        "item_number": 44,
+        "Description": "Lambert Cruz",
+        "NetAmount": null
+      },
+      {
+        "item_number": 45,
+        "Description": "Director, Operations",
+        "NetAmount": null
+      },
+      {
+        "item_number": 46,
+        "Description": "5139",
+        "NetAmount": 5139.0
+      },
+      {
+        "item_number": 47,
+        "Description": "0103",
+        "NetAmount": 103.0
+      },
+      {
+        "item_number": 48,
+        "Description": "$",
+        "NetAmount": 25.0
+      },
+      {
+        "item_number": 49,
+        "Description": "2537332",
+        "NetAmount": 2537332.0
+      },
+      {
+        "item_number": 50,
+        "Description": "07/06/2025",
+        "NetAmount": 2025.0
+      },
+      {
+        "item_number": 51,
+        "Description": "$",
+        "NetAmount": 225.0
+      },
+      {
+        "item_number": 52,
+        "Description": "2537333",
+        "NetAmount": 2537333.0
+      },
+      {
+        "item_number": 53,
+        "Description": "07/06/2025",
+        "NetAmount": 2025.0
+      },
+      {
+        "item_number": 54,
+        "Description": "$",
+        "NetAmount": 250.0
+      },
+      {
+        "item_number": 55,
+        "Description": "07/09/2025",
+        "NetAmount": 2025.0
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
+        "TextLineItems",
+        "OpenAI_LLM_Text",
         "EnhancedRegex"
       ],
       "confidence_scores": {
         "VendorName": 0.9,
-        "VendorAddress": 0.0,
-        "VendorCountry": 0.0,
-        "VendorTaxId": 0.0,
-        "VendorContactEmail": 0.0,
-        "VendorPhone": 0.0,
-        "VendorBankName": 0.0,
-        "VendorBankAccountNumber": 0.0,
-        "VendorBankDetails": 0.0,
-        "VendorContactPerson": 0.0,
-        "VendorWebsite": 0.0,
+        "VendorAddress": 0.8,
+        "VendorPhone": 0.8,
         "CustomerName": 0.9,
-        "BillingAddress": 0.0,
-        "ShippingAddress": 0.0,
-        "CustomerPhone": 0.0,
-        "CustomerEmail": 0.0,
-        "CustomerTaxId": 0.0,
-        "CustomerContactPerson": 0.0,
-        "InvoiceId": 0.0,
+        "InvoiceId": 0.8,
         "InvoiceDate": 0.9,
-        "DueDate": 0.0,
-        "InvoiceCurrency": 0.0,
-        "InvoiceType": 0.0,
-        "PurchaseOrder": 0.0,
-        "PaymentTerms": 0.0,
-        "PaymentMethod": 0.0,
-        "CostCenter": 0.0,
-        "ServicePeriodStart": 0.0,
-        "ServicePeriodEnd": 0.0,
-        "LineItems_Count": 0.0,
-        "TotalTax": 0.0,
-        "TaxTypeBreakdown": 0.0,
-        "WithholdingTax": 0.0,
-        "Subtotal": 0.0,
-        "ShippingHandling": 0.0,
-        "Surcharges": 0.0,
+        "CostCenter": 0.8,
+        "LineItems_Count": 0.8,
         "InvoiceTotal": 0.9,
-        "AmountPaid": 0.0,
-        "AmountDue": 0.0,
-        "Notes": 0.0,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.0,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "Notes": 0.8,
+        "ApproverList": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:50:51.567655",
+      "processing_timestamp": "2025-11-21T12:15:03.019711",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "NotAvailable",
-        "VendorCountry": "NotAvailable",
-        "VendorTaxId": "NotAvailable",
-        "VendorContactEmail": "NotAvailable",
-        "VendorPhone": "NotAvailable",
-        "VendorBankName": "NotAvailable",
-        "VendorBankAccountNumber": "NotAvailable",
-        "VendorBankDetails": "NotAvailable",
-        "VendorContactPerson": "NotAvailable",
-        "VendorWebsite": "NotAvailable",
-        "CustomerName": "azure",
-        "BillingAddress": "NotAvailable",
-        "ShippingAddress": "NotAvailable",
-        "CustomerPhone": "NotAvailable",
-        "CustomerEmail": "NotAvailable",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "NotAvailable",
-        "InvoiceId": "NotAvailable",
-        "InvoiceDate": "azure",
-        "DueDate": "NotAvailable",
-        "InvoiceCurrency": "NotAvailable",
-        "InvoiceType": "NotAvailable",
-        "PurchaseOrder": "NotAvailable",
-        "PaymentTerms": "NotAvailable",
-        "PaymentMethod": "NotAvailable",
-        "CostCenter": "NotAvailable",
-        "ServicePeriodStart": "NotAvailable",
-        "ServicePeriodEnd": "NotAvailable",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "NotAvailable",
-        "TaxTypeBreakdown": "NotAvailable",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "NotAvailable",
-        "ShippingHandling": "NotAvailable",
-        "Surcharges": "NotAvailable",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "NotAvailable",
-        "AmountDue": "NotAvailable",
-        "Notes": "NotAvailable",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "NotAvailable",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "TextExtraction"
     }
   }
 ]

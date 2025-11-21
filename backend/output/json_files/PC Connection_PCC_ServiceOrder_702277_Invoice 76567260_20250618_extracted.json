@@ -3,67 +3,303 @@
     "invoice_number": 1,
     "source_file": "PC Connection_PCC_ServiceOrder_702277_Invoice 76567260_20250618.pdf",
     "fields": {
-      "VendorName": "Connection®\nBUSINESS",
-      "VendorAddress": "730 Milford Road, MERRIMACK, NH 03054",
-      "VendorCountry": "na",
-      "VendorTaxId": "02-0497006",
-      "VendorContactEmail": "REMIT@CONNECTION.COM",
-      "VendorPhone": "(800)800-0014",
-      "VendorBankName": "Citizens Bank",
-      "VendorBankAccountNumber": "1310873248",
-      "VendorBankDetails": "ACH Payments: ABA # 2110-70175, Account # 1310873248; WIRE Payments: ABA #0115-00120, Account # 1310873248",
-      "VendorContactPerson": "PC Connection",
-      "VendorWebsite": "na",
-      "CustomerName": "CONSOLIDATED ANALYTICS",
-      "BillingAddress": "1 MACARTHUR PLACE, STE 100, SANTA ANA, CA 92707",
+      "VendorName": {
+        "value": "Connection®\nBUSINESS",
+        "confidence": 0.413,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "730 Milford Road",
+          "city": "MERRIMACK",
+          "state": "NH",
+          "postal_code": "03054"
+        },
+        "confidence": 0.886,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorCountry": {
+        "value": "USA",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorTaxId": {
+        "value": "02-0497006",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactEmail": {
+        "value": "REMIT@CONNECTION.COM",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "(800)800-0014",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "Citizens Bank",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankAccountNumber": {
+        "value": "1310873248",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankDetails": {
+        "value": "ACH Payments: ABA # 2110-70175, Account # 1310873248; WIRE Payments: ABA #0115-00120, Account # 1310873248",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactPerson": {
+        "value": "PC Connection",
+        "confidence": 0.928,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "CONSOLIDATED ANALYTICS",
+        "confidence": 0.929,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": "1 MacArthur Place, Ste 100, Santa Ana CA 92707",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "ShippingAddress": {
-        "street_address": "1 MACARTHUR PLACE STE 100",
-        "city": "SANTA ANA",
-        "state": "CA",
-        "postal_code": "92707",
-        "house_number": "1",
-        "road": "MACARTHUR PLACE",
-        "unit": "STE 100"
+        "value": {
+          "street_address": "1 MACARTHUR PLACE STE 100",
+          "city": "SANTA ANA",
+          "state": "CA",
+          "postal_code": "92707"
+        },
+        "confidence": 0.866,
+        "method": "AzurePrebuiltInvoice"
       },
-      "CustomerPhone": "na",
-      "CustomerEmail": "na",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "CONSOLIDATED ANALYTICS",
-      "InvoiceId": "76567260",
-      "InvoiceDate": "2025-06-18",
-      "DueDate": "na",
-      "InvoiceCurrency": "na",
-      "InvoiceType": "INVOICE RENEWAL",
-      "PurchaseOrder": "Adobe",
-      "PaymentTerms": "Net 30",
-      "PaymentMethod": "Electronic Funds Transfer",
-      "CostCenter": "na",
-      "ServicePeriodStart": "2025-05-22",
-      "ServicePeriodEnd": "2026-05-26",
-      "LineItems_Count": "na",
-      "TotalTax": "na",
-      "TaxTypeBreakdown": "na",
-      "WithholdingTax": "na",
-      "Subtotal": "73,984.75",
-      "ShippingHandling": "na",
-      "Surcharges": "na",
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "CONSOLIDATED ANALYTICS",
+        "confidence": 0.929,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "76567260",
+        "confidence": 0.939,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-18",
+        "confidence": 0.939,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "Invoice Renewal",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PurchaseOrder": {
+        "value": "Adobe",
+        "confidence": 0.833,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "PaymentTerms": {
+        "value": "Net 30",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": "EFT/ACH/WIRE",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "05/22/2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ServicePeriodEnd": {
+        "value": "05/26/2026",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "LineItems_Count": {
+        "value": 3,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "73,984.75",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "InvoiceTotal": {
-        "amount": 73984.75,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 73984.75,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.833,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "na",
-      "AmountDue": "na",
-      "Notes": "Company retains a purchase money security interest in Equipment until payment is made in full. Backordered items will be shipped and invoiced to you as soon as they are available. Please include invoice number(s) in the transmitted information. For your security, do not change remittance details without valid written and verbal authorization from our company.",
-      "QRCode": "na",
-      "CompanyRegistration": "na",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "AmountDue": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Notes": {
+        "value": "Company retains a purchase money security interest in Equipment until payment is made in full. Backordered items will be shipped and invoiced to you as soon as they are available.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Annual or Prorated Charge\nVIP-MP AB Pro DC Teams L4\nUsage Date from 05/22/2025 to 05/26/2025",
+        "ItemCode": "41557538",
+        "UnitPrice": {
+          "amount": 3.61,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 18.05,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "INVOICE RENEWAL\nVIP-MP AB Pro DC Teams L4\nUsage Date from 05/27/2025 to 05/26/2026",
+        "ItemCode": "41557538",
+        "UnitPrice": {
+          "amount": 263.55,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 71685.6,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "INVOICE RENEWAL\nVIP-MP CC All Apps Pro Tms L4\nUsage Date from 05/27/2025 to 05/26/2026",
+        "ItemCode": "41557763",
+        "UnitPrice": {
+          "amount": 1140.55,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 2281.1,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
@@ -73,7 +309,7 @@
       "confidence_scores": {
         "VendorName": 0.9,
         "VendorAddress": 0.9,
-        "VendorCountry": 0.0,
+        "VendorCountry": 0.8,
         "VendorTaxId": 0.8,
         "VendorContactEmail": 0.8,
         "VendorPhone": 0.8,
@@ -81,100 +317,30 @@
         "VendorBankAccountNumber": 0.8,
         "VendorBankDetails": 0.8,
         "VendorContactPerson": 0.9,
-        "VendorWebsite": 0.0,
         "CustomerName": 0.9,
         "BillingAddress": 0.8,
         "ShippingAddress": 0.9,
-        "CustomerPhone": 0.0,
-        "CustomerEmail": 0.0,
-        "CustomerTaxId": 0.0,
         "CustomerContactPerson": 0.9,
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
-        "DueDate": 0.0,
-        "InvoiceCurrency": 0.0,
+        "InvoiceCurrency": 0.8,
         "InvoiceType": 0.8,
         "PurchaseOrder": 0.9,
         "PaymentTerms": 0.8,
         "PaymentMethod": 0.8,
-        "CostCenter": 0.0,
         "ServicePeriodStart": 0.8,
         "ServicePeriodEnd": 0.8,
-        "LineItems_Count": 0.0,
-        "TotalTax": 0.0,
-        "TaxTypeBreakdown": 0.8,
-        "WithholdingTax": 0.0,
+        "LineItems_Count": 0.8,
         "Subtotal": 0.8,
-        "ShippingHandling": 0.0,
-        "Surcharges": 0.0,
         "InvoiceTotal": 0.9,
-        "AmountPaid": 0.0,
-        "AmountDue": 0.0,
-        "Notes": 0.8,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.0,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:52:18.715134",
+      "processing_timestamp": "2025-11-21T12:16:41.338931",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "LLM_Text_Analysis",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "azure",
-        "VendorCountry": "NotAvailable",
-        "VendorTaxId": "llm",
-        "VendorContactEmail": "llm",
-        "VendorPhone": "llm",
-        "VendorBankName": "llm",
-        "VendorBankAccountNumber": "llm",
-        "VendorBankDetails": "llm",
-        "VendorContactPerson": "azure",
-        "VendorWebsite": "NotAvailable",
-        "CustomerName": "azure",
-        "BillingAddress": "llm",
-        "ShippingAddress": "azure",
-        "CustomerPhone": "NotAvailable",
-        "CustomerEmail": "NotAvailable",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "azure",
-        "InvoiceId": "azure",
-        "InvoiceDate": "azure",
-        "DueDate": "NotAvailable",
-        "InvoiceCurrency": "NotAvailable",
-        "InvoiceType": "llm",
-        "PurchaseOrder": "azure",
-        "PaymentTerms": "llm",
-        "PaymentMethod": "llm",
-        "CostCenter": "NotAvailable",
-        "ServicePeriodStart": "llm",
-        "ServicePeriodEnd": "llm",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "NotAvailable",
-        "TaxTypeBreakdown": "llm",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "llm",
-        "ShippingHandling": "NotAvailable",
-        "Surcharges": "NotAvailable",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "NotAvailable",
-        "AmountDue": "NotAvailable",
-        "Notes": "llm",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "NotAvailable",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "Azure"
     }
   }
 ]

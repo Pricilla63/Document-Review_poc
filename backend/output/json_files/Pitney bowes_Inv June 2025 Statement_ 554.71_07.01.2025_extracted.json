@@ -3,63 +3,275 @@
     "invoice_number": 1,
     "source_file": "Pitney bowes_Inv June 2025 Statement_ 554.71_07.01.2025.pdf",
     "fields": {
-      "VendorName": "pitney bowes",
-      "VendorAddress": "27 Waterview Drive, Shelton, CT 06484",
-      "VendorCountry": "na",
-      "VendorTaxId": "84-1386389",
-      "VendorContactEmail": "na",
-      "VendorPhone": "844 256 6444",
-      "VendorBankName": "na",
-      "VendorBankAccountNumber": "na",
-      "VendorBankDetails": "na",
-      "VendorContactPerson": "PURCHASE POWER",
-      "VendorWebsite": "https://pitneybowes.com/us/support/addresschange",
-      "CustomerName": "Consolidated Analytics Inc",
-      "BillingAddress": "1500 S Douglass Rd, Suite 110B, Anaheim, CA 92806",
-      "ShippingAddress": "na",
-      "CustomerPhone": "na",
-      "CustomerEmail": "na",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "Consolidated Analytics Inc\nAccounts Payable",
-      "InvoiceId": "8000-9090-0949-8283",
-      "InvoiceDate": "2025-07-01",
-      "DueDate": "2025-07-28",
-      "InvoiceCurrency": "USD",
-      "InvoiceType": "Account Statement",
-      "PurchaseOrder": "na",
-      "PaymentTerms": "Minimum payment due before due date",
-      "PaymentMethod": "Check, Online Bank Transfer",
-      "CostCenter": "na",
-      "ServicePeriodStart": "na",
-      "ServicePeriodEnd": "na",
-      "LineItems_Count": "na",
-      "TotalTax": "na",
-      "TaxTypeBreakdown": "na",
-      "WithholdingTax": "na",
-      "Subtotal": "502.25 USD",
-      "ShippingHandling": "na",
-      "Surcharges": "41.00 USD",
+      "VendorName": {
+        "value": "pitney bowes",
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "27 Waterview Drive",
+          "city": "Shelton",
+          "state": "CT",
+          "postal_code": "06484"
+        },
+        "confidence": 0.876,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorCountry": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorTaxId": {
+        "value": "84-1386389",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "844 256 6444",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "on",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorBankDetails": {
+        "value": "PO BOX 981026, BOSTON, MA 02298-1026",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactPerson": {
+        "value": "PURCHASE POWER",
+        "confidence": 0.914,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "pitneybowes.com/us/support/addresschange",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CustomerName": {
+        "value": "Consolidated Analytics Inc",
+        "confidence": 0.887,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": "1500 S DOUGLASS RD, SUITE 110B, ANAHEIM CA 92806",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "Consolidated Analytics Inc\nAccounts Payable",
+        "confidence": 0.887,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-01",
+        "confidence": 0.894,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-07-28",
+        "confidence": 0.937,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "Account Statement",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "Minimum payment due by due date",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": "Check, Online Bank Transfer",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "LineItems_Count": {
+        "value": 2,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "502.25",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "41.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "InvoiceTotal": {
-        "amount": 554.71,
-        "currency": "$",
-        "currency_code": "USD"
+        "value": {
+          "amount": 554.71,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.662,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "0.00 USD",
+      "AmountPaid": {
+        "value": "0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "AmountDue": {
-        "amount": 554.71,
-        "currency": "$",
-        "currency_code": "USD"
+        "value": {
+          "amount": 554.71,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.662,
+        "method": "AzurePrebuiltInvoice"
       },
-      "Notes": "Credit Cards are NOT an accepted form of payment for accounts. To avoid late fees please ensure Pitney Bowes receives a minimum payment before the due date.",
-      "QRCode": "na",
-      "CompanyRegistration": "na",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "Notes": {
+        "value": "Credit Cards are NOT accepted. To avoid late fees, ensure payment before due date. Online payments available.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "LATE FEE",
+        "NetAmount": {
+          "amount": 41.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "POSTAGE / SUPPLIES",
+        "NetAmount": {
+          "amount": 11.46,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
@@ -69,108 +281,35 @@
       "confidence_scores": {
         "VendorName": 0.9,
         "VendorAddress": 0.9,
-        "VendorCountry": 0.0,
         "VendorTaxId": 0.8,
-        "VendorContactEmail": 0.0,
         "VendorPhone": 0.8,
-        "VendorBankName": 0.0,
-        "VendorBankAccountNumber": 0.0,
-        "VendorBankDetails": 0.0,
+        "VendorBankAccountNumber": 0.7,
+        "VendorBankDetails": 0.8,
         "VendorContactPerson": 0.9,
         "VendorWebsite": 0.8,
         "CustomerName": 0.9,
         "BillingAddress": 0.8,
-        "ShippingAddress": 0.0,
-        "CustomerPhone": 0.0,
-        "CustomerEmail": 0.0,
-        "CustomerTaxId": 0.0,
         "CustomerContactPerson": 0.9,
-        "InvoiceId": 0.8,
         "InvoiceDate": 0.9,
         "DueDate": 0.9,
         "InvoiceCurrency": 0.8,
         "InvoiceType": 0.8,
-        "PurchaseOrder": 0.0,
         "PaymentTerms": 0.8,
         "PaymentMethod": 0.8,
-        "CostCenter": 0.0,
-        "ServicePeriodStart": 0.0,
-        "ServicePeriodEnd": 0.0,
-        "LineItems_Count": 0.0,
-        "TotalTax": 0.0,
-        "TaxTypeBreakdown": 0.8,
-        "WithholdingTax": 0.0,
+        "LineItems_Count": 0.8,
         "Subtotal": 0.8,
-        "ShippingHandling": 0.0,
         "Surcharges": 0.8,
         "InvoiceTotal": 0.9,
         "AmountPaid": 0.8,
         "AmountDue": 0.9,
-        "Notes": 0.8,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.0,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:52:32.680827",
+      "processing_timestamp": "2025-11-21T12:16:54.335314",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "LLM_Text_Analysis",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "azure",
-        "VendorCountry": "NotAvailable",
-        "VendorTaxId": "llm",
-        "VendorContactEmail": "NotAvailable",
-        "VendorPhone": "llm",
-        "VendorBankName": "NotAvailable",
-        "VendorBankAccountNumber": "NotAvailable",
-        "VendorBankDetails": "NotAvailable",
-        "VendorContactPerson": "azure",
-        "VendorWebsite": "llm",
-        "CustomerName": "azure",
-        "BillingAddress": "llm",
-        "ShippingAddress": "NotAvailable",
-        "CustomerPhone": "NotAvailable",
-        "CustomerEmail": "NotAvailable",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "azure",
-        "InvoiceId": "llm",
-        "InvoiceDate": "azure",
-        "DueDate": "azure",
-        "InvoiceCurrency": "llm",
-        "InvoiceType": "llm",
-        "PurchaseOrder": "NotAvailable",
-        "PaymentTerms": "llm",
-        "PaymentMethod": "llm",
-        "CostCenter": "NotAvailable",
-        "ServicePeriodStart": "NotAvailable",
-        "ServicePeriodEnd": "NotAvailable",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "NotAvailable",
-        "TaxTypeBreakdown": "llm",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "llm",
-        "ShippingHandling": "NotAvailable",
-        "Surcharges": "llm",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "llm",
-        "AmountDue": "azure",
-        "Notes": "llm",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "NotAvailable",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "Azure"
     }
   }
 ]

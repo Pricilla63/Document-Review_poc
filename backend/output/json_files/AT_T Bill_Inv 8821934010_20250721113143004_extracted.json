@@ -313,7 +313,7 @@
         "InvoiceTotal": 0.9,
         "AmountDue": 0.9
       },
-      "processing_timestamp": "2025-11-20T20:08:59.255104",
+      "processing_timestamp": "2025-11-21T12:02:39.855565",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

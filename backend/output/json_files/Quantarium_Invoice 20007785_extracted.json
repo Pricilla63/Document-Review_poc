@@ -3,71 +3,281 @@
     "invoice_number": 1,
     "source_file": "Quantarium_Invoice 20007785.pdf",
     "fields": {
-      "VendorName": "uantarium",
-      "VendorAddress": "{\"street_address\": \"P.O. Box 3279\", \"city\": \"REDMOND\", \"state\": \"WA\", \"postal_code\": \"98073\", \"country\": \"UNITED STATES\"}",
-      "VendorCountry": "USA",
-      "VendorTaxId": "na",
-      "VendorContactEmail": "na",
-      "VendorPhone": "na",
-      "VendorBankName": "na",
-      "VendorBankAccountNumber": "na",
-      "VendorBankDetails": "na",
-      "VendorContactPerson": "QUANTARIUM\nAttention: ACCTG DEPT",
-      "VendorWebsite": "na",
-      "CustomerName": "CONSOLIDATED ANALYTICS,\nINC",
-      "BillingAddress": "P.O. Box 3279, REDMOND WA 98073, UNITED STATES",
-      "ShippingAddress": "na",
-      "CustomerPhone": "na",
-      "CustomerEmail": "na",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "CONSOLIDATED ANALYTICS, INC",
-      "InvoiceId": "20007785",
-      "InvoiceDate": "2025-06-30",
-      "DueDate": "2025-07-30",
-      "InvoiceCurrency": "USD",
-      "InvoiceType": "na",
-      "PurchaseOrder": "na",
-      "PaymentTerms": "na",
-      "PaymentMethod": "na",
-      "CostCenter": "na",
-      "ServicePeriodStart": "na",
-      "ServicePeriodEnd": "na",
-      "LineItems_Count": "na",
+      "VendorName": {
+        "value": "uantarium",
+        "confidence": 0.945,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "P.O. Box 3279",
+          "city": "REDMOND",
+          "state": "WA",
+          "postal_code": "98073",
+          "country": "UNITED STATES"
+        },
+        "confidence": 0.887,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorCountry": {
+        "value": "USA",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactPerson": {
+        "value": "QUANTARIUM\nAttention: ACCTG DEPT",
+        "confidence": 0.916,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "CONSOLIDATED ANALYTICS,\nINC",
+        "confidence": 0.737,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": "P.O. Box 3279, REDMOND WA 98073, UNITED STATES",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "CONSOLIDATED ANALYTICS, INC",
+        "confidence": 0.936,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "20007785",
+        "confidence": 0.966,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-30",
+        "confidence": 0.937,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-07-30",
+        "confidence": 0.937,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentMethod": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodEnd": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "LineItems_Count": {
+        "value": 1,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
       "TotalTax": {
-        "amount": 0.0,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.956,
+        "method": "AzurePrebuiltInvoice"
       },
-      "TaxTypeBreakdown": "na",
-      "WithholdingTax": "na",
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "Subtotal": {
-        "amount": 3865.0,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 3865.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.951,
+        "method": "AzurePrebuiltInvoice"
       },
-      "ShippingHandling": "na",
-      "Surcharges": "na",
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "InvoiceTotal": {
-        "amount": 3865.0,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 3865.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.951,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "na",
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "AmountDue": {
-        "amount": 3865.0,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 3865.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.956,
+        "method": "AzurePrebuiltInvoice"
       },
-      "Notes": "Reference: June 2025",
-      "QRCode": "na",
-      "CompanyRegistration": "na",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "Notes": {
+        "value": "Reference: June 2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Valuations",
+        "Quantity": 773.0,
+        "UnitPrice": {
+          "amount": 5.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 3865.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
@@ -78,107 +288,27 @@
         "VendorName": 0.9,
         "VendorAddress": 0.9,
         "VendorCountry": 0.8,
-        "VendorTaxId": 0.0,
-        "VendorContactEmail": 0.0,
-        "VendorPhone": 0.0,
-        "VendorBankName": 0.0,
-        "VendorBankAccountNumber": 0.0,
-        "VendorBankDetails": 0.0,
         "VendorContactPerson": 0.9,
-        "VendorWebsite": 0.0,
         "CustomerName": 0.9,
         "BillingAddress": 0.8,
-        "ShippingAddress": 0.0,
-        "CustomerPhone": 0.0,
-        "CustomerEmail": 0.0,
-        "CustomerTaxId": 0.0,
         "CustomerContactPerson": 0.9,
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
         "DueDate": 0.9,
         "InvoiceCurrency": 0.8,
-        "InvoiceType": 0.0,
-        "PurchaseOrder": 0.0,
-        "PaymentTerms": 0.0,
-        "PaymentMethod": 0.0,
-        "CostCenter": 0.0,
-        "ServicePeriodStart": 0.0,
-        "ServicePeriodEnd": 0.0,
-        "LineItems_Count": 0.0,
+        "LineItems_Count": 0.8,
         "TotalTax": 0.9,
-        "TaxTypeBreakdown": 0.8,
-        "WithholdingTax": 0.0,
         "Subtotal": 0.9,
-        "ShippingHandling": 0.0,
-        "Surcharges": 0.0,
         "InvoiceTotal": 0.9,
-        "AmountPaid": 0.0,
         "AmountDue": 0.9,
-        "Notes": 0.8,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.0,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:53:19.034871",
+      "processing_timestamp": "2025-11-21T12:17:37.305872",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "LLM_Text_Analysis",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "azure",
-        "VendorCountry": "llm",
-        "VendorTaxId": "NotAvailable",
-        "VendorContactEmail": "NotAvailable",
-        "VendorPhone": "NotAvailable",
-        "VendorBankName": "NotAvailable",
-        "VendorBankAccountNumber": "NotAvailable",
-        "VendorBankDetails": "NotAvailable",
-        "VendorContactPerson": "azure",
-        "VendorWebsite": "NotAvailable",
-        "CustomerName": "azure",
-        "BillingAddress": "llm",
-        "ShippingAddress": "NotAvailable",
-        "CustomerPhone": "NotAvailable",
-        "CustomerEmail": "NotAvailable",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "azure",
-        "InvoiceId": "azure",
-        "InvoiceDate": "azure",
-        "DueDate": "azure",
-        "InvoiceCurrency": "llm",
-        "InvoiceType": "NotAvailable",
-        "PurchaseOrder": "NotAvailable",
-        "PaymentTerms": "NotAvailable",
-        "PaymentMethod": "NotAvailable",
-        "CostCenter": "NotAvailable",
-        "ServicePeriodStart": "NotAvailable",
-        "ServicePeriodEnd": "NotAvailable",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "azure",
-        "TaxTypeBreakdown": "llm",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "azure",
-        "ShippingHandling": "NotAvailable",
-        "Surcharges": "NotAvailable",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "NotAvailable",
-        "AmountDue": "azure",
-        "Notes": "llm",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "NotAvailable",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "Azure"
     }
   }
 ]

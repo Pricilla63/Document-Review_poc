@@ -9,7 +9,7 @@
         "method": "AzurePrebuiltInvoice"
       },
       "VendorAddress": {
-        "value": "PO Box 103894, Pasadena, CA 91189-3894",
+        "value": "PO Box 103894, Pasadena, CA 91189-3894, United States",
         "confidence": 0.8,
         "method": "OpenAI_LLM"
       },
@@ -432,7 +432,7 @@
         "AmountDue": 0.9,
         "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T20:12:32.552197",
+      "processing_timestamp": "2025-11-21T12:06:05.207102",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

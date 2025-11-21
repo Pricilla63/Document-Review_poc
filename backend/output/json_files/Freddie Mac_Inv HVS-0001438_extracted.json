@@ -65,7 +65,7 @@
       },
       "CustomerName": {
         "value": "Consolidated Analytics (Real Info, Inc)",
-        "confidence": 0.895,
+        "confidence": 0.896,
         "method": "AzurePrebuiltInvoice"
       },
       "BillingAddress": {
@@ -79,9 +79,9 @@
         "method": "AzurePrebuiltInvoice"
       },
       "ShippingAddress": {
-        "value": "8250 Jones Branch Drive, McLean, Virginia 22102",
-        "confidence": 0.8,
-        "method": "OpenAI_LLM"
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
       "CustomerPhone": {
         "value": "na",
@@ -99,7 +99,7 @@
         "method": "NotAvailable"
       },
       "CustomerContactPerson": {
-        "value": "SIS01()",
+        "value": "SIS01",
         "confidence": 0.8,
         "method": "OpenAI_LLM"
       },
@@ -149,14 +149,14 @@
         "method": "NotAvailable"
       },
       "ServicePeriodStart": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "04/30/2024",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "ServicePeriodEnd": {
-        "value": "na",
-        "confidence": 0.0,
-        "method": "NotAvailable"
+        "value": "06/30/2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
       "LineItems_Count": {
         "value": 7,
@@ -335,7 +335,6 @@
         "VendorContactPerson": 0.9,
         "CustomerName": 0.9,
         "BillingAddress": 0.9,
-        "ShippingAddress": 0.8,
         "CustomerContactPerson": 0.8,
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
@@ -343,6 +342,8 @@
         "InvoiceCurrency": 0.8,
         "InvoiceType": 0.8,
         "PaymentTerms": 0.8,
+        "ServicePeriodStart": 0.8,
+        "ServicePeriodEnd": 0.8,
         "LineItems_Count": 0.8,
         "TotalTax": 0.8,
         "Subtotal": 0.9,
@@ -351,7 +352,7 @@
         "AmountDue": 0.9,
         "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T20:12:14.697841",
+      "processing_timestamp": "2025-11-21T12:05:47.645438",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

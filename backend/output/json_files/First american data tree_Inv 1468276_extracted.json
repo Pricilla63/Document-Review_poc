@@ -217,7 +217,7 @@
         "method": "AzurePrebuiltInvoice"
       },
       "Notes": {
-        "value": "PLEASE REFERENCE BILLING NUMBER ALONG WITH YOUR PAYMENT.",
+        "value": "PLEASE REFERENCE BILLING NUMBER ALONG WITH YOUR PAYMENT. For billing questions or details for this invoice, go online to https://faanalytics.sharefile.com/Authentication/Login or call, 800-795-0391. For Accounts Receivable & Address Changes Payments : 800-795-0391 Address Changes : mortgageanalytics.support@firstam.com. IMPORTANT NOTICE: Data & Analytics does not change payment or wiring instructions. If you receive an e-mail containing WIRE TRANSFER INSTRUCTIONS, call your account representative immediately at a number you trust to verify the information prior to sending funds.",
         "confidence": 0.8,
         "method": "OpenAI_LLM"
       },
@@ -308,7 +308,7 @@
         "AmountDue": 0.9,
         "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T20:11:44.734663",
+      "processing_timestamp": "2025-11-21T12:05:19.620065",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

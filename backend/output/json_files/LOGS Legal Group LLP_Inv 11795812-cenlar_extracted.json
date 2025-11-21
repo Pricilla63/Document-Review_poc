@@ -3,63 +3,418 @@
     "invoice_number": 1,
     "source_file": "LOGS Legal Group LLP_Inv 11795812-cenlar.pdf",
     "fields": {
-      "VendorName": "LOGS Legal Group LLP",
-      "VendorAddress": "{\"street_address\": \"1715 Yankee Doodle Road, Suite 210\", \"city\": \"Eagan\", \"state\": \"MN\", \"postal_code\": \"55121\"}",
-      "VendorCountry": "USA",
-      "VendorTaxId": "56-2046047",
-      "VendorContactEmail": "na",
-      "VendorPhone": "(952)831-4060",
-      "VendorBankName": "na",
-      "VendorBankAccountNumber": "na",
-      "VendorBankDetails": "na",
-      "VendorContactPerson": "LOGS Legal Group LLP",
-      "VendorWebsite": "https://logscdcbea1201.logs.com:8011/nbs/printinvoice.do?fldInvoiceId=9283318",
-      "CustomerName": "Cenlar FSB",
-      "BillingAddress": "425 Phillips Boulevard, Ewing, NJ 08618",
-      "ShippingAddress": "431 Central Avenue South, Brooten, MN, 56316",
-      "CustomerPhone": "636.685.7444",
-      "CustomerEmail": "Askargacin@cenlar.com",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "Ross Trott, Il",
-      "InvoiceId": "MN0215169",
-      "InvoiceDate": "2025-07-09",
-      "DueDate": "2025-07-11",
-      "InvoiceCurrency": "USD",
-      "InvoiceType": "Eviction Services",
-      "PurchaseOrder": "na",
-      "PaymentTerms": "na",
-      "PaymentMethod": "Check",
-      "CostCenter": "NCT9DQ",
-      "ServicePeriodStart": "2025-07-08",
-      "ServicePeriodEnd": "2025-07-08",
-      "LineItems_Count": "na",
-      "TotalTax": "0.00 USD",
-      "TaxTypeBreakdown": "na",
-      "WithholdingTax": "na",
-      "Subtotal": "400.00 USD",
-      "ShippingHandling": "na",
-      "Surcharges": "na",
+      "VendorName": {
+        "value": "LOGS Legal Group LLP",
+        "confidence": 0.926,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "P.O. Box 9108",
+          "city": "Temecula",
+          "state": "CA",
+          "postal_code": "92589-9108"
+        },
+        "confidence": 0.915,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorCountry": {
+        "value": "USA",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorTaxId": {
+        "value": "56-2046047",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactEmail": {
+        "value": "jkubik@ca-usa.com",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorPhone": {
+        "value": "(952)831-4060",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactPerson": {
+        "value": "LOGS Legal Group LLP",
+        "confidence": 0.926,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "Cenlar FSB",
+        "confidence": 0.937,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "425 Phillips Boulevard",
+          "city": "Ewing",
+          "state": "NJ",
+          "postal_code": "08618"
+        },
+        "confidence": 0.888,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": "PO BOX 775426, CHICAGO, IL 60677-5426",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CustomerPhone": {
+        "value": "636.685.7444",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CustomerEmail": {
+        "value": "Askargacin@cenlar.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "Ross Trott, Il",
+        "confidence": 0.886,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "MN0215169",
+        "confidence": 0.946,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-07-09",
+        "confidence": 0.949,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "07/11/2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "Eviction Services",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentMethod": {
+        "value": "Check",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CostCenter": {
+        "value": "NCT9DQ",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ServicePeriodStart": {
+        "value": "2025-07-08",
+        "confidence": 0.57,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodEnd": {
+        "value": "07/08/2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "LineItems_Count": {
+        "value": 17,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
+      "TotalTax": {
+        "value": "0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "TaxTypeBreakdown": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Subtotal": {
+        "value": "400.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "InvoiceTotal": {
-        "amount": 2193.0,
-        "currency": "$",
-        "currency_code": "USD"
+        "value": {
+          "amount": 2193.0,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.819,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "na",
+      "AmountPaid": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "AmountDue": {
-        "amount": 400.0,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 400.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
       },
-      "Notes": "Please attach a copy of this invoice with your payment to ensure proper credit for this loan.",
-      "QRCode": "na",
-      "CompanyRegistration": "na",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "Notes": {
+        "value": "Approved final eviction invoice. Please attach a copy of this invoice with your payment to ensure proper credit for this loan.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "Yes",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ApproverList": {
+        "value": [
+          "Amber S. Kargacin"
+        ],
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ApprovalStatus": {
+        "value": "Approved",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ApprovalTimestamps": {
+        "value": [
+          "07/29/2025 07:21 AM"
+        ],
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "ATTORNEY FEE - EVICTION (REC, ELIG)",
+        "NetAmount": {
+          "amount": 400.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Attorney Fee",
+        "NetAmount": {
+          "amount": 940.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "Publication Cost",
+        "NetAmount": {
+          "amount": 690.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "Recording Certificate",
+        "NetAmount": {
+          "amount": 46.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "Recording Cost",
+        "NetAmount": {
+          "amount": 92.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": "Service Cost",
+        "NetAmount": {
+          "amount": 130.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 7,
+        "Description": "Sale Coverage Cost",
+        "NetAmount": {
+          "amount": 225.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 8,
+        "Description": "Sheriff Fee",
+        "NetAmount": {
+          "amount": 70.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 9,
+        "NetAmount": {
+          "amount": 46.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 10,
+        "Description": "Attorney Fee",
+        "NetAmount": {
+          "amount": 940.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 11,
+        "Description": "Publication Cost",
+        "NetAmount": {
+          "amount": 690.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 12,
+        "Description": "Recording Certificate",
+        "NetAmount": {
+          "amount": 46.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 13,
+        "Description": "Recording Cost",
+        "NetAmount": {
+          "amount": 92.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 14,
+        "Description": "Service Cost",
+        "NetAmount": {
+          "amount": 130.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 15,
+        "Description": "Sale Coverage Cost",
+        "NetAmount": {
+          "amount": 225.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 16,
+        "Description": "Sheriff Fee",
+        "NetAmount": {
+          "amount": 70.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 17,
+        "Description": "ASSIGNMENT OF",
+        "NetAmount": {
+          "amount": 46.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
@@ -71,106 +426,41 @@
         "VendorAddress": 0.9,
         "VendorCountry": 0.8,
         "VendorTaxId": 0.8,
-        "VendorContactEmail": 0.0,
+        "VendorContactEmail": 0.7,
         "VendorPhone": 0.8,
-        "VendorBankName": 0.0,
-        "VendorBankAccountNumber": 0.0,
-        "VendorBankDetails": 0.0,
         "VendorContactPerson": 0.9,
-        "VendorWebsite": 0.8,
         "CustomerName": 0.9,
         "BillingAddress": 0.9,
         "ShippingAddress": 0.8,
         "CustomerPhone": 0.8,
         "CustomerEmail": 0.8,
-        "CustomerTaxId": 0.0,
         "CustomerContactPerson": 0.9,
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
         "DueDate": 0.8,
         "InvoiceCurrency": 0.8,
         "InvoiceType": 0.8,
-        "PurchaseOrder": 0.0,
-        "PaymentTerms": 0.0,
         "PaymentMethod": 0.8,
         "CostCenter": 0.8,
         "ServicePeriodStart": 0.9,
         "ServicePeriodEnd": 0.8,
-        "LineItems_Count": 0.0,
+        "LineItems_Count": 0.8,
         "TotalTax": 0.8,
-        "TaxTypeBreakdown": 0.8,
-        "WithholdingTax": 0.0,
         "Subtotal": 0.8,
-        "ShippingHandling": 0.0,
-        "Surcharges": 0.0,
         "InvoiceTotal": 0.9,
-        "AmountPaid": 0.0,
         "AmountDue": 0.9,
         "Notes": 0.8,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.0,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "ApprovalRequired": 0.8,
+        "ApproverList": 0.8,
+        "ApprovalStatus": 0.8,
+        "ApprovalTimestamps": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:43:48.579021",
+      "processing_timestamp": "2025-11-21T12:07:55.997667",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "LLM_Text_Analysis",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "azure",
-        "VendorCountry": "llm",
-        "VendorTaxId": "llm",
-        "VendorContactEmail": "NotAvailable",
-        "VendorPhone": "llm",
-        "VendorBankName": "NotAvailable",
-        "VendorBankAccountNumber": "NotAvailable",
-        "VendorBankDetails": "NotAvailable",
-        "VendorContactPerson": "azure",
-        "VendorWebsite": "llm",
-        "CustomerName": "azure",
-        "BillingAddress": "azure",
-        "ShippingAddress": "llm",
-        "CustomerPhone": "llm",
-        "CustomerEmail": "llm",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "azure",
-        "InvoiceId": "azure",
-        "InvoiceDate": "azure",
-        "DueDate": "llm",
-        "InvoiceCurrency": "llm",
-        "InvoiceType": "llm",
-        "PurchaseOrder": "NotAvailable",
-        "PaymentTerms": "NotAvailable",
-        "PaymentMethod": "llm",
-        "CostCenter": "llm",
-        "ServicePeriodStart": "azure",
-        "ServicePeriodEnd": "llm",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "llm",
-        "TaxTypeBreakdown": "llm",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "llm",
-        "ShippingHandling": "NotAvailable",
-        "Surcharges": "NotAvailable",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "NotAvailable",
-        "AmountDue": "azure",
-        "Notes": "llm",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "NotAvailable",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "Azure"
     }
   }
 ]

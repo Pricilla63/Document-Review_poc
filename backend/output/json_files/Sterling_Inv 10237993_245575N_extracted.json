@@ -3,69 +3,402 @@
     "invoice_number": 1,
     "source_file": "Sterling_Inv 10237993_245575N.pdf",
     "fields": {
-      "VendorName": "Sterling",
-      "VendorAddress": "PO Box 35626, Newark, NJ 07193-5626, United States of America",
-      "VendorCountry": "United States of America",
-      "VendorTaxId": "na",
-      "VendorContactEmail": "AccountsReceivable@sterlingcheck.com",
-      "VendorPhone": "1.800.853.3228",
-      "VendorBankName": "na",
-      "VendorBankAccountNumber": "386633702",
-      "VendorBankDetails": "ACH (ABA# 021000021, Acct# 386633702, Acct Name Sterling Infosystems, Inc.)",
-      "VendorContactPerson": "na",
-      "VendorWebsite": "na",
-      "CustomerName": "Lisa Stratton\nConsolidated Analytics, Inc.",
-      "BillingAddress": "1 Mac Arthur Place, Suite 100, Santa Ana, CA 92707, United States of America",
-      "ShippingAddress": "na",
-      "CustomerPhone": "na",
-      "CustomerEmail": "na",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "Lisa Stratton",
-      "InvoiceId": "10237993",
-      "InvoiceDate": "2025-03-31",
-      "DueDate": "2025-04-30",
-      "InvoiceCurrency": "USD",
-      "InvoiceType": "na",
-      "PurchaseOrder": "245575N",
-      "PaymentTerms": "Net 30",
-      "PaymentMethod": "Check or ACH; major credit cards (subject to 3% convenience fee)",
-      "CostCenter": "na",
-      "ServicePeriodStart": "2025-03-01",
-      "ServicePeriodEnd": "2025-03-31",
-      "LineItems_Count": "na",
+      "VendorName": {
+        "value": "Sterling",
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": "PO Box 35626, Newark, NJ 07193-5626",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorCountry": {
+        "value": "United States of America",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorContactEmail": {
+        "value": "AccountsReceivable@sterlingcheck.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "1.800.853.3228",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "Sterling Infosystems, Inc.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankAccountNumber": {
+        "value": "386633702",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankDetails": {
+        "value": "ABA# 021000021, Acct# 386633702, Acct Name Sterling Infosystems, Inc.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactPerson": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "Lisa Stratton\nConsolidated Analytics, Inc.",
+        "confidence": 0.886,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": {
+          "street_address": "1 Mac Arthur Place Suite 100",
+          "city": "Santa Ana",
+          "state": "CA",
+          "postal_code": "92707",
+          "country": "United States of America"
+        },
+        "confidence": 0.819,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ShippingAddress": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerPhone": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "Lisa Stratton",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceId": {
+        "value": "10237993",
+        "confidence": 0.94,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-03-31",
+        "confidence": 0.94,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "2025-04-30",
+        "confidence": 0.939,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PurchaseOrder": {
+        "value": "245575N",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentTerms": {
+        "value": "Net 30",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": "Check, ACH, Credit Card",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "2025-03-01",
+        "confidence": 0.927,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "ServicePeriodEnd": {
+        "value": "2025-03-31",
+        "confidence": 0.916,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "LineItems_Count": {
+        "value": 14,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
       "TotalTax": {
-        "amount": 0.0,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.936,
+        "method": "AzurePrebuiltInvoice"
       },
       "TaxTypeBreakdown": {
-        "Sales Tax": "0.00 USD"
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
       },
-      "WithholdingTax": "na",
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "Subtotal": {
-        "amount": 5.47,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 5.47,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.938,
+        "method": "AzurePrebuiltInvoice"
       },
-      "ShippingHandling": "na",
-      "Surcharges": "na",
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "InvoiceTotal": {
-        "amount": 5.47,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 5.47,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.937,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "4,490.37 USD",
-      "AmountDue": "5.47 USD",
-      "Notes": "Payment Policy: Our standard payment options are check or ACH (ABA# 021000021, Acct# 386633702, Acct Name Sterling Infosystems, Inc.). We will also accept major credit cards subject to a 3% convenience fee (plus any applicable sales and use taxes). Past due amounts shall bear interest at a rate of 1.5% per month. Thank you for your business.",
-      "QRCode": "na",
-      "CompanyRegistration": "na",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "AmountPaid": {
+        "value": "4,490.37",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "AmountDue": {
+        "value": "5.47",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "Notes": {
+        "value": "Payment Policy: Our standard payment options are check or ACH (ABA# 021000021, Acct# 386633702, Acct Name Sterling Infosystems, Inc.). We will also accept major credit cards subject to a 3% convenience fee (plus any applicable sales and use taxes). Past due amounts shall bear interest at a rate of 1.5% per month.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Adverse Action Letter",
+        "Quantity": 1.0,
+        "NetAmount": {
+          "amount": 3.75,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Criminal County (10 year search)",
+        "Quantity": 169.0,
+        "NetAmount": {
+          "amount": 255.35,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "DOJ Sex Offender Search",
+        "Quantity": 102.0,
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "Enhanced Nationwide Criminal Search",
+        "Quantity": 102.0,
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 5,
+        "Description": "Federal Criminal Record",
+        "Quantity": 142.0,
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 6,
+        "Description": "Late Payment Fee",
+        "Quantity": 1.0,
+        "NetAmount": {
+          "amount": 1.72,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 7,
+        "Description": "Limited Denial of Participation (HUD Programs)",
+        "Quantity": 102.0,
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 8,
+        "Description": "Locator - County Validator",
+        "Quantity": 11.0,
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 9,
+        "Description": "Managed Compliance",
+        "Quantity": 7.0,
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 10,
+        "Description": "Online Order Transaction Fee",
+        "Quantity": 102.0,
+        "NetAmount": {
+          "amount": 52.02,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 11,
+        "Description": "Package Pricing",
+        "Quantity": 102.0,
+        "NetAmount": {
+          "amount": 3978.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 12,
+        "Description": "Payment",
+        "Quantity": 102.0,
+        "NetAmount": {
+          "amount": -4490.37,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 13,
+        "Description": "SSN Trace",
+        "Quantity": 102.0,
+        "NetAmount": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 14,
+        "Description": "State Criminal Repository",
+        "Quantity": 3.0,
+        "NetAmount": {
+          "amount": 205.0,
+          "currency": null,
+          "currency_code": "USD"
+        }
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
@@ -76,107 +409,37 @@
         "VendorName": 0.9,
         "VendorAddress": 0.8,
         "VendorCountry": 0.8,
-        "VendorTaxId": 0.0,
         "VendorContactEmail": 0.8,
         "VendorPhone": 0.8,
-        "VendorBankName": 0.0,
+        "VendorBankName": 0.8,
         "VendorBankAccountNumber": 0.8,
         "VendorBankDetails": 0.8,
-        "VendorContactPerson": 0.0,
-        "VendorWebsite": 0.0,
         "CustomerName": 0.9,
         "BillingAddress": 0.9,
-        "ShippingAddress": 0.0,
-        "CustomerPhone": 0.0,
-        "CustomerEmail": 0.0,
-        "CustomerTaxId": 0.0,
         "CustomerContactPerson": 0.8,
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
         "DueDate": 0.9,
         "InvoiceCurrency": 0.8,
-        "InvoiceType": 0.0,
         "PurchaseOrder": 0.8,
         "PaymentTerms": 0.8,
         "PaymentMethod": 0.8,
-        "CostCenter": 0.0,
         "ServicePeriodStart": 0.9,
         "ServicePeriodEnd": 0.9,
-        "LineItems_Count": 0.0,
+        "LineItems_Count": 0.8,
         "TotalTax": 0.9,
-        "TaxTypeBreakdown": 0.8,
-        "WithholdingTax": 0.0,
         "Subtotal": 0.9,
-        "ShippingHandling": 0.0,
-        "Surcharges": 0.0,
         "InvoiceTotal": 0.9,
         "AmountPaid": 0.8,
         "AmountDue": 0.8,
-        "Notes": 0.8,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.0,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:54:28.115853",
+      "processing_timestamp": "2025-11-21T12:18:48.670191",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "LLM_Text_Analysis",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "llm",
-        "VendorCountry": "llm",
-        "VendorTaxId": "NotAvailable",
-        "VendorContactEmail": "llm",
-        "VendorPhone": "llm",
-        "VendorBankName": "NotAvailable",
-        "VendorBankAccountNumber": "llm",
-        "VendorBankDetails": "llm",
-        "VendorContactPerson": "NotAvailable",
-        "VendorWebsite": "NotAvailable",
-        "CustomerName": "azure",
-        "BillingAddress": "azure",
-        "ShippingAddress": "NotAvailable",
-        "CustomerPhone": "NotAvailable",
-        "CustomerEmail": "NotAvailable",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "llm",
-        "InvoiceId": "azure",
-        "InvoiceDate": "azure",
-        "DueDate": "azure",
-        "InvoiceCurrency": "llm",
-        "InvoiceType": "NotAvailable",
-        "PurchaseOrder": "llm",
-        "PaymentTerms": "llm",
-        "PaymentMethod": "llm",
-        "CostCenter": "NotAvailable",
-        "ServicePeriodStart": "azure",
-        "ServicePeriodEnd": "azure",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "azure",
-        "TaxTypeBreakdown": "llm",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "azure",
-        "ShippingHandling": "NotAvailable",
-        "Surcharges": "NotAvailable",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "llm",
-        "AmountDue": "llm",
-        "Notes": "llm",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "NotAvailable",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "Azure"
     }
   }
 ]

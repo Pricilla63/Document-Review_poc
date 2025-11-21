@@ -196,7 +196,7 @@
         "method": "NotAvailable"
       },
       "Surcharges": {
-        "value": "2.5% credit card surcharge (not included in total)",
+        "value": "2.5% credit card surcharge may apply",
         "confidence": 0.8,
         "method": "OpenAI_LLM"
       },
@@ -224,7 +224,7 @@
         "method": "AzurePrebuiltInvoice"
       },
       "Notes": {
-        "value": "We impose a surcharge of 2.5% on the total transaction amount on all credit card payments. The surcharge is based on the billing address on the top of your invoice and is not greater than our cost of acceptance. We do not surcharge debit cards.",
+        "value": "Detailed breakdown of your Invoice charges can be found online by logging into your account at https://accountmanager.8x8.com. Please open a Billing Support case in your Admin Console https://8x8.force.com/s/createcase or call 888-898-8733. We impose a surcharge of 2.5% on the total transaction amount on all credit card payments. Regulatory Recovery Fee (RRF), Universal Service Fund (USF), E911 Service Fee, E911 Surcharge / Tax, State, Local, Other Taxes and Surcharges explained.",
         "confidence": 0.8,
         "method": "OpenAI_LLM"
       },
@@ -534,7 +534,7 @@
         "AmountDue": 0.9,
         "Notes": 0.8
       },
-      "processing_timestamp": "2025-11-20T20:07:48.691916",
+      "processing_timestamp": "2025-11-21T12:01:32.197509",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
         "MissingFieldHandling"

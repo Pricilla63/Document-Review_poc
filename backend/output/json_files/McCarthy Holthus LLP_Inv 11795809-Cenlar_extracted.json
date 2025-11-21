@@ -3,73 +3,307 @@
     "invoice_number": 1,
     "source_file": "McCarthy Holthus LLP_Inv 11795809-Cenlar.pdf",
     "fields": {
-      "VendorName": "IDSolutions",
-      "VendorAddress": "2763 Camino Del Rio S., Suite 100, San Diego, CA 92108",
-      "VendorCountry": "USA",
-      "VendorTaxId": "33-084-0381",
-      "VendorContactEmail": "srogato@McCarthyHolthus.com",
-      "VendorPhone": "619-685-4800",
-      "VendorBankName": "na",
-      "VendorBankAccountNumber": "na",
-      "VendorBankDetails": "na",
-      "VendorContactPerson": "IDSolutions",
-      "VendorWebsite": "na",
-      "CustomerName": "McCarthy & Holthus, LLP",
-      "BillingAddress": "425 Phillips Blvd, Ewing, NJ 08618, USA",
-      "ShippingAddress": "na",
-      "CustomerPhone": "800-223-6527",
-      "CustomerEmail": "na",
-      "CustomerTaxId": "na",
-      "CustomerContactPerson": "McCarthy & Holthus, LLP",
-      "InvoiceId": "3575639",
-      "InvoiceDate": "2025-06-23",
-      "DueDate": "2025-07-28",
-      "InvoiceCurrency": "USD",
-      "InvoiceType": "Eviction Attorney",
-      "PurchaseOrder": "na",
-      "PaymentTerms": "Due upon receipt",
-      "PaymentMethod": "Check",
-      "CostCenter": "na",
-      "ServicePeriodStart": "2025-06-20",
-      "ServicePeriodEnd": "2025-07-16",
-      "LineItems_Count": "na",
+      "VendorName": {
+        "value": "IDSolutions",
+        "confidence": 0.926,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorAddress": {
+        "value": {
+          "street_address": "2763 Camino Del Rio South",
+          "city": "San Diego",
+          "state": "CA",
+          "postal_code": "92108"
+        },
+        "confidence": 0.865,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorCountry": {
+        "value": "USA",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorTaxId": {
+        "value": "33-084-0381",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorContactEmail": {
+        "value": "jkubik@ca-usa.com",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorPhone": {
+        "value": "(619) 685-4800",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "VendorBankName": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankAccountNumber": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "VendorBankDetails": {
+        "value": "k",
+        "confidence": 0.7,
+        "method": "Regex"
+      },
+      "VendorContactPerson": {
+        "value": "IDSolutions",
+        "confidence": 0.926,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "VendorWebsite": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerName": {
+        "value": "McCarthy & Holthus, LLP",
+        "confidence": 0.903,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "BillingAddress": {
+        "value": "425 Phillips Blvd, Ewing, NJ 08618",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ShippingAddress": {
+        "value": "PO BOX 840055, Los Angeles, CA 90084-0055",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CustomerPhone": {
+        "value": "800-223-6527",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CustomerEmail": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerTaxId": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CustomerContactPerson": {
+        "value": "McCarthy & Holthus, LLP",
+        "confidence": 0.903,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceId": {
+        "value": "3575639",
+        "confidence": 0.973,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "InvoiceDate": {
+        "value": "2025-06-23",
+        "confidence": 0.972,
+        "method": "AzurePrebuiltInvoice"
+      },
+      "DueDate": {
+        "value": "7/28/2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceCurrency": {
+        "value": "USD",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "InvoiceType": {
+        "value": "Eviction Attorney",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PurchaseOrder": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "PaymentTerms": {
+        "value": "Due upon receipt",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "PaymentMethod": {
+        "value": "CHECK",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "CostCenter": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ServicePeriodStart": {
+        "value": "6/20/2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ServicePeriodEnd": {
+        "value": "7/16/2025",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "LineItems_Count": {
+        "value": 4,
+        "confidence": 1.0,
+        "method": "Calculated"
+      },
       "TotalTax": {
-        "amount": 0.0,
-        "currency": null,
-        "currency_code": "USD"
+        "value": {
+          "amount": 0.0,
+          "currency": null,
+          "currency_code": "USD"
+        },
+        "confidence": 0.941,
+        "method": "AzurePrebuiltInvoice"
       },
       "TaxTypeBreakdown": {
-        "SalesTax": "USD 0.00"
+        "value": [],
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
       },
-      "WithholdingTax": "na",
+      "WithholdingTax": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "Subtotal": {
-        "amount": 0.73,
-        "currency": "$",
-        "currency_code": "USD"
+        "value": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.97,
+        "method": "AzurePrebuiltInvoice"
       },
-      "ShippingHandling": "USD 0.00",
-      "Surcharges": "USD 0.00",
+      "ShippingHandling": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "Surcharges": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
       "InvoiceTotal": {
-        "amount": 0.73,
-        "currency": "$",
-        "currency_code": "USD"
+        "value": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.819,
+        "method": "AzurePrebuiltInvoice"
       },
-      "AmountPaid": "USD 0.00",
+      "AmountPaid": {
+        "value": "0.00",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
       "AmountDue": {
-        "amount": 0.73,
-        "currency": "$",
-        "currency_code": "USD"
+        "value": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "confidence": 0.819,
+        "method": "AzurePrebuiltInvoice"
       },
-      "Notes": "THE AMOUNT SHOWN IS DUE AND PAYABLE UPON RECEIPT. PLEASE REMIT PAYMENT TO Attn: General Accounting, PO BOX 840055, LOS ANGELES, CA 90084-0055. If you have any questions please contact accounting at (619) 685-4800.",
-      "QRCode": "na",
-      "CompanyRegistration": "CA Debt Collection License Number # na",
-      "ApprovalWorkflowID": "na",
-      "ApprovalRequired": "na",
-      "ApproverList": "na",
-      "ApprovalStatus": "na",
-      "ApprovalTimestamps": "na"
+      "Notes": {
+        "value": "THE AMOUNT SHOWN IS DUE AND PAYABLE UPON RECEIPT. PLEASE REMIT PAYMENT TO Attn: General Accounting, PO BOX 840055, LOS ANGELES, CA 90084-0055.",
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "QRCode": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "CompanyRegistration": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalWorkflowID": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalRequired": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApproverList": {
+        "value": [],
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      },
+      "ApprovalStatus": {
+        "value": "na",
+        "confidence": 0.0,
+        "method": "NotAvailable"
+      },
+      "ApprovalTimestamps": {
+        "value": [],
+        "confidence": 0.8,
+        "method": "OpenAI_LLM"
+      }
     },
-    "items": [],
+    "items": [
+      {
+        "item_number": 1,
+        "Description": "Mailing Cost\n1 x $0.73",
+        "NetAmount": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 2,
+        "Description": "Eviction Attorney",
+        "NetAmount": {
+          "amount": 550.0,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 3,
+        "Description": "All Occupants\n2111 E WAYNE RD\nPALM SPRINGS, CA 92262",
+        "Quantity": 1.0,
+        "UnitPrice": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        },
+        "NetAmount": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      },
+      {
+        "item_number": 4,
+        "Description": "First-Class Mail® Letter",
+        "NetAmount": {
+          "amount": 0.73,
+          "currency": "$",
+          "currency_code": "USD"
+        }
+      }
+    ],
     "extraction_metadata": {
       "methods_used": [
         "AzureDocumentIntelligence",
@@ -83,104 +317,39 @@
         "VendorTaxId": 0.8,
         "VendorContactEmail": 0.8,
         "VendorPhone": 0.8,
-        "VendorBankName": 0.0,
-        "VendorBankAccountNumber": 0.0,
-        "VendorBankDetails": 0.0,
+        "VendorBankDetails": 0.7,
         "VendorContactPerson": 0.9,
-        "VendorWebsite": 0.0,
         "CustomerName": 0.9,
         "BillingAddress": 0.8,
-        "ShippingAddress": 0.0,
+        "ShippingAddress": 0.8,
         "CustomerPhone": 0.8,
-        "CustomerEmail": 0.0,
-        "CustomerTaxId": 0.0,
         "CustomerContactPerson": 0.9,
         "InvoiceId": 0.9,
         "InvoiceDate": 0.9,
         "DueDate": 0.8,
         "InvoiceCurrency": 0.8,
         "InvoiceType": 0.8,
-        "PurchaseOrder": 0.0,
         "PaymentTerms": 0.8,
         "PaymentMethod": 0.8,
-        "CostCenter": 0.0,
         "ServicePeriodStart": 0.8,
         "ServicePeriodEnd": 0.8,
-        "LineItems_Count": 0.0,
+        "LineItems_Count": 0.8,
         "TotalTax": 0.9,
         "TaxTypeBreakdown": 0.8,
-        "WithholdingTax": 0.0,
         "Subtotal": 0.9,
-        "ShippingHandling": 0.8,
-        "Surcharges": 0.8,
         "InvoiceTotal": 0.9,
         "AmountPaid": 0.8,
         "AmountDue": 0.9,
         "Notes": 0.8,
-        "QRCode": 0.0,
-        "CompanyRegistration": 0.8,
-        "ApprovalWorkflowID": 0.0,
-        "ApprovalRequired": 0.0,
-        "ApproverList": 0.0,
-        "ApprovalStatus": 0.0,
-        "ApprovalTimestamps": 0.0
+        "ApproverList": 0.8,
+        "ApprovalTimestamps": 0.8
       },
-      "processing_timestamp": "2025-11-20T19:47:34.932578",
+      "processing_timestamp": "2025-11-21T12:11:40.887672",
       "extraction_strategies": [
         "AzurePrebuiltInvoice",
-        "LLM_Text_Analysis",
-        "RegexPatterns",
         "MissingFieldHandling"
       ],
-      "source_breakdown": {
-        "VendorName": "azure",
-        "VendorAddress": "azure",
-        "VendorCountry": "llm",
-        "VendorTaxId": "llm",
-        "VendorContactEmail": "llm",
-        "VendorPhone": "llm",
-        "VendorBankName": "NotAvailable",
-        "VendorBankAccountNumber": "NotAvailable",
-        "VendorBankDetails": "NotAvailable",
-        "VendorContactPerson": "azure",
-        "VendorWebsite": "NotAvailable",
-        "CustomerName": "azure",
-        "BillingAddress": "llm",
-        "ShippingAddress": "NotAvailable",
-        "CustomerPhone": "llm",
-        "CustomerEmail": "NotAvailable",
-        "CustomerTaxId": "NotAvailable",
-        "CustomerContactPerson": "azure",
-        "InvoiceId": "azure",
-        "InvoiceDate": "azure",
-        "DueDate": "llm",
-        "InvoiceCurrency": "llm",
-        "InvoiceType": "llm",
-        "PurchaseOrder": "NotAvailable",
-        "PaymentTerms": "llm",
-        "PaymentMethod": "llm",
-        "CostCenter": "NotAvailable",
-        "ServicePeriodStart": "llm",
-        "ServicePeriodEnd": "llm",
-        "LineItems_Count": "NotAvailable",
-        "TotalTax": "azure",
-        "TaxTypeBreakdown": "llm",
-        "WithholdingTax": "NotAvailable",
-        "Subtotal": "azure",
-        "ShippingHandling": "llm",
-        "Surcharges": "llm",
-        "InvoiceTotal": "azure",
-        "AmountPaid": "llm",
-        "AmountDue": "azure",
-        "Notes": "llm",
-        "QRCode": "NotAvailable",
-        "CompanyRegistration": "llm",
-        "ApprovalWorkflowID": "NotAvailable",
-        "ApprovalRequired": "NotAvailable",
-        "ApproverList": "NotAvailable",
-        "ApprovalStatus": "NotAvailable",
-        "ApprovalTimestamps": "NotAvailable"
-      }
+      "line_items_method": "Azure"
     }
   }
 ]
